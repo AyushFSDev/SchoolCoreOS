@@ -52,6 +52,8 @@ border-bottom:1.5px dashed #e5e7eb;
 
 .compare-row{
 display:flex;
+flex-direction: row;
+text-align: start;
 align-items:center;
 gap:10px;
 padding:12px 0;

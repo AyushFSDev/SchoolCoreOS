@@ -887,6 +887,12 @@
             .features-hero {
                 padding: 36px 0 44px;
             }
+            .features-hero-text h2{
+                font-size: 24px;
+            }
+            .features-hero-text p{
+                font-size: 16px;
+            }
 
             .features-card {
                 width: 66%;

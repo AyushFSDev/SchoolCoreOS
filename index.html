@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./styles/solution.css" />
     <link rel="stylesheet" href="./styles/transform.css" />
     <link rel="stylesheet" href="./styles/roles.css" />
-
   </head>
 
   <body>
@@ -138,12 +137,22 @@
       </div>
     </section>
 
-    <!-- Clear Floating Dashboard -->
+    <!-- Dashboard Preview -->
     <div class="dashboard-preview-wrapper">
-      <img
-        src="./assets/images/Desktop - 32 (1).png"
-        class="dashboard-preview"
-      />
+      <picture>
+        <!-- Mobile Image -->
+        <source
+          media="(max-width:500px)"
+          srcset="./assets/images/hero-dashboard.png"
+        />
+
+        <!-- Desktop Image -->
+        <img
+          src="./assets/images/Desktop - 32 (1).png"
+          class="dashboard-preview"
+          alt="Dashboard Preview"
+        />
+      </picture>
     </div>
 
     <!-- HERO END ================================================================================================== -->
@@ -421,86 +430,118 @@
     <!-- FEATURE END ================================================================================================== -->
 
     <!-- PROBLEM DEFINITION START ================================================================================================== -->
-  <section class="problem-section">
-  <div class="section-header reveal">
-    <span class="eyebrow">Platform Overview</span>
-    <h2>Education operations are more <em>complex</em> than they should be.</h2>
-    <p>Institutions rely on disconnected systems that create operational friction, slow decision-making, and increase compliance risk.</p>
-  </div>
-
-  <div class="radial-stage reveal" data-delay="2">
-
-    <!-- orbit rings -->
-    <div class="orbit-ring"></div>
-    <div class="orbit-ring-sm"></div>
-
-    <!-- SVG lines from center (460, 350) to each card -->
-    <svg class="connector-svg" viewBox="0 0 920 700" preserveAspectRatio="none">
-      <line x1="460" y1="350" x2="460" y2="42"/>
-      <line x1="460" y1="350" x2="755" y2="161"/>
-      <line x1="460" y1="350" x2="755" y2="525"/>
-      <line x1="460" y1="350" x2="460" y2="651"/>
-      <line x1="460" y1="350" x2="165" y2="525"/>
-      <line x1="460" y1="350" x2="165" y2="161"/>
-    </svg>
-
-    <!-- Core -->
-    <div class="core">
-      <span class="core-label">Operational<br>Complexity</span>
-      <span class="core-sub">Across Institutions</span>
-    </div>
-
-    <!-- Cards -->
-    <div class="pain-card" data-pos="top">
-      <div class="pain-glyph">
-        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    <section class="problem-section">
+      <div class="section-header reveal">
+        <h2>
+          Institutions Don’t Struggle With Growth.  They Struggle With Systems.
+        </h2>
+        <p>
+          Institutions today operate on fragmented systems that limit growth,
+          transparency, and governance.
+        </p>
       </div>
-      <h4>Fragmented Systems</h4>
-      <p>Departments in silos — no unified data layer.</p>
-    </div>
 
-    <div class="pain-card" data-pos="top-right">
-      <div class="pain-glyph">
-        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+      <div class="radial-stage reveal" data-delay="2">
+        <!-- orbit rings -->
+        <div class="orbit-ring"></div>
+        <div class="orbit-ring-sm"></div>
+
+        <!-- SVG lines from center (460, 350) to each card -->
+        <svg
+          class="connector-svg"
+          viewBox="0 0 920 700"
+          preserveAspectRatio="none"
+        >
+          <line x1="460" y1="350" x2="460" y2="42" />
+          <line x1="460" y1="350" x2="755" y2="161" />
+          <line x1="460" y1="350" x2="755" y2="525" />
+          <line x1="460" y1="350" x2="460" y2="651" />
+          <line x1="460" y1="350" x2="165" y2="525" />
+          <line x1="460" y1="350" x2="165" y2="161" />
+        </svg>
+
+        <!-- Core -->
+        <div class="core">
+          <span class="core-label">Operational<br />Complexity</span>
+          <span class="core-sub">Across Institutions</span>
+        </div>
+
+        <!-- Cards -->
+        <div class="pain-card" data-pos="top">
+          <div class="pain-glyph">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" rx="1.5" />
+              <rect x="14" y="3" width="7" height="7" rx="1.5" />
+              <rect x="3" y="14" width="7" height="7" rx="1.5" />
+              <rect x="14" y="14" width="7" height="7" rx="1.5" />
+            </svg>
+          </div>
+          <h4>Fragmented Systems</h4>
+          <p>Departments in silos — no unified data layer.</p>
+        </div>
+
+        <div class="pain-card" data-pos="top-right">
+          <div class="pain-glyph">
+            <svg viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+              <path d="M14 2v6h6M8 13h8M8 17h5" />
+            </svg>
+          </div>
+          <h4>Manual Approvals</h4>
+          <p>Decisions slowed by paperwork and repetitive tasks.</p>
+        </div>
+
+        <div class="pain-card" data-pos="bottom-right">
+          <div class="pain-glyph">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"
+              />
+              <line x1="12" y1="9" x2="12" y2="13" />
+              <line x1="12" y1="17" x2="12.01" y2="17" />
+            </svg>
+          </div>
+          <h4>Compliance Risk</h4>
+          <p>Audits reactive — not built into daily workflows.</p>
+        </div>
+
+        <div class="pain-card" data-pos="bottom">
+          <div class="pain-glyph">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+          </div>
+          <h4>Limited Visibility</h4>
+          <p>Leadership lacks real-time operational insight.</p>
+        </div>
+
+        <div class="pain-card" data-pos="bottom-left">
+          <div class="pain-glyph">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87" />
+              <path d="M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <h4>Disconnected Stakeholders</h4>
+          <p>Parents, staff, and admins on separate channels.</p>
+        </div>
+
+        <div class="pain-card" data-pos="top-left">
+          <div class="pain-glyph">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <h4>Multi-campus Gaps</h4>
+          <p>No centralized control across branches.</p>
+        </div>
       </div>
-      <h4>Manual Approvals</h4>
-      <p>Decisions slowed by paperwork and repetitive tasks.</p>
-    </div>
-
-    <div class="pain-card" data-pos="bottom-right">
-      <div class="pain-glyph">
-        <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-      </div>
-      <h4>Compliance Risk</h4>
-      <p>Audits reactive — not built into daily workflows.</p>
-    </div>
-
-    <div class="pain-card" data-pos="bottom">
-      <div class="pain-glyph">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-      </div>
-      <h4>Limited Visibility</h4>
-      <p>Leadership lacks real-time operational insight.</p>
-    </div>
-
-    <div class="pain-card" data-pos="bottom-left">
-      <div class="pain-glyph">
-        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-      </div>
-      <h4>Disconnected Stakeholders</h4>
-      <p>Parents, staff, and admins on separate channels.</p>
-    </div>
-
-    <div class="pain-card" data-pos="top-left">
-      <div class="pain-glyph">
-        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      </div>
-      <h4>Multi-campus Gaps</h4>
-      <p>No centralized control across branches.</p>
-    </div>
-
-  </div>
-</section>
+    </section>
     <!-- PROBLEM DEFINITION END ================================================================================================== -->
 
     <!-- SOLUTION START ================================================================================================== -->
