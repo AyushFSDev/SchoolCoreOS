@@ -1,0 +1,952 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/features.css" />
+    <link rel="stylesheet" href="./styles/problems.css" />
+    <link rel="stylesheet" href="./styles/solution.css" />
+    <link rel="stylesheet" href="./styles/transform.css" />
+    <link rel="stylesheet" href="./styles/roles.css" />
+
+  </head>
+
+  <body>
+    <!-- HEADER START======================================================================== -->
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="#">SchoolCore<span>OS</span></a>
+
+        <nav class="nav-links">
+          <a href="#">Platform</a>
+          <a href="#">Solutions</a>
+          <a href="#">Enterprise</a>
+          <a href="#">Pricing</a>
+        </nav>
+
+        <div class="nav-right">
+          <a href="#" class="login">Login</a>
+          <button class="free-trial">Free Trial</button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#000000"
+          >
+            <path
+              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+            />
+          </svg>
+        </div>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- OFFCANVAS -->
+    <aside class="offcanvas" id="offcanvas" aria-hidden="true">
+      <div class="offcanvas-header">
+        <span class="offcanvas-logo">School<span>Core</span>OS</span>
+        <button class="close-btn" id="closeBtn" aria-label="Close menu">
+          ✕
+        </button>
+      </div>
+
+      <div class="offcanvas-body">
+        <div class="offcanvas-section-label">Menu</div>
+        <nav class="offcanvas-nav">
+          <a href="#">Platform <span class="nav-arrow">›</span></a>
+          <a href="#">Solutions <span class="nav-arrow">›</span></a>
+          <a href="#">Enterprise <span class="nav-arrow">›</span></a>
+          <a href="#">Pricing <span class="nav-arrow">›</span></a>
+        </nav>
+
+        <div class="offcanvas-divider"></div>
+
+        <div class="offcanvas-section-label">Support</div>
+        <nav class="offcanvas-nav">
+          <a href="#">Help Center <span class="nav-arrow">›</span></a>
+          <a href="#">Contact Us <span class="nav-arrow">›</span></a>
+          <a href="#"
+            >☾ Dark Mode:
+
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.5 12.5H32.5C34.4891 12.5 36.3968 13.2902 37.8033 14.6967C39.2098 16.1032 40 18.0109 40 20C40 21.9891 39.2098 23.8968 37.8033 25.3033C36.3968 26.7098 34.4891 27.5 32.5 27.5H22.5C23.0819 26.726 23.5718 25.8871 23.96 25H32.5C33.8261 25 35.0979 24.4732 36.0355 23.5355C36.9732 22.5979 37.5 21.3261 37.5 20C37.5 18.6739 36.9732 17.4021 36.0355 16.4645C35.0979 15.5268 33.8261 15 32.5 15H23.96C23.5683 14.105 23.0817 13.2717 22.5 12.5Z"
+                fill="#07305D"
+                fill-opacity="0.6"
+              />
+              <path
+                d="M0 20C0 23.3152 1.31696 26.4946 3.66117 28.8388C6.00537 31.183 9.18479 32.5 12.5 32.5C15.8152 32.5 18.9946 31.183 21.3388 28.8388C23.683 26.4946 25 23.3152 25 20C25 16.6848 23.683 13.5054 21.3388 11.1612C18.9946 8.81696 15.8152 7.5 12.5 7.5C9.18479 7.5 6.00537 8.81696 3.66117 11.1612C1.31696 13.5054 0 16.6848 0 20Z"
+                fill="#07305D"
+                fill-opacity="0.6"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
+
+      <div class="offcanvas-footer">
+        <a href="#" class="oc-login">Login</a>
+        <button class="oc-trial">Start Free Trial</button>
+      </div>
+    </aside>
+    <!-- HEADER END ================================================================================================== -->
+
+    <!-- HERO START ================================================================================================== -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+
+      <div class="hero-content">
+        <h1>
+          The Operating System<br />
+          for Education.
+        </h1>
+
+        <p>
+          Built for institutions that demand structure, scale, and governance.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="primary-btn">Start Free Trial</button>
+          <button class="secondary-btn">Explore Platform</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clear Floating Dashboard -->
+    <div class="dashboard-preview-wrapper">
+      <img
+        src="./assets/images/Desktop - 32 (1).png"
+        class="dashboard-preview"
+      />
+    </div>
+
+    <!-- HERO END ================================================================================================== -->
+    <!-- FEATURE START ================================================================================================== -->
+    <section class="features-hero">
+      <!-- ── HEADING ── -->
+      <div class="features-hero-text">
+        <h2>Everything Your Institution Runs On.</h2>
+        <p>
+          From admissions to finance, academics to compliance —everything
+          connected in real time.
+        </p>
+      </div>
+
+      <!-- ── STAGE ── -->
+      <div class="features-stage">
+        <!-- Blurred dashboard -->
+        <div class="features-dashboard">
+          <div class="features-db-content"></div>
+        </div>
+
+        <!-- ── CONNECTOR DOTS SVG ── -->
+        <svg class="features-dots-svg" viewBox="0 0 1060 560">
+          <circle
+            class="features-glow-dot"
+            cx="200"
+            cy="110"
+            r="4"
+            fill="#6366f1"
+            filter="url(#glow-indigo)"
+          />
+          <circle
+            class="features-glow-dot"
+            cx="880"
+            cy="110"
+            r="4"
+            fill="#8b5cf6"
+          />
+          <circle
+            class="features-glow-dot"
+            cx="570"
+            cy="160"
+            r="4"
+            fill="#14b8a6"
+          />
+          <circle
+            class="features-glow-dot"
+            cx="260"
+            cy="250"
+            r="4"
+            fill="#22c55e"
+          />
+          <circle
+            class="features-glow-dot"
+            cx="820"
+            cy="240"
+            r="4"
+            fill="#f59e0b"
+          />
+          <circle
+            class="features-glow-dot"
+            cx="530"
+            cy="330"
+            r="4"
+            fill="#ec4899"
+          />
+          <circle
+            class="features-glow-dot"
+            cx="200"
+            cy="440"
+            r="4"
+            fill="#3b82f6"
+          />
+          <circle
+            class="features-glow-dot"
+            cx="584"
+            cy="470"
+            r="4"
+            fill="#6366f1"
+          />
+          <defs>
+            <filter
+              id="glow-indigo"
+              x="-50%"
+              y="-50%"
+              width="200%"
+              height="200%"
+            >
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="3"
+                result="blur"
+              />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+        </svg>
+
+        <!-- ── FEATURE CARDS ── -->
+
+        <!-- 1. Multi-Faculty Governance -->
+        <div class="features-card features-card-governance">
+          <div class="features-card-icon features-icon-indigo">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#6366f1"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <rect x="3" y="3" width="7" height="7" rx="1.5" />
+              <rect x="14" y="3" width="7" height="7" rx="1.5" />
+              <rect x="3" y="14" width="7" height="7" rx="1.5" />
+              <rect x="14" y="14" width="7" height="7" rx="1.5" />
+            </svg>
+          </div>
+          <div class="features-card-text">
+            <h3>Multi-Faculty Governance</h3>
+            <p>Manage departments & programs centrally</p>
+          </div>
+        </div>
+
+        <!-- 2. AI Academic Insights -->
+        <div class="features-card features-card-ai">
+          <div class="features-card-icon features-icon-purple">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#8b5cf6"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="3" />
+              <polyline points="7,14 10,10 13,13 17,8" />
+              <circle cx="17" cy="8" r="1.5" fill="#8b5cf6" />
+            </svg>
+          </div>
+          <div class="features-card-text">
+            <h3>AI Academic Insights</h3>
+            <p>Real-time performance analytics</p>
+          </div>
+        </div>
+
+        <!-- 3. Compliance & Audit Logs -->
+        <div class="features-card features-card-compliance">
+          <div class="features-card-icon features-icon-teal">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#14b8a6"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M9 11l3 3L22 4" />
+              <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+            </svg>
+          </div>
+          <div class="features-card-text">
+            <h3>Compliance & Audit Logs</h3>
+            <p>Built-in regulatory tracking</p>
+          </div>
+        </div>
+
+        <!-- 4. Academic Reporting -->
+        <div class="features-card features-card-reporting">
+          <div class="features-card-icon features-icon-green">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#16a34a"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M4 19V6a2 2 0 012-2h12a2 2 0 012 2v13" />
+              <line x1="8" y1="10" x2="16" y2="10" />
+              <line x1="8" y1="14" x2="13" y2="14" />
+            </svg>
+          </div>
+          <div class="features-card-text">
+            <h3>Academic Reporting</h3>
+            <p>Real-time performance insights</p>
+          </div>
+        </div>
+
+        <!-- 5. Financial Management -->
+        <div class="features-card features-card-financial">
+          <div class="features-card-icon features-icon-amber">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#d97706"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+              <line x1="12" y1="12" x2="12" y2="16" />
+              <line x1="10" y1="14" x2="14" y2="14" />
+            </svg>
+          </div>
+          <div class="features-card-text">
+            <h3>Financial Management</h3>
+            <p>Fees, payroll & accounts unified</p>
+          </div>
+        </div>
+
+        <!-- 6. Role-Based Access -->
+        <div class="features-card features-card-roleaccess">
+          <div class="features-card-icon features-icon-pink">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#db2777"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <circle cx="12" cy="8" r="4" />
+              <path d="M6 20v-1a6 6 0 0112 0v1" />
+              <circle cx="18" cy="14" r="3" fill="#fce7f3" stroke="#db2777" />
+              <line x1="18" y1="13" x2="18" y2="15" />
+            </svg>
+          </div>
+          <div class="features-card-text">
+            <h3>Role-Based Access</h3>
+            <p>Controlled permissions system-wide</p>
+          </div>
+        </div>
+
+        <!-- 7. Multi-Campus Control -->
+        <div class="features-card features-card-campus">
+          <div class="features-card-icon features-icon-blue">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#2563eb"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9,22 9,12 15,12 15,22" />
+            </svg>
+          </div>
+          <div class="features-card-text">
+            <h3>Multi-Campus Control</h3>
+            <p>Centralized oversight across campuses</p>
+          </div>
+        </div>
+
+        <!-- 8. Communication Hub -->
+        <div class="features-card features-card-comms">
+          <div class="features-card-icon features-icon-rose">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#e11d48"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path
+                d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"
+              />
+            </svg>
+          </div>
+          <div class="features-card-text">
+            <h3>Communication Hub</h3>
+            <p>Institution-wide messaging</p>
+          </div>
+        </div>
+      </div>
+      <!-- /features-stage -->
+    </section>
+    <!-- FEATURE END ================================================================================================== -->
+
+    <!-- PROBLEM DEFINITION START ================================================================================================== -->
+  <section class="problem-section">
+  <div class="section-header reveal">
+    <span class="eyebrow">Platform Overview</span>
+    <h2>Education operations are more <em>complex</em> than they should be.</h2>
+    <p>Institutions rely on disconnected systems that create operational friction, slow decision-making, and increase compliance risk.</p>
+  </div>
+
+  <div class="radial-stage reveal" data-delay="2">
+
+    <!-- orbit rings -->
+    <div class="orbit-ring"></div>
+    <div class="orbit-ring-sm"></div>
+
+    <!-- SVG lines from center (460, 350) to each card -->
+    <svg class="connector-svg" viewBox="0 0 920 700" preserveAspectRatio="none">
+      <line x1="460" y1="350" x2="460" y2="42"/>
+      <line x1="460" y1="350" x2="755" y2="161"/>
+      <line x1="460" y1="350" x2="755" y2="525"/>
+      <line x1="460" y1="350" x2="460" y2="651"/>
+      <line x1="460" y1="350" x2="165" y2="525"/>
+      <line x1="460" y1="350" x2="165" y2="161"/>
+    </svg>
+
+    <!-- Core -->
+    <div class="core">
+      <span class="core-label">Operational<br>Complexity</span>
+      <span class="core-sub">Across Institutions</span>
+    </div>
+
+    <!-- Cards -->
+    <div class="pain-card" data-pos="top">
+      <div class="pain-glyph">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+      </div>
+      <h4>Fragmented Systems</h4>
+      <p>Departments in silos — no unified data layer.</p>
+    </div>
+
+    <div class="pain-card" data-pos="top-right">
+      <div class="pain-glyph">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+      </div>
+      <h4>Manual Approvals</h4>
+      <p>Decisions slowed by paperwork and repetitive tasks.</p>
+    </div>
+
+    <div class="pain-card" data-pos="bottom-right">
+      <div class="pain-glyph">
+        <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </div>
+      <h4>Compliance Risk</h4>
+      <p>Audits reactive — not built into daily workflows.</p>
+    </div>
+
+    <div class="pain-card" data-pos="bottom">
+      <div class="pain-glyph">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <h4>Limited Visibility</h4>
+      <p>Leadership lacks real-time operational insight.</p>
+    </div>
+
+    <div class="pain-card" data-pos="bottom-left">
+      <div class="pain-glyph">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <h4>Disconnected Stakeholders</h4>
+      <p>Parents, staff, and admins on separate channels.</p>
+    </div>
+
+    <div class="pain-card" data-pos="top-left">
+      <div class="pain-glyph">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <h4>Multi-campus Gaps</h4>
+      <p>No centralized control across branches.</p>
+    </div>
+
+  </div>
+</section>
+    <!-- PROBLEM DEFINITION END ================================================================================================== -->
+
+    <!-- SOLUTION START ================================================================================================== -->
+    <section style="background: #f5f5f5">
+      <div class="two-col">
+        <!-- LEFT sticky -->
+        <div class="left-col">
+          <h2>
+            Not Just an ERP.<br />
+            <span class="muted">One System.</span><br />
+            Total Institutional Control.
+          </h2>
+          <p>
+            SchoolCoreOS connects academics,<br />
+            finance, governance and communication<br />
+            into one structured platform.
+          </p>
+          <div class="feature-buttons">
+            <button class="feature-primary-btn">See How it Works</button>
+          </div>
+        </div>
+
+        <!-- RIGHT solution list -->
+        <div class="right-col">
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <!-- credit-card / subscription icon -->
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="5" width="20" height="14" rx="2" />
+                <line x1="2" y1="10" x2="22" y2="10" />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Student Subscription Management</h3>
+              <p>
+                Control enrollments, access, and institutional revenue streams
+              </p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <!-- building / campus icon -->
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Multi-Campus &amp; Franchise Setup</h3>
+              <p>Centralized administration across branches</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <!-- academic cap / lifecycle icon -->
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Academic Lifecycle Management</h3>
+              <p>From syllabus and timetable to exams and certifications</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <!-- briefcase / placement icon -->
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                <line x1="12" y1="12" x2="12" y2="16" />
+                <line x1="10" y1="14" x2="14" y2="14" />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Internship &amp; Placement Tracking</h3>
+              <p>Manage career outcomes institution-wide</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <!-- file / finance icon -->
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <line x1="3" y1="9" x2="21" y2="9" />
+                <line x1="9" y1="21" x2="9" y2="9" />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Integrated Financial Operations</h3>
+              <p>Fees, accounts, payroll, and reporting unified</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <!-- shield / compliance icon -->
+              <svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Compliance &amp; Audit Logs</h3>
+              <p>Built-in regulatory tracking and activity monitoring</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <!-- lock / governance icon -->
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Role-Based Governance</h3>
+              <p>Secure, permission-driven institutional access</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Real-Time Alerts &amp; Notifications</h3>
+              <p>Keep every stakeholder informed and on track</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Performance Analytics</h3>
+              <p>Data-driven insights across academics and operations</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Staff &amp; Faculty Management</h3>
+              <p>Unified HR, schedules, and workload management</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Parent &amp; Student Communication</h3>
+              <p>Built-in messaging and notice boards for all stakeholders</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </div>
+            <div class="solution-text">
+              <h3>Timetable &amp; Scheduling Engine</h3>
+              <p>Automated clash-free scheduling across departments</p>
+            </div>
+          </div>
+        </div>
+        <!-- /right-col -->
+      </div>
+    </section>
+    <!-- SOLUTION END ================================================================================================== -->
+    <!-- TRANSFORM START ================================================================================================== -->
+    <section class="transform-section">
+      <div class="transform-container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Transform Fragmented Operations into a Unified Institutional System
+          </h2>
+
+          <p class="section-sub">
+            Replace disconnected tools with a unified operational system
+            designed for modern institutions.
+          </p>
+        </div>
+
+        <div class="compare-cols">
+          <!-- LEFT -->
+          <div class="compare-col left-col">
+            <h3 class="compare-col-title">Fragmented Institutional Systems</h3>
+
+            <div class="compare-row">
+              <span class="x-icon">✕</span> Multiple disconnected tools
+            </div>
+
+            <div class="compare-row">
+              <span class="x-icon">✕</span> Manual coordination across
+              departments
+            </div>
+
+            <div class="compare-row">
+              <span class="x-icon">✕</span> Limited operational visibility
+            </div>
+
+            <div class="compare-row">
+              <span class="x-icon">✕</span> Data scattered across platforms
+            </div>
+
+            <div class="compare-row">
+              <span class="x-icon">✕</span> Inconsistent processes across
+              campuses
+            </div>
+          </div>
+
+          <div class="divider-line"></div>
+
+          <!-- RIGHT -->
+          <div class="compare-col right-col">
+            <h3 class="compare-col-title">
+              Unified Institutional Infrastructure
+            </h3>
+
+            <div class="compare-row">
+              <span class="check-icon">✓</span> One connected operational
+              platform
+            </div>
+
+            <div class="compare-row">
+              <span class="check-icon">✓</span> Automated coordination across
+              departments
+            </div>
+
+            <div class="compare-row">
+              <span class="check-icon">✓</span> Real-time institutional
+              visibility
+            </div>
+
+            <div class="compare-row">
+              <span class="check-icon">✓</span> Centralized data and reporting
+            </div>
+
+            <div class="compare-row">
+              <span class="check-icon">✓</span> Standardized operations across
+              campuses
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TRANSFORM END ================================================================================================== -->
+    <!-- ROLES START ================================================================================================== -->
+    <section class="roles-section">
+      <div class="container">
+        <h1 class="page-title">Platform Roles & Access Levels</h1>
+
+        <p class="page-sub">
+          Every stakeholder interacts with SchoolCoreOS through clearly defined
+          roles and permissions.
+        </p>
+
+        <div class="roles-grid">
+          <!-- Super Admin -->
+
+          <div class="role-card super-admin">
+            <h3>Super Admin</h3>
+
+            <p class="role-desc">
+              Complete system ownership with unrestricted access across all
+              modules.
+            </p>
+
+            <ul class="role-extra">
+              <li>System configuration & settings</li>
+              <li>Role & permissions management</li>
+              <li>Multi-campus oversight</li>
+            </ul>
+          </div>
+
+          <!-- Admin -->
+
+          <div class="role-card admin">
+            <h3>Admin</h3>
+
+            <p class="role-desc">
+              Day-to-day administrative control with institutional access.
+            </p>
+
+            <ul class="role-extra">
+              <li>Admissions & records</li>
+              <li>Operational workflows</li>
+              <li>Department coordination</li>
+            </ul>
+          </div>
+
+          <!-- Principal -->
+
+          <div class="role-card principal">
+            <h3>Principal</h3>
+
+            <p class="role-desc">
+              Academic and operational oversight across departments.
+            </p>
+
+            <ul class="role-extra">
+              <li>Academic performance</li>
+              <li>Staff activity monitoring</li>
+              <li>Institutional reporting</li>
+            </ul>
+          </div>
+
+          <!-- Trainer -->
+
+          <div class="role-card trainer">
+            <h3>Trainer</h3>
+
+            <p class="role-desc">
+              Course delivery, scheduling and learner progress management.
+            </p>
+
+            <ul class="role-extra">
+              <li>Course delivery</li>
+              <li>Attendance tracking</li>
+              <li>Assessment management</li>
+            </ul>
+          </div>
+
+          <!-- Staff -->
+
+          <div class="role-card staff">
+            <h3>Staff</h3>
+
+            <p class="role-desc">
+              Operational support with access to relevant workflows.
+            </p>
+
+            <ul class="role-extra">
+              <li>Administrative support</li>
+              <li>Data coordination</li>
+              <li>Process execution</li>
+            </ul>
+          </div>
+
+          <!-- Student -->
+
+          <div class="role-card student">
+            <h3>Student</h3>
+
+            <p class="role-desc">
+              Personal learning dashboard and academic records.
+            </p>
+
+            <ul class="role-extra">
+              <li>Course resources</li>
+              <li>Academic performance</li>
+              <li>Schedule access</li>
+            </ul>
+          </div>
+
+          <!-- Parent -->
+
+          <div class="role-card parent">
+            <h3>Parent</h3>
+
+            <p class="role-desc">
+              Visibility into student progress and institutional updates.
+            </p>
+
+            <ul class="role-extra">
+              <li>Attendance tracking</li>
+              <li>Academic progress</li>
+              <li>Fee management</li>
+            </ul>
+          </div>
+
+          <!-- Vendor -->
+
+          <div class="role-card vendor">
+            <h3>Vendor</h3>
+
+            <p class="role-desc">Track purchase orders and manage invoices.</p>
+
+            <ul class="role-extra">
+              <li>Purchase orders</li>
+              <li>Invoice submission</li>
+              <li>Payment tracking</li>
+            </ul>
+          </div>
+
+          <!-- Alumni -->
+
+          <div class="role-card alumni">
+            <h3>Alumni</h3>
+
+            <p class="role-desc">
+              Stay connected with institution updates and alumni network.
+            </p>
+
+            <ul class="role-extra">
+              <li>Alumni network</li>
+              <li>Events</li>
+              <li>Historical records</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="roles-footer">
+        Supporting <span>17+ granular access roles</span><br />
+        across governance and operations.
+      </div>
+    </section>
+    <!-- ROLES END ================================================================================================== -->
+    <!-- Script -->
+    <script src="./index.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/problems.js"></script>
+    <script src="./scripts/roles.js"></script>
+  </body>
+</html>

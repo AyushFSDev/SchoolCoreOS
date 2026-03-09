@@ -1,0 +1,71 @@
+.roles-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  font-family: sans-serif;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.role-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Soft shadow */
+  border-top: 4px solid #ccc; /* Default border color */
+  transition: transform 0.3s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Colors for top borders */
+.orange { border-top-color: #b36b39; }
+.blue { border-top-color: #5c7cfa; }
+.green { border-top-color: #2fb344; }
+.red { border-top-color: #d63939; }
+
+.role-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.role-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.features li {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Checkmark icon (CSS pseudo-element) */
+.features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #2fb344;
+  font-weight: bold;
+}
