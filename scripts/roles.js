@@ -1,14 +1,15 @@
 // roles section start
-const cards = document.querySelectorAll(".role-card");
-
-cards.forEach((card) => {
-  card.addEventListener("click", () => {
-    cards.forEach((c) => {
-      if (c !== card) {
-        c.classList.remove("active");
-      }
-    });
-
-    card.classList.toggle("active");
-  });
-});
+  function scrollTrack(direction) {
+        const track = document.getElementById('roleTrack');
+        // Calculate dynamic width (Card width + gap)
+        const style = getComputedStyle(document.documentElement);
+        const cardWidth = parseInt(style.getPropertyValue('--card-width'));
+        const gap = parseInt(style.getPropertyValue('--card-gap'));
+        
+        const moveAmount = cardWidth + gap;
+        
+        track.scrollBy({
+            left: direction * moveAmount,
+            behavior: 'smooth'
+        });
+    }

@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./styles/solution.css" />
     <link rel="stylesheet" href="./styles/transform.css" />
     <link rel="stylesheet" href="./styles/roles.css" />
+    <link rel="stylesheet" href="./styles/easy-to-use.css" />
+
+    <link rel="stylesheet" href="./styles/footer.css" />
   </head>
 
   <body>
@@ -63,7 +66,7 @@
     <!-- OFFCANVAS -->
     <aside class="offcanvas" id="offcanvas" aria-hidden="true">
       <div class="offcanvas-header">
-        <span class="offcanvas-logo">School<span>Core</span>OS</span>
+        <span class="offcanvas-logo">SchoolCore<span>OS</span></span>
         <button class="close-btn" id="closeBtn" aria-label="Close menu">
           ✕
         </button>
@@ -143,7 +146,7 @@
         <!-- Mobile Image -->
         <source
           media="(max-width:500px)"
-          srcset="./assets/images/hero-dashboard.png"
+          srcset="./assets/images/dashboard-mobile-view.png"
         />
 
         <!-- Desktop Image -->
@@ -162,7 +165,7 @@
       <div class="features-hero-text">
         <h2>Everything Your Institution Runs On.</h2>
         <p>
-          From admissions to finance, academics to compliance —everything
+          From admissions to finance, academics to compliance everything
           connected in real time.
         </p>
       </div>
@@ -433,7 +436,7 @@
     <section class="problem-section">
       <div class="section-header reveal">
         <h2>
-          Institutions Don’t Struggle With Growth.  They Struggle With Systems.
+          Institutions Don’t Struggle With Growth. They Struggle With Systems.
         </h2>
         <p>
           Institutions today operate on fragmented systems that limit growth,
@@ -468,77 +471,106 @@
 
         <!-- Cards -->
         <div class="pain-card" data-pos="top">
-          <div class="pain-glyph">
-            <svg viewBox="0 0 24 24">
-              <rect x="3" y="3" width="7" height="7" rx="1.5" />
-              <rect x="14" y="3" width="7" height="7" rx="1.5" />
-              <rect x="3" y="14" width="7" height="7" rx="1.5" />
-              <rect x="14" y="14" width="7" height="7" rx="1.5" />
-            </svg>
+          <div class="pain-header">
+            <div class="pain-glyph">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                <rect x="14" y="14" width="7" height="7" rx="1.5" />
+              </svg>
+            </div>
+            <h4>Fragmented Systems</h4>
           </div>
-          <h4>Fragmented Systems</h4>
-          <p>Departments in silos — no unified data layer.</p>
+
+          <p class="pain-desc">Departments in silos — no unified data layer.</p>
         </div>
 
         <div class="pain-card" data-pos="top-right">
-          <div class="pain-glyph">
-            <svg viewBox="0 0 24 24">
-              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-              <path d="M14 2v6h6M8 13h8M8 17h5" />
-            </svg>
+          <div class="pain-header">
+            <div class="pain-glyph">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
+                />
+                <path d="M14 2v6h6M8 13h8M8 17h5" />
+              </svg>
+            </div>
+            <h4>Manual Approvals</h4>
           </div>
-          <h4>Manual Approvals</h4>
-          <p>Decisions slowed by paperwork and repetitive tasks.</p>
+
+          <p class="pain-desc">
+            Decisions slowed by paperwork and repetitive tasks.
+          </p>
         </div>
 
         <div class="pain-card" data-pos="bottom-right">
-          <div class="pain-glyph">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"
-              />
-              <line x1="12" y1="9" x2="12" y2="13" />
-              <line x1="12" y1="17" x2="12.01" y2="17" />
-            </svg>
+          <div class="pain-header">
+            <div class="pain-glyph">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"
+                />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+            </div>
+            <h4>Compliance Risk</h4>
           </div>
-          <h4>Compliance Risk</h4>
-          <p>Audits reactive — not built into daily workflows.</p>
+
+          <p class="pain-desc">
+            Audits reactive — not built into daily workflows.
+          </p>
         </div>
 
         <div class="pain-card" data-pos="bottom">
-          <div class="pain-glyph">
-            <svg viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="12" />
-              <line x1="12" y1="16" x2="12.01" y2="16" />
-            </svg>
+          <div class="pain-header">
+            <div class="pain-glyph">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+            </div>
+            <h4>Limited Visibility</h4>
           </div>
-          <h4>Limited Visibility</h4>
-          <p>Leadership lacks real-time operational insight.</p>
+
+          <p class="pain-desc">
+            Leadership lacks real-time operational insight.
+          </p>
         </div>
 
         <div class="pain-card" data-pos="bottom-left">
-          <div class="pain-glyph">
-            <svg viewBox="0 0 24 24">
-              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-              <circle cx="9" cy="7" r="4" />
-              <path d="M23 21v-2a4 4 0 00-3-3.87" />
-              <path d="M16 3.13a4 4 0 010 7.75" />
-            </svg>
+          <div class="pain-header">
+            <div class="pain-glyph">
+              <svg viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87" />
+                <path d="M16 3.13a4 4 0 010 7.75" />
+              </svg>
+            </div>
+            <h4>Disconnected Stakeholders</h4>
           </div>
-          <h4>Disconnected Stakeholders</h4>
-          <p>Parents, staff, and admins on separate channels.</p>
+
+          <p class="pain-desc">
+            Parents, staff, and admins on separate channels.
+          </p>
         </div>
 
         <div class="pain-card" data-pos="top-left">
-          <div class="pain-glyph">
-            <svg viewBox="0 0 24 24">
-              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-              <polyline points="9 22 9 12 15 12 15 22" />
-            </svg>
+          <div class="pain-header">
+            <div class="pain-glyph">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <div>
+              <h4>Multi-campus Gaps</h4>
+            </div>
           </div>
-          <h4>Multi-campus Gaps</h4>
-          <p>No centralized control across branches.</p>
+          <p class="pain-desc">No centralized control across branches.</p>
         </div>
       </div>
     </section>
@@ -748,7 +780,7 @@
     <!-- TRANSFORM START ================================================================================================== -->
     <section class="transform-section">
       <div class="transform-container">
-        <div class="section-header">
+        <div class="transform-section-header">
           <h2 class="section-title">
             Transform Fragmented Operations into a Unified Institutional System
           </h2>
@@ -825,169 +857,445 @@
     <!-- TRANSFORM END ================================================================================================== -->
     <!-- ROLES START ================================================================================================== -->
     <section class="roles-section">
-      <div class="container">
-        <h1 class="page-title">Platform Roles & Access Levels</h1>
+      <div class="roles-container">
+        <div class="roles-header">
+          <h2>Designed for every role.</h2>
+          <p>
+            SchoolCoreOS connects your entire institution with structured access
+            and intuitive workflows.
+          </p>
+        </div>
 
-        <p class="page-sub">
-          Every stakeholder interacts with SchoolCoreOS through clearly defined
-          roles and permissions.
-        </p>
-
-        <div class="roles-grid">
-          <!-- Super Admin -->
-
-          <div class="role-card super-admin">
-            <h3>Super Admin</h3>
-
-            <p class="role-desc">
-              Complete system ownership with unrestricted access across all
-              modules.
-            </p>
-
-            <ul class="role-extra">
-              <li>System configuration & settings</li>
-              <li>Role & permissions management</li>
-              <li>Multi-campus oversight</li>
-            </ul>
+        <div class="roles-scroll" id="roleTrack">
+          <div class="role-card">
+            <div class="role-content">
+              <span class="role-label">Leadership</span>
+              <h3>Super Admin</h3>
+              <p>Complete system ownership and institutional governance.</p>
+            </div>
+            <img
+              src="https://media.istockphoto.com/id/499173995/photo/portrait-of-a-happy-senior-business-man-smiling.jpg?s=612x612&w=0&k=20&c=trJ3SRe_kCMzuKNth0we8KpQx1cLXjFhxbBjDgmqdB4="
+              alt="Admin"
+            />
           </div>
 
-          <!-- Admin -->
-
-          <div class="role-card admin">
-            <h3>Admin</h3>
-
-            <p class="role-desc">
-              Day-to-day administrative control with institutional access.
-            </p>
-
-            <ul class="role-extra">
-              <li>Admissions & records</li>
-              <li>Operational workflows</li>
-              <li>Department coordination</li>
-            </ul>
+          <div class="role-card">
+            <div class="role-content">
+              <span class="role-label">Management</span>
+              <h3>Principal</h3>
+              <p>
+                Monitor academic performance and staff activity in real-time.
+              </p>
+            </div>
+            <img src="./assets/images/principle-image.jpg" alt="Principal" />
           </div>
 
-          <!-- Principal -->
-
-          <div class="role-card principal">
-            <h3>Principal</h3>
-
-            <p class="role-desc">
-              Academic and operational oversight across departments.
-            </p>
-
-            <ul class="role-extra">
-              <li>Academic performance</li>
-              <li>Staff activity monitoring</li>
-              <li>Institutional reporting</li>
-            </ul>
+          <div class="role-card">
+            <div class="role-content">
+              <span class="role-label">Academic</span>
+              <h3>Trainer</h3>
+              <p>Deliver classes and track learner progress effortlessly.</p>
+            </div>
+            <img src="./assets/images/Trainer-image.jpg" alt="Trainer" />
           </div>
 
-          <!-- Trainer -->
-
-          <div class="role-card trainer">
-            <h3>Trainer</h3>
-
-            <p class="role-desc">
-              Course delivery, scheduling and learner progress management.
-            </p>
-
-            <ul class="role-extra">
-              <li>Course delivery</li>
-              <li>Attendance tracking</li>
-              <li>Assessment management</li>
-            </ul>
+          <div class="role-card">
+            <div class="role-content">
+              <span class="role-label">Community</span>
+              <h3>Student</h3>
+              <p>Access learning resources and performance insights.</p>
+            </div>
+            <img src="./assets/images/student-image.jpg" alt="Student" />
           </div>
 
-          <!-- Staff -->
-
-          <div class="role-card staff">
-            <h3>Staff</h3>
-
-            <p class="role-desc">
-              Operational support with access to relevant workflows.
-            </p>
-
-            <ul class="role-extra">
-              <li>Administrative support</li>
-              <li>Data coordination</li>
-              <li>Process execution</li>
-            </ul>
+          <div class="role-card">
+            <div class="role-content">
+              <span class="role-label">Support</span>
+              <h3>Accountant</h3>
+              <p>Manage fees, payroll, and financial auditing.</p>
+            </div>
+            <img
+              src="https://via.placeholder.com/300x180/FFFFFF/000000?text=Accountant"
+              alt="Accountant"
+            />
           </div>
 
-          <!-- Student -->
-
-          <div class="role-card student">
-            <h3>Student</h3>
-
-            <p class="role-desc">
-              Personal learning dashboard and academic records.
-            </p>
-
-            <ul class="role-extra">
-              <li>Course resources</li>
-              <li>Academic performance</li>
-              <li>Schedule access</li>
-            </ul>
+          <div class="role-card">
+            <div class="role-content">
+              <span class="role-label">Operations</span>
+              <h3>Librarian</h3>
+              <p>Digital cataloging and inventory tracking.</p>
+            </div>
+            <img
+              src="https://via.placeholder.com/300x180/FFFFFF/000000?text=Librarian"
+              alt="Librarian"
+            />
           </div>
 
-          <!-- Parent -->
-
-          <div class="role-card parent">
-            <h3>Parent</h3>
-
-            <p class="role-desc">
-              Visibility into student progress and institutional updates.
-            </p>
-
-            <ul class="role-extra">
-              <li>Attendance tracking</li>
-              <li>Academic progress</li>
-              <li>Fee management</li>
-            </ul>
+          <div class="role-card">
+            <div class="role-content">
+              <span class="role-label">Communication</span>
+              <h3>Receptionist</h3>
+              <p>Handle inquiries and visitor management.</p>
+            </div>
+            <img
+              src="https://via.placeholder.com/300x180/FFFFFF/000000?text=Receptionist"
+              alt="Receptionist"
+            />
           </div>
 
-          <!-- Vendor -->
-
-          <div class="role-card vendor">
-            <h3>Vendor</h3>
-
-            <p class="role-desc">Track purchase orders and manage invoices.</p>
-
-            <ul class="role-extra">
-              <li>Purchase orders</li>
-              <li>Invoice submission</li>
-              <li>Payment tracking</li>
-            </ul>
+          <div class="role-card">
+            <div class="role-content">
+              <span class="role-label">Family</span>
+              <h3>Parent</h3>
+              <p>Stay updated on child attendance and progress.</p>
+            </div>
+            <img
+              src="https://via.placeholder.com/300x180/FFFFFF/000000?text=Parent"
+              alt="Parent"
+            />
           </div>
 
-          <!-- Alumni -->
+          <div class="role-card">
+            <div class="role-content">
+              <span class="role-label">Logistics</span>
+              <h3>Transport Manager</h3>
+              <p>Route optimization and fleet tracking.</p>
+            </div>
+            <img
+              src="https://via.placeholder.com/300x180/FFFFFF/000000?text=Transport"
+              alt="Transport"
+            />
+          </div>
 
-          <div class="role-card alumni">
-            <h3>Alumni</h3>
-
-            <p class="role-desc">
-              Stay connected with institution updates and alumni network.
-            </p>
-
-            <ul class="role-extra">
-              <li>Alumni network</li>
-              <li>Events</li>
-              <li>Historical records</li>
-            </ul>
+          <div class="role-card">
+            <div class="role-content">
+              <span class="role-label">Security</span>
+              <h3>IT Support</h3>
+              <p>Manage infrastructure and data security.</p>
+            </div>
+            <img
+              src="https://via.placeholder.com/300x180/FFFFFF/000000?text=IT+Support"
+              alt="IT Support"
+            />
           </div>
         </div>
-      </div>
-      <div class="roles-footer">
-        Supporting <span>17+ granular access roles</span><br />
-        across governance and operations.
+
+        <div class="scroll-controls">
+          <button class="scroll-btn" onclick="scrollTrack(-1)">&#10094;</button>
+          <button class="scroll-btn" onclick="scrollTrack(1)">&#10095;</button>
+        </div>
+
+        <div class="roles-footer">
+          <h2>
+            Supporting <span>17+ granular access roles</span> across governance
+            and operations.
+          </h2>
+        </div>
       </div>
     </section>
     <!-- ROLES END ================================================================================================== -->
+    <!-- EASY TO USE START ================================================================================================= -->
+    <div class="main-container">
+      <div class="header-section">
+        <h1>Powerful Infrastructure.<br />Simple to Use.</h1>
+      </div>
+
+      <div class="layout-grid">
+        <div class="feature-list" id="desktopList"></div>
+
+        <div class="image-container">
+          <img src="" id="mainPreview" alt="Preview" />
+        </div>
+      </div>
+
+      <div class="mobile-view">
+        <div class="mobile-carousel">
+          <button class="nav-btn prev" onclick="move(-1)">‹</button>
+
+          <div class="mobile-card">
+            <img src="" id="mobilePreview" />
+          </div>
+
+          <button class="nav-btn next" onclick="move(1)">›</button>
+        </div>
+
+        <div class="mobile-content-area" id="mobileDetails"></div>
+      </div>
+    </div>
+    <!-- Easy to use section end ================================================================================= -->
+    <!-- MOBILE FIRST START ================================================================================= -->
+  
+    <!-- MOBILE FIRST END ================================================================================= -->
+    <!-- FOOTER START ================================================================================= -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <h3>SchoolCoreOS</h3>
+            <p>Operational clarity for modern institutions.</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Solutions</h4>
+              <a href="#">Education</a>
+              <a href="#">Enterprise</a>
+              <a href="#">Professional</a>
+              <a href="#">Individual</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Platform</h4>
+              <a href="#">Features</a>
+              <a href="#">AI Engine</a>
+              <a href="#">Security</a>
+              <a href="#">Integrations</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Company</h4>
+              <a href="#">About</a>
+              <a href="#">Careers</a>
+              <a href="#">Contact</a>
+              <a href="#">Support</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="app-links">
+            <h4>Get the App</h4>
+
+            <div class="app-buttons">
+              <a href="#" class="">
+                <!-- GOOGLE PLAY SVG -->
+
+                <svg
+                  width="136"
+                  height="41"
+                  viewBox="0 0 136 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_565_548)">
+                    <path
+                      d="M127.165 0.710938H8.16455C4.02242 0.710938 0.664551 4.0688 0.664551 8.21094V32.2109C0.664551 36.3531 4.02242 39.7109 8.16455 39.7109H127.165C131.307 39.7109 134.665 36.3531 134.665 32.2109V8.21094C134.665 4.0688 131.307 0.710938 127.165 0.710938Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M127.165 0.710938H8.16455C4.02242 0.710938 0.664551 4.0688 0.664551 8.21094V32.2109C0.664551 36.3531 4.02242 39.7109 8.16455 39.7109H127.165C131.307 39.7109 134.665 36.3531 134.665 32.2109V8.21094C134.665 4.0688 131.307 0.710938 127.165 0.710938Z"
+                      stroke="#A6A6A6"
+                    />
+                    <path
+                      d="M68.3015 21.9628C65.9495 21.9628 64.0325 23.7508 64.0325 26.2158C64.0325 28.6647 65.9495 30.4688 68.3015 30.4688C70.6535 30.4688 72.5705 28.6647 72.5705 26.2158C72.5705 23.7508 70.6535 21.9628 68.3015 21.9628ZM68.3015 28.7938C67.0125 28.7938 65.9005 27.7307 65.9005 26.2158C65.9005 24.6848 67.0125 23.6378 68.3015 23.6378C69.5905 23.6378 70.7015 24.6848 70.7015 26.2158C70.7015 27.7298 69.5905 28.7938 68.3015 28.7938ZM58.9875 21.9628C56.6355 21.9628 54.7185 23.7508 54.7185 26.2158C54.7185 28.6647 56.6355 30.4688 58.9875 30.4688C61.3395 30.4688 63.2565 28.6647 63.2565 26.2158C63.2575 23.7508 61.3395 21.9628 58.9875 21.9628ZM58.9875 28.7938C57.6985 28.7938 56.5875 27.7307 56.5875 26.2158C56.5875 24.6848 57.6995 23.6378 58.9875 23.6378C60.2765 23.6378 61.3875 24.6848 61.3875 26.2158C61.3885 27.7298 60.2765 28.7938 58.9875 28.7938ZM47.9095 25.0718H52.2275C52.0985 26.0868 51.7605 26.8277 51.2445 27.3438C50.6165 27.9718 49.6335 28.6648 47.9095 28.6648C45.2515 28.6648 43.1735 26.5218 43.1735 23.8638C43.1735 21.2058 45.2515 19.0628 47.9095 19.0628C49.3435 19.0628 50.3905 19.6268 51.1635 20.3518L52.4365 19.0788C51.3575 18.0478 49.9235 17.2578 47.9095 17.2578C44.2685 17.2578 41.2075 20.2218 41.2075 23.8628C41.2075 27.5038 44.2685 30.4678 47.9095 30.4678C49.8745 30.4678 51.3575 29.8238 52.5175 28.6148C53.7095 27.4228 54.0805 25.7468 54.0805 24.3938C54.0805 23.9748 54.0485 23.5878 53.9835 23.2658H47.9095V25.0718ZM93.2175 24.6688C92.8635 23.7178 91.7835 21.9618 89.5765 21.9618C87.3855 21.9618 85.5655 23.6858 85.5655 26.2148C85.5655 28.5988 87.3695 30.4678 89.7865 30.4678C91.7355 30.4678 92.8635 29.2758 93.3305 28.5828L91.8805 27.6158C91.3975 28.3248 90.7365 28.7918 89.7865 28.7918C88.8355 28.7918 88.1595 28.3568 87.7245 27.5028L93.4115 25.1508L93.2175 24.6688ZM87.4175 26.0868C87.3695 24.4438 88.6905 23.6058 89.6405 23.6058C90.3815 23.6058 91.0095 23.9758 91.2195 24.5078L87.4175 26.0868ZM82.7935 30.2108H84.6625V17.7098H82.7935V30.2108ZM79.7325 22.9128H79.6685C79.2495 22.4138 78.4445 21.9618 77.4295 21.9618C75.3025 21.9618 73.3535 23.8308 73.3535 26.2308C73.3535 28.6148 75.3025 30.4678 77.4295 30.4678C78.4445 30.4678 79.2495 30.0168 79.6685 29.5008H79.7325V30.1128C79.7325 31.7398 78.8625 32.6097 77.4605 32.6097C76.3165 32.6097 75.6075 31.7878 75.3175 31.0958L73.6905 31.7728C74.1575 32.9008 75.3985 34.2858 77.4605 34.2858C79.6515 34.2858 81.5045 32.9968 81.5045 29.8558V22.2198H79.7325V22.9128ZM77.5905 28.7938C76.3015 28.7938 75.2225 27.7148 75.2225 26.2318C75.2225 24.7338 76.3015 23.6378 77.5905 23.6378C78.8635 23.6378 79.8615 24.7328 79.8615 26.2318C79.8615 27.7138 78.8635 28.7938 77.5905 28.7938ZM101.972 17.7098H97.5005V30.2108H99.3655V25.4748H101.971C104.039 25.4748 106.072 23.9778 106.072 21.5928C106.072 19.2078 104.04 17.7098 101.972 17.7098ZM102.02 23.7348H99.3655V19.4498H102.02C103.415 19.4498 104.207 20.6048 104.207 21.5928C104.207 22.5608 103.415 23.7348 102.02 23.7348ZM113.552 21.9398C112.201 21.9398 110.802 22.5348 110.223 23.8538L111.88 24.5458C112.234 23.8538 112.893 23.6288 113.585 23.6288C114.55 23.6288 115.531 24.2078 115.547 25.2368V25.3658C115.209 25.1728 114.485 24.8828 113.601 24.8828C111.816 24.8828 109.998 25.8638 109.998 27.6978C109.998 29.3708 111.462 30.4478 113.102 30.4478C114.357 30.4478 115.048 29.8848 115.482 29.2258H115.546V30.1908H117.347V25.3978C117.347 23.1778 115.691 21.9398 113.552 21.9398ZM113.326 28.7908C112.715 28.7908 111.862 28.4847 111.862 27.7298C111.862 26.7648 112.924 26.3948 113.84 26.3948C114.66 26.3948 115.046 26.5718 115.545 26.8128C115.401 27.9707 114.404 28.7908 113.326 28.7908ZM123.909 22.2128L121.77 27.6328H121.706L119.487 22.2128H117.477L120.806 29.7878L118.908 34.0018H120.854L125.985 22.2128H123.909ZM107.102 30.2108H108.968V17.7098H107.102V30.2108Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M47.5406 10.0031H44.6326V10.7241H46.8116C46.7526 11.3101 46.5176 11.7711 46.1246 12.1061C45.7306 12.4411 45.2276 12.6091 44.6326 12.6091C43.9786 12.6091 43.4256 12.3831 42.9736 11.9301C42.5296 11.4691 42.3026 10.9001 42.3026 10.2121C42.3026 9.52512 42.5296 8.95512 42.9736 8.49412C43.4256 8.04212 43.9786 7.81612 44.6326 7.81612C44.9676 7.81612 45.2866 7.87412 45.5796 8.00012C45.8726 8.12612 46.1076 8.30213 46.2916 8.52813L46.8446 7.97513C46.5936 7.69013 46.2746 7.47213 45.8816 7.31313C45.4876 7.15413 45.0766 7.07812 44.6326 7.07812C43.7606 7.07812 43.0236 7.38013 42.4206 7.98313C41.8166 8.58713 41.5156 9.33212 41.5156 10.2121C41.5156 11.0921 41.8166 11.8381 42.4206 12.4411C43.0236 13.0451 43.7606 13.3461 44.6326 13.3461C45.5456 13.3461 46.2746 13.0531 46.8366 12.4581C47.3306 11.9641 47.5826 11.2931 47.5826 10.4551C47.5826 10.3131 47.5656 10.1621 47.5406 10.0031Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M48.6885 7.21094V13.211H52.1915V12.474H49.4595V10.572H51.9225V9.85094H49.4595V7.94894H52.1915V7.21094H48.6885Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M57.1176 7.94894V7.21094H52.9946V7.94894H54.6706V13.211H55.4416V7.94894H57.1176Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M60.8726 7.21094H60.1016V13.211H60.8726V7.21094Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M65.9677 7.94894V7.21094H61.8447V7.94894H63.5207V13.211H64.2917V7.94894H65.9677Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M73.7697 7.99213C73.1747 7.38013 72.4457 7.07812 71.5737 7.07812C70.7027 7.07812 69.9727 7.38013 69.3777 7.98313C68.7827 8.57813 68.4897 9.32412 68.4897 10.2121C68.4897 11.1011 68.7827 11.8461 69.3777 12.4411C69.9727 13.0451 70.7027 13.3461 71.5737 13.3461C72.4367 13.3461 73.1747 13.0451 73.7697 12.4411C74.3647 11.8461 74.6577 11.1011 74.6577 10.2121C74.6577 9.33212 74.3647 8.58713 73.7697 7.99213ZM69.9317 8.49412C70.3757 8.04212 70.9197 7.81612 71.5737 7.81612C72.2277 7.81612 72.7717 8.04212 73.2077 8.49412C73.6517 8.93912 73.8697 9.51712 73.8697 10.2121C73.8697 10.9081 73.6517 11.4861 73.2077 11.9301C72.7717 12.3831 72.2277 12.6091 71.5737 12.6091C70.9197 12.6091 70.3757 12.3831 69.9317 11.9301C69.4957 11.4781 69.2777 10.9081 69.2777 10.2121C69.2777 9.51712 69.4957 8.94712 69.9317 8.49412Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M76.5097 9.47394L76.4767 8.31694H76.5097L79.5607 13.211H80.3647V7.21094H79.5937V10.723L79.6277 11.879H79.5937L76.6777 7.21094H75.7397V13.211H76.5097V9.47394Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M20.8819 19.6348L10.2349 30.9348C10.2359 30.9368 10.2359 30.9388 10.2369 30.9408C10.5629 32.1688 11.6839 33.0718 13.0139 33.0718C13.5459 33.0718 14.0449 32.9278 14.4729 32.6758L14.5069 32.6558L26.4909 25.7408L20.8819 19.6348Z"
+                      fill="#EB4335"
+                    />
+                    <path
+                      d="M31.6541 17.7121L31.6441 17.7051L26.4701 14.7051L20.6411 19.8921L26.4901 25.7401L31.6371 22.7711C32.5391 22.2841 33.1511 21.3331 33.1511 20.2361C33.1511 19.1471 32.5471 18.2001 31.6541 17.7121Z"
+                      fill="#FABC13"
+                    />
+                    <path
+                      d="M10.2352 9.48828C10.1712 9.72428 10.1372 9.97128 10.1372 10.2283V30.1953C10.1372 30.4523 10.1699 30.7002 10.2349 30.9352L21.2482 19.9243L10.2352 9.48828Z"
+                      fill="#547DBF"
+                    />
+                    <path
+                      d="M20.9599 20.2116L26.4709 14.7026L14.4999 7.76256C14.0649 7.50156 13.5579 7.35156 13.0139 7.35156C11.6839 7.35156 10.5619 8.25656 10.2349 9.48556L10.2352 9.48853L20.9599 20.2116Z"
+                      fill="#30A851"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_565_548">
+                      <rect width="136" height="41" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+
+              <a href="#" class="">
+                <!-- APP STORE SVG -->
+
+                <svg
+                  width="125"
+                  height="41"
+                  viewBox="0 0 121 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_565_563)">
+                    <path
+                      d="M112.165 0.710938H8.16455C4.02242 0.710938 0.664551 4.0688 0.664551 8.21094V32.2109C0.664551 36.3531 4.02242 39.7109 8.16455 39.7109H112.165C116.307 39.7109 119.665 36.3531 119.665 32.2109V8.21094C119.665 4.0688 116.307 0.710938 112.165 0.710938Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M112.165 0.710938H8.16455C4.02242 0.710938 0.664551 4.0688 0.664551 8.21094V32.2109C0.664551 36.3531 4.02242 39.7109 8.16455 39.7109H112.165C116.307 39.7109 119.665 36.3531 119.665 32.2109V8.21094C119.665 4.0688 116.307 0.710938 112.165 0.710938Z"
+                      stroke="#A6A6A6"
+                    />
+                    <path
+                      d="M24.9345 20.5113C24.9453 19.6766 25.167 18.8582 25.579 18.1323C25.991 17.4063 26.58 16.7964 27.2911 16.3592C26.8394 15.7141 26.2434 15.1831 25.5506 14.8086C24.8578 14.434 24.0871 14.2262 23.2999 14.2015C21.6207 14.0253 19.9928 15.2064 19.137 15.2064C18.2648 15.2064 16.9473 14.219 15.5285 14.2482C14.6109 14.2779 13.7165 14.5447 12.9326 15.0228C12.1488 15.5009 11.5021 16.1738 11.0556 16.9761C9.12161 20.3245 10.5642 25.2456 12.4168 27.9522C13.3437 29.2775 14.427 30.758 15.8445 30.7055C17.2315 30.648 17.7496 29.821 19.4239 29.821C21.0826 29.821 21.5686 30.7055 23.0149 30.6721C24.5032 30.6479 25.441 29.3409 26.3354 28.003C27.0013 27.0586 27.5138 26.0149 27.8538 24.9105C26.9891 24.5447 26.2512 23.9325 25.732 23.1503C25.2129 22.368 24.9356 21.4502 24.9345 20.5113Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M22.2031 12.4223C23.0146 11.4481 23.4144 10.1959 23.3176 8.93164C22.0778 9.06186 20.9325 9.65442 20.1101 10.5913C19.7079 11.0489 19.3999 11.5814 19.2037 12.1582C19.0074 12.7349 18.9268 13.3447 18.9663 13.9527C19.5865 13.9591 20.2 13.8246 20.7606 13.5596C21.3213 13.2945 21.8145 12.9056 22.2031 12.4223Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M42.4673 27.3507H37.7339L36.5971 30.7071H34.5923L39.0757 18.2891H41.1587L45.6421 30.7071H43.603L42.4673 27.3507ZM38.2241 25.8019H41.9761L40.1265 20.3546H40.0747L38.2241 25.8019Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M55.3248 26.1804C55.3248 28.9939 53.8189 30.8015 51.5465 30.8015C50.9708 30.8316 50.3983 30.699 49.8945 30.4188C49.3907 30.1387 48.976 29.7224 48.6978 29.2175H48.6548V33.7018H46.7964V21.653H48.5953V23.1589H48.6295C48.9204 22.6564 49.3422 22.2422 49.8498 21.9604C50.3574 21.6785 50.932 21.5396 51.5123 21.5583C53.8101 21.5583 55.3248 23.3747 55.3248 26.1804ZM53.4146 26.1804C53.4146 24.3474 52.4674 23.1423 51.022 23.1423C49.6021 23.1423 48.647 24.3728 48.647 26.1804C48.647 28.0046 49.6021 29.2263 51.022 29.2263C52.4674 29.2263 53.4146 28.03 53.4146 26.1804Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M65.2895 26.1804C65.2895 28.9939 63.7837 30.8015 61.5112 30.8015C60.9356 30.8316 60.3631 30.699 59.8593 30.4188C59.3555 30.1387 58.9407 29.7224 58.6626 29.2175H58.6196V33.7018H56.7612V21.653H58.56V23.1589H58.5942C58.8851 22.6564 59.3069 22.2422 59.8145 21.9604C60.3221 21.6785 60.8967 21.5396 61.477 21.5583C63.7749 21.5583 65.2895 23.3747 65.2895 26.1804ZM63.3794 26.1804C63.3794 24.3474 62.4321 23.1423 60.9868 23.1423C59.5669 23.1423 58.6118 24.3728 58.6118 26.1804C58.6118 28.0046 59.5669 29.2263 60.9868 29.2263C62.4321 29.2263 63.3794 28.03 63.3794 26.1804Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M71.8755 27.2471C72.0132 28.4785 73.2095 29.2871 74.8442 29.2871C76.4106 29.2871 77.5376 28.4785 77.5376 27.3681C77.5376 26.4043 76.8579 25.8271 75.2485 25.4316L73.6391 25.0439C71.3589 24.4931 70.3003 23.4267 70.3003 21.6962C70.3003 19.5537 72.1675 18.082 74.8188 18.082C77.4428 18.082 79.2417 19.5537 79.3022 21.6962H77.4262C77.3139 20.457 76.2895 19.7089 74.7924 19.7089C73.2954 19.7089 72.271 20.4658 72.271 21.5673C72.271 22.4453 72.9253 22.9619 74.5258 23.3573L75.894 23.6933C78.4418 24.2958 79.5005 25.3193 79.5005 27.1357C79.5005 29.4589 77.6499 30.914 74.7065 30.914C71.9526 30.914 70.0932 29.4931 69.9731 27.247L71.8755 27.2471Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M83.5112 19.5098V21.6524H85.2329V23.1241H83.5112V28.1153C83.5112 28.8907 83.8559 29.252 84.6128 29.252C84.8172 29.2485 85.0212 29.2341 85.2241 29.209V30.6719C84.8838 30.7355 84.538 30.7643 84.1919 30.7579C82.3589 30.7579 81.644 30.0694 81.644 28.3135V23.1241H80.3276V21.6524H81.644V19.5098H83.5112Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M86.23 26.1817C86.23 23.333 87.9077 21.543 90.5239 21.543C93.1489 21.543 94.8189 23.333 94.8189 26.1817C94.8189 29.0381 93.1577 30.8203 90.5239 30.8203C87.8911 30.8203 86.23 29.0381 86.23 26.1817ZM92.9253 26.1817C92.9253 24.2276 92.0298 23.0743 90.5239 23.0743C89.0181 23.0743 88.1236 24.2364 88.1236 26.1817C88.1236 28.1436 89.0181 29.2881 90.5239 29.2881C92.0298 29.2881 92.9253 28.1436 92.9253 26.1817Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M96.3511 21.6529H98.1235V23.1939H98.1665C98.2864 22.7126 98.5684 22.2873 98.965 21.9894C99.3616 21.6915 99.8486 21.5393 100.344 21.5582C100.558 21.5574 100.772 21.5807 100.981 21.6275V23.3658C100.711 23.2832 100.428 23.2453 100.146 23.2535C99.876 23.2426 99.6069 23.2902 99.357 23.393C99.1072 23.4959 98.8825 23.6517 98.6986 23.8496C98.5146 24.0474 98.3756 24.2828 98.2912 24.5395C98.2068 24.7961 98.1789 25.068 98.2095 25.3365V30.7066H96.3511V21.6529Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M109.549 28.0489C109.299 29.6924 107.699 30.8203 105.651 30.8203C103.017 30.8203 101.382 29.0557 101.382 26.2246C101.382 23.3848 103.026 21.543 105.573 21.543C108.078 21.543 109.653 23.2637 109.653 26.0088V26.6455H103.258V26.7578C103.229 27.091 103.27 27.4267 103.381 27.7425C103.491 28.0584 103.667 28.3472 103.897 28.5897C104.128 28.8323 104.407 29.023 104.717 29.1493C105.026 29.2756 105.359 29.3346 105.694 29.3223C106.133 29.3634 106.574 29.2617 106.95 29.0323C107.327 28.8028 107.62 28.4579 107.785 28.0488L109.549 28.0489ZM103.267 25.3467H107.793C107.81 25.0471 107.765 24.7473 107.66 24.4661C107.555 24.1849 107.394 23.9283 107.185 23.7126C106.977 23.4968 106.726 23.3265 106.448 23.2123C106.171 23.098 105.873 23.0424 105.573 23.0489C105.27 23.0471 104.97 23.1052 104.69 23.2199C104.41 23.3347 104.155 23.5037 103.941 23.7174C103.727 23.931 103.557 24.185 103.441 24.4646C103.325 24.7443 103.266 25.0441 103.267 25.3467Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M37.9912 8.94232C38.3808 8.91436 38.7718 8.97322 39.1359 9.11465C39.5 9.25609 39.8282 9.47657 40.0968 9.76019C40.3653 10.0438 40.5676 10.3835 40.689 10.7548C40.8104 11.1261 40.8479 11.5197 40.7988 11.9072C40.7988 13.8134 39.7685 14.9092 37.9912 14.9092H35.8359V8.94232H37.9912ZM36.7627 14.0653H37.8877C38.1661 14.082 38.4447 14.0363 38.7032 13.9317C38.9618 13.8271 39.1937 13.6662 39.3822 13.4606C39.5707 13.255 39.711 13.01 39.7929 12.7434C39.8747 12.4768 39.8961 12.1953 39.8554 11.9193C39.8931 11.6445 39.8696 11.3647 39.7865 11.1001C39.7034 10.8354 39.5627 10.5924 39.3747 10.3885C39.1866 10.1846 38.9558 10.0247 38.6987 9.92048C38.4416 9.81624 38.1647 9.77016 37.8877 9.78553H36.7627V14.0653Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M41.8455 12.6548C41.8172 12.3589 41.851 12.0603 41.9449 11.7782C42.0387 11.4962 42.1905 11.2368 42.3904 11.0168C42.5903 10.7969 42.8341 10.6211 43.1059 10.5008C43.3778 10.3805 43.6717 10.3184 43.969 10.3184C44.2663 10.3184 44.5603 10.3805 44.8321 10.5008C45.104 10.6211 45.3477 10.7969 45.5476 11.0168C45.7476 11.2368 45.8993 11.4962 45.9932 11.7782C46.087 12.0603 46.1209 12.3589 46.0925 12.6548C46.1214 12.951 46.0879 13.25 45.9944 13.5325C45.9008 13.815 45.7491 14.0749 45.5491 14.2953C45.3491 14.5157 45.1052 14.6918 44.8331 14.8124C44.561 14.9329 44.2666 14.9952 43.969 14.9952C43.6714 14.9952 43.3771 14.9329 43.1049 14.8124C42.8328 14.6918 42.5889 14.5157 42.3889 14.2953C42.1889 14.0749 42.0373 13.815 41.9437 13.5325C41.8501 13.25 41.8166 12.951 41.8455 12.6548ZM45.1785 12.6548C45.1785 11.6787 44.74 11.1079 43.9705 11.1079C43.198 11.1079 42.7635 11.6787 42.7635 12.6548C42.7635 13.6387 43.198 14.2051 43.9705 14.2051C44.74 14.2051 45.1785 13.6348 45.1785 12.6548Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M51.7383 14.9092H50.8164L49.8857 11.5928H49.8154L48.8887 14.9092H47.9756L46.7344 10.4062H47.6357L48.4424 13.8422H48.5088L49.4346 10.4062H50.2871L51.2129 13.8422H51.2832L52.0859 10.4062H52.9746L51.7383 14.9092Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M54.0186 10.4059H54.8741V11.1212H54.9405C55.0532 10.8643 55.2432 10.6489 55.484 10.5051C55.7249 10.3613 56.0046 10.2962 56.2843 10.3189C56.5034 10.3025 56.7234 10.3355 56.928 10.4156C57.1326 10.4957 57.3165 10.6208 57.4662 10.7817C57.6159 10.9425 57.7274 11.135 57.7926 11.3448C57.8579 11.5546 57.875 11.7764 57.8428 11.9937V14.9087H56.9542V12.2169C56.9542 11.4933 56.6397 11.1334 55.9825 11.1334C55.8337 11.1265 55.6852 11.1518 55.5472 11.2076C55.4091 11.2635 55.2848 11.3485 55.1827 11.4569C55.0805 11.5653 55.003 11.6944 54.9555 11.8356C54.908 11.9767 54.8915 12.1264 54.9073 12.2745V14.9088H54.0186V10.4059Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M59.2588 8.64844H60.1474V14.9092H59.2588V8.64844Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M61.3826 12.6549C61.3543 12.359 61.3882 12.0604 61.482 11.7783C61.5759 11.4962 61.7277 11.2369 61.9276 11.0169C62.1276 10.7969 62.3713 10.6211 62.6432 10.5008C62.9151 10.3806 63.2091 10.3184 63.5064 10.3184C63.8037 10.3184 64.0977 10.3806 64.3695 10.5008C64.6414 10.6211 64.8851 10.7969 65.0851 11.0169C65.2851 11.2369 65.4368 11.4962 65.5307 11.7783C65.6246 12.0604 65.6584 12.359 65.6301 12.6549C65.659 12.9511 65.6255 13.2501 65.5319 13.5326C65.4382 13.8152 65.2865 14.075 65.0865 14.2954C64.8865 14.5158 64.6426 14.6919 64.3705 14.8124C64.0983 14.933 63.804 14.9952 63.5064 14.9952C63.2087 14.9952 62.9144 14.933 62.6423 14.8124C62.3701 14.6919 62.1262 14.5158 61.9262 14.2954C61.7262 14.075 61.5745 13.8152 61.4809 13.5326C61.3873 13.2501 61.3538 12.9511 61.3826 12.6549ZM64.7156 12.6549C64.7156 11.6788 64.2771 11.108 63.5076 11.108C62.7351 11.108 62.3006 11.6788 62.3006 12.6549C62.3006 13.6388 62.7352 14.2052 63.5076 14.2052C64.2771 14.2052 64.7156 13.6349 64.7156 12.6549Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M66.5659 13.6348C66.5659 12.8242 67.1694 12.3569 68.2407 12.2905L69.4604 12.2202V11.8315C69.4604 11.356 69.146 11.0874 68.5386 11.0874C68.0425 11.0874 67.6987 11.2695 67.6001 11.5879H66.7397C66.8305 10.8145 67.5581 10.3184 68.5796 10.3184C69.7085 10.3184 70.3452 10.8804 70.3452 11.8315V14.9082H69.4897V14.2754H69.4194C69.2767 14.5024 69.0763 14.6874 68.8387 14.8117C68.601 14.9359 68.3347 14.9948 68.0669 14.9824C67.8778 15.0021 67.6868 14.9819 67.506 14.9232C67.3253 14.8645 67.1588 14.7686 67.0174 14.6416C66.876 14.5146 66.7627 14.3594 66.685 14.186C66.6072 14.0126 66.5666 13.8248 66.5659 13.6348ZM69.4604 13.25V12.8735L68.3608 12.9438C67.7407 12.9853 67.4594 13.1963 67.4594 13.5933C67.4594 13.9985 67.811 14.2344 68.2944 14.2344C68.4361 14.2487 68.5792 14.2344 68.7152 14.1923C68.8512 14.1502 68.9773 14.0812 69.0861 13.9894C69.1949 13.8975 69.2841 13.7847 69.3484 13.6577C69.4127 13.5307 69.4508 13.392 69.4604 13.25Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M71.5132 12.6558C71.5132 11.2329 72.2446 10.3316 73.3823 10.3316C73.6637 10.3186 73.943 10.386 74.1875 10.5259C74.4321 10.6658 74.6317 10.8724 74.7632 11.1216H74.8296V8.64844H75.7182V14.9092H74.8667V14.1978H74.7964C74.6548 14.4452 74.4482 14.6493 74.1989 14.7878C73.9496 14.9262 73.6673 14.9939 73.3823 14.9834C72.2368 14.9834 71.5132 14.0821 71.5132 12.6558ZM72.4312 12.6558C72.4312 13.6109 72.8814 14.1856 73.6343 14.1856C74.3833 14.1856 74.8462 13.6026 74.8462 12.6597C74.8462 11.7212 74.3784 11.1299 73.6343 11.1299C72.8862 11.1299 72.4312 11.7085 72.4312 12.6558Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M79.3948 12.6548C79.3665 12.3589 79.4003 12.0603 79.4942 11.7782C79.588 11.4962 79.7398 11.2368 79.9397 11.0168C80.1397 10.7969 80.3834 10.6211 80.6552 10.5008C80.9271 10.3805 81.2211 10.3184 81.5183 10.3184C81.8156 10.3184 82.1096 10.3805 82.3814 10.5008C82.6533 10.6211 82.897 10.7969 83.0969 11.0168C83.2969 11.2368 83.4486 11.4962 83.5425 11.7782C83.6363 12.0603 83.6702 12.3589 83.6419 12.6548C83.6707 12.951 83.6373 13.25 83.5437 13.5325C83.4501 13.815 83.2984 14.0749 83.0984 14.2953C82.8984 14.5157 82.6545 14.6918 82.3824 14.8124C82.1103 14.9329 81.816 14.9952 81.5183 14.9952C81.2207 14.9952 80.9264 14.9329 80.6543 14.8124C80.3821 14.6918 80.1382 14.5157 79.9382 14.2953C79.7382 14.0749 79.5866 13.815 79.493 13.5325C79.3994 13.25 79.366 12.951 79.3948 12.6548ZM82.7278 12.6548C82.7278 11.6787 82.2893 11.1079 81.5198 11.1079C80.7473 11.1079 80.3128 11.6787 80.3128 12.6548C80.3128 13.6387 80.7474 14.2051 81.5198 14.2051C82.2893 14.2051 82.7278 13.6348 82.7278 12.6548Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M84.8345 10.4059H85.6899V11.1212H85.7563C85.869 10.8643 86.059 10.6489 86.2999 10.5051C86.5407 10.3613 86.8205 10.2962 87.1001 10.3189C87.3192 10.3025 87.5392 10.3355 87.7438 10.4156C87.9484 10.4957 88.1323 10.6208 88.282 10.7817C88.4317 10.9425 88.5433 11.135 88.6085 11.3448C88.6737 11.5546 88.6908 11.7764 88.6587 11.9937V14.9087H87.77V12.2169C87.77 11.4933 87.4556 11.1334 86.7983 11.1334C86.6496 11.1265 86.5011 11.1518 86.363 11.2076C86.225 11.2635 86.1006 11.3485 85.9985 11.4569C85.8963 11.5653 85.8189 11.6944 85.7713 11.8356C85.7238 11.9767 85.7074 12.1264 85.7231 12.2745V14.9088H84.8345V10.4059Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M93.6802 9.28516V10.4268H94.6558V11.1753H93.6802V13.4907C93.6802 13.9624 93.8745 14.169 94.3169 14.169C94.4301 14.1686 94.5433 14.1618 94.6558 14.1485V14.8887C94.4962 14.9172 94.3345 14.9324 94.1723 14.9341C93.1841 14.9341 92.7905 14.5864 92.7905 13.7183V11.1753H92.0757V10.4267H92.7905V9.28516H93.6802Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M95.8696 8.64844H96.7505V11.1299H96.8208C96.9389 10.8706 97.1341 10.654 97.3798 10.5096C97.6255 10.3653 97.9098 10.3002 98.1938 10.3233C98.4117 10.3114 98.6296 10.3478 98.8319 10.4298C99.0342 10.5119 99.2159 10.6375 99.364 10.7979C99.5121 10.9582 99.623 11.1493 99.6888 11.3574C99.7546 11.5655 99.7736 11.7856 99.7446 12.002V14.9092H98.855V12.2212C98.855 11.502 98.52 11.1377 97.8921 11.1377C97.7394 11.1252 97.5857 11.1462 97.442 11.1992C97.2982 11.2523 97.1677 11.3361 97.0597 11.4448C96.9518 11.5536 96.8688 11.6846 96.8168 11.8287C96.7647 11.9729 96.7448 12.1266 96.7583 12.2793V14.9092H95.8697L95.8696 8.64844Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M104.926 13.6924C104.805 14.1039 104.544 14.4599 104.187 14.6981C103.83 14.9362 103.401 15.0414 102.975 14.9951C102.678 15.0029 102.383 14.9461 102.111 14.8286C101.839 14.7111 101.595 14.5356 101.397 14.3145C101.199 14.0934 101.052 13.8318 100.965 13.548C100.878 13.2642 100.854 12.9649 100.895 12.6709C100.855 12.376 100.88 12.0761 100.966 11.7914C101.053 11.5067 101.199 11.244 101.396 11.0209C101.593 10.7978 101.836 10.6197 102.107 10.4984C102.379 10.3772 102.674 10.3158 102.971 10.3184C104.224 10.3184 104.98 11.1744 104.98 12.5884V12.8984H101.8V12.9482C101.786 13.1135 101.807 13.2798 101.861 13.4366C101.915 13.5933 102.002 13.737 102.114 13.8585C102.227 13.9799 102.364 14.0765 102.517 14.1419C102.669 14.2073 102.834 14.2401 102.999 14.2382C103.212 14.2638 103.427 14.2255 103.618 14.1283C103.809 14.0311 103.966 13.8793 104.071 13.6923L104.926 13.6924ZM101.8 12.2412H104.075C104.086 12.0901 104.065 11.9383 104.014 11.7956C103.963 11.6528 103.883 11.5224 103.779 11.4125C103.674 11.3027 103.548 11.2158 103.408 11.1577C103.268 11.0995 103.118 11.0712 102.966 11.0747C102.812 11.0728 102.66 11.1016 102.518 11.1596C102.375 11.2175 102.246 11.3034 102.137 11.4121C102.029 11.5208 101.943 11.6502 101.885 11.7926C101.827 11.935 101.798 12.0875 101.8 12.2412Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_565_563">
+                      <rect width="121" height="41" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <h4>Connect</h4>
+
+            <div class="social-icons">
+              <a href="#">LinkedIn</a>
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
+              <a href="#">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 SchoolCoreOS. All rights reserved.</span>
+
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END ================================================================================= -->
+
     <!-- Script -->
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
     <script src="./scripts/header.js"></script>
     <script src="./scripts/problems.js"></script>
     <script src="./scripts/roles.js"></script>
+    <script src="./scripts/easyToUse.js"></script>
+    
   </body>
 </html>

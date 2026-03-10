@@ -1,71 +1,212 @@
-.roles-section {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f8f9fa;
-  font-family: sans-serif;
+   :root {
+    --apple-bg: #f5f5f7;
+    --apple-text: #1d1d1f;
+    --apple-gray: #6e6e73;
+    --card-width: 340px;
+    --card-gap: 28px;
+}.roles-section {
+    margin: 0;
+    padding: 0;
+    background: var(--apple-bg);
+}
+.roles-container{
+  padding: 80px 0;
+    max-width: 1150px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.roles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  max-width: 1100px;
-  margin: 40px auto;
+.roles-header {
+    padding: 0 0px;
+    max-width: 900px;
+    margin-bottom: 40px;
 }
+
+.roles-header h2 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+    color: var(--apple-text);
+    margin: 0 0 15px 0;
+}
+
+.roles-header p {
+    color: var(--apple-gray);
+    font-size: 21px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Scroll container */
+
+.roles-scroll {
+    display: flex;
+    gap: var(--card-gap);
+    overflow-x: auto;
+    padding: 20px 60px 40px 60px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.roles-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Cards */
 
 .role-card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: left;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Soft shadow */
-  border-top: 4px solid #ccc; /* Default border color */
-  transition: transform 0.3s ease;
+    min-width: var(--card-width);
+    height: 420px;
+    background: white;
+    border-radius: 28px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    scroll-snap-align: start;
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s ease;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 .role-card:hover {
-  transform: translateY(-5px);
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-/* Colors for top borders */
-.orange { border-top-color: #b36b39; }
-.blue { border-top-color: #5c7cfa; }
-.green { border-top-color: #2fb344; }
-.red { border-top-color: #d63939; }
+.role-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--apple-gray);
+    margin-bottom: 8px;
+}
 
 .role-card h3 {
-  margin-top: 0;
-  font-size: 1.2rem;
-  color: #333;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: var(--apple-text);
 }
 
 .role-card p {
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.5;
+    font-size: 17px;
+    color: var(--apple-gray);
+    line-height: 1.47;
+    margin: 0;
 }
 
-.features {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
-  border-top: 1px solid #eee;
-  padding-top: 15px;
+.role-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-top: 20px;
 }
 
-.features li {
-  font-size: 0.85rem;
-  color: #555;
-  margin-bottom: 8px;
-  position: relative;
-  padding-left: 20px;
+/* Scroll Buttons */
+
+.scroll-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    padding: 0 60px;
+    margin-top: 10px;
 }
 
-/* Checkmark icon (CSS pseudo-element) */
-.features li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #2fb344;
-  font-weight: bold;
+.scroll-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: #d2d2d7;
+    color: #1d1d1f;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    opacity: 0.8;
+}
+
+.scroll-btn:hover {
+    background: #86868b;
+    color: white;
+    opacity: 1;
+}
+
+.roles-footer{
+  padding: 0 0px;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.roles-footer h2 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.003em;
+    color: var(--apple-gray);
+    margin: 0 0 15px 0;
+}
+.roles-footer span{
+    color: var(--apple-text);
+    font-weight: 600;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+.roles-header{
+padding:0 24px;
+}
+
+.roles-header h2{
+font-size:24px;
+}
+
+.roles-header p{
+font-size:16px;
+}
+
+.roles-scroll{
+padding:20px 24px;
+gap:16px;
+}
+
+.role-card{
+min-width:85%;
+height:380px;
+padding:24px;
+}
+
+.role-card h3{
+font-size:20px;
+margin-top: 10px;
+}
+
+/* Buttons center me */
+
+.scroll-controls{
+justify-content:flex-end;
+padding:20px 0;
+margin-right: 10px;
+
+}
+
+.scroll-btn{
+width:40px;
+height:40px;
+font-size:18px;
+}
+.roles-footer h2{
+font-size:16px;
+margin-left: 15px;
+margin-top: 30px;
+}
+
 }

@@ -1,0 +1,205 @@
+/* ============================= */
+    /* SOLUTION SECTION              */
+    /* ============================= */
+
+    .solution-section {
+      padding: 200px 24px;
+      background: linear-gradient(to bottom, #ffffff 0%, #f8f8fa 100%);
+      position: relative;
+    }
+
+    .solution-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 100px;
+      align-items: center;
+      position: relative;
+    }
+
+    /* ---- LEFT TEXT ---- */
+    .solution-text { position: relative; }
+
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #8e8e93;
+    }
+
+    .solution-section h2 {
+      font-size: 64px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      margin: 18px 0 28px;
+      max-width: 620px;
+      transition: opacity 0.4s, transform 0.4s;
+    }
+
+    .solution-subtext {
+      font-size: 22px;
+      color: #6e6e73;
+      line-height: 1.6;
+      margin-bottom: 56px;
+      max-width: 560px;
+      transition: opacity 0.4s, transform 0.4s;
+    }
+
+    /* Features */
+    .solution-features {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      transition: opacity 0.4s, transform 0.4s;
+    }
+
+    .feature {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .icon {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #f2f2f7, #ffffff);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04), inset 0 1px 0 rgba(255,255,255,0.7);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 600;
+      color: #0071e3;
+      flex-shrink: 0;
+    }
+
+    .feature h4 { font-size: 19px; font-weight: 600; margin-bottom: 6px; }
+    .feature p  { font-size: 16px; color: #6e6e73; line-height: 1.6; }
+
+    /* Fade animation classes */
+    .fade-out {
+      opacity: 0 !important;
+      transform: translateY(18px) !important;
+      pointer-events: none;
+    }
+    .fade-in {
+      animation: fadeInUp 0.42s ease forwards;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ---- RIGHT IMAGE + PROGRESS ---- */
+    .solution-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .solution-image {
+      flex: 1;
+      position: relative;
+    }
+
+    .solution-image img {
+      width: 100%;
+      border-radius: 28px;
+      box-shadow: 0 50px 120px rgba(0,0,0,0.18);
+      transition: opacity 0.4s ease, transform 0.5s ease;
+      display: block;
+    }
+    .solution-image img.img-fade-out {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+
+    /* ---- VERTICAL PROGRESS (right side) ---- */
+    .vertical-progress {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      width: 40px;
+      gap: 0;
+    }
+
+    /* Nav buttons inside progress */
+    .vp-nav-btn {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      border: 1.5px solid #d1d1d6;
+      background: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex; align-items: center; justify-content: center;
+      color: #333;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    .vp-nav-btn:hover {
+      background: #0071e3;
+      border-color: #0071e3;
+      color: #fff;
+    }
+
+    /* Dots area */
+    .vp-dots-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    .vp-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .vp-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #d1d1d6;
+      transition: all 0.3s ease;
+    }
+    .vp-step.active .vp-dot {
+      width: 12px; height: 12px;
+      background: #0071e3;
+      box-shadow: 0 0 0 4px rgba(0,113,227,0.15);
+    }
+    .vp-step.done .vp-dot {
+      background: #0071e3;
+    }
+
+    /* Line between dots */
+    .vp-line {
+      width: 2px;
+      height: 40px;
+      background: #e5e5ea;
+      position: relative;
+      overflow: hidden;
+    }
+    .vp-line-fill {
+      width: 100%;
+      background: #0071e3;
+      border-radius: 2px;
+      transition: height 0.5s ease;
+      height: 0%;
+    }
+
+    .vp-dot-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 1000px) {
+      .solution-container { grid-template-columns: 1fr; gap: 60px; }
+      .solution-section h2 { font-size: 44px; }
+      .solution-subtext { font-size: 18px; }
+      .vertical-progress { display: none; }
+    }

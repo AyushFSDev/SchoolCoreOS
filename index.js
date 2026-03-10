@@ -1,16 +1,10 @@
-
-
-// Close on nav link click
-offcanvas.querySelectorAll("a").forEach((a) => {
-  a.addEventListener("click", closeMenu);
-});
-
 // Close on Escape key
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeMenu();
 });
 
-// Easy to use section start -------------------
+// ---------------- Easy To Use Section ----------------
+
 const data = [
   {
     title: "Upload Thousands of Records in Seconds",
@@ -55,52 +49,93 @@ const dotsContainer = document.getElementById("dotsContainer");
 
 function init() {
   data.forEach((item, i) => {
-    // Desktop list
+    // Desktop
     const div = document.createElement("div");
     div.className = `feature-item ${i === 0 ? "active" : ""}`;
     div.onclick = () => setActive(i);
-    div.innerHTML = `<div class="title-row"><svg class="icon-circle-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg><span class="feature-title">${item.title}</span></div><p class="feature-description">${item.desc}</p>`;
+
+    div.innerHTML = `
+<div class="title-row">
+<svg class="icon-circle-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+<circle cx="12" cy="12" r="10"></circle>
+<line x1="12" y1="8" x2="12" y2="16"></line>
+<line x1="8" y1="12" x2="16" y2="12"></line>
+</svg>
+
+<span class="feature-title">${item.title}</span>
+
+</div>
+
+<p class="feature-description">${item.desc}</p>
+`;
+
     featureList.appendChild(div);
 
     // Mobile cards
-    const card = document.createElement("div");
-    card.className = "carousel-card";
-    card.innerHTML = `<img src="${item.img}" alt="img">`;
-    mobileTrack.appendChild(card);
+    if (mobileTrack) {
+      const card = document.createElement("div");
+      card.className = "carousel-card";
+      card.innerHTML = `<img src="${item.img}" alt="img">`;
+
+      mobileTrack.appendChild(card);
+    }
 
     // Dots
-    const dot = document.createElement("div");
-    dot.className = `dot ${i === 0 ? "active" : ""}`;
-    dotsContainer.appendChild(dot);
+    if (dotsContainer) {
+      const dot = document.createElement("div");
+      dot.className = `dot ${i === 0 ? "active" : ""}`;
+
+      dotsContainer.appendChild(dot);
+    }
   });
+
   setActive(0);
 }
 
 function setActive(index) {
-  // Desktop logic
   const items = document.querySelectorAll(".feature-item");
-  items.forEach((item, i) => item.classList.toggle("active", i === index));
-  document.getElementById("desktopImage").src = data[index].img;
 
-  // Mobile logic update text
-  document.getElementById("mobileTitle").innerText = data[index].title;
-  document.getElementById("mobileDesc").innerText = data[index].desc;
+  items.forEach((item, i) => {
+    item.classList.toggle("active", i === index);
+  });
 
-  // Update dots
+  const desktopImage = document.getElementById("desktopImage");
+
+  if (desktopImage) {
+    desktopImage.src = data[index].img;
+  }
+
+  const mobileTitle = document.getElementById("mobileTitle");
+  const mobileDesc = document.getElementById("mobileDesc");
+
+  if (mobileTitle) mobileTitle.innerText = data[index].title;
+  if (mobileDesc) mobileDesc.innerText = data[index].desc;
+
+  // dots update
   const dots = document.querySelectorAll(".dot");
-  dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === index);
+  });
 }
 
 function scrollCarousel(direction) {
+  if (!mobileTrack) return;
+
   const cardWidth = mobileTrack.offsetWidth;
-  mobileTrack.scrollBy({ left: direction * cardWidth, behavior: "smooth" });
+
+  mobileTrack.scrollBy({
+    left: direction * cardWidth,
+    behavior: "smooth",
+  });
 }
 
-mobileTrack.addEventListener("scroll", () => {
-  const index = Math.round(mobileTrack.scrollLeft / mobileTrack.offsetWidth);
-  setActive(index);
-});
+if (mobileTrack) {
+  mobileTrack.addEventListener("scroll", () => {
+    const index = Math.round(mobileTrack.scrollLeft / mobileTrack.offsetWidth);
+
+    setActive(index);
+  });
+}
 
 init();
-
-

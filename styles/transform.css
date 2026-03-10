@@ -8,7 +8,7 @@ background:#ffffff;
 
 }
 .transform-container{
-max-width:1100px;
+max-width:1150px;
 margin:auto;
 }
 .transform-inner{
@@ -32,10 +32,12 @@ padding-bottom: 20px;
 }
 
 .compare-cols{
+    width: 90%;
 display:grid;
 grid-template-columns:1fr 1px 1fr;
 gap:20px;
 margin-top:40px;
+align-content: center;
 }
 
 .divider-line{
@@ -52,14 +54,13 @@ border-bottom:1.5px dashed #e5e7eb;
 
 .compare-row{
 display:flex;
-flex-direction: row;
+
 text-align: start;
 align-items:center;
 gap:10px;
 padding:12px 0;
 font-size:18px;
 color:#374151;
-border-bottom:1px solid #f3f4f6;
 }
 
 .compare-row:last-child{
@@ -89,9 +90,21 @@ MOBILE
 ========================================= */
 
 @media (max-width:768px){
-
+.section-title{
+font-size:24px;
+}
+.section-sub{
+font-size:16px;
+}
 .compare-cols{
 grid-template-columns:1fr;
+}
+.compare-col-title{
+    font-size: 16px;
+    text-align: start;
+}
+.compare-row{
+    font-size: 16px;
 }
 
 .divider-line{

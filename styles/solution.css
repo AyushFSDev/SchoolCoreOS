@@ -17,7 +17,7 @@
       justify-content: space-between;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 150px 24px;
+      padding: 70px 24px;
       gap: 70px;
     }
 
@@ -38,7 +38,7 @@
 
     .left-col h2 .muted {
       color: #aaa;
-      font-weight: 400;
+      font-weight: 600;
     }
 
     .left-col p {
@@ -148,12 +148,12 @@
       }
 
       .left-col h2 {
-        font-size: 1.55rem;
+        font-size: 24px;
         margin-bottom: 12px;
       }
 
       .left-col p {
-        font-size: 0.83rem;
+        font-size: 16px;
         margin-bottom: 20px;
       }
 
@@ -182,11 +182,11 @@
       }
 
       .solution-text h3 {
-        font-size: 0.875rem;
+        font-size: 16px;
       }
 
       .solution-text p {
-        font-size: 0.78rem;
+        font-size: 13px;
       }
     }
 
