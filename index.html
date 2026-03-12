@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-white.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/features.css" />
+    <link rel="stylesheet" href="./styles/choose-path.css" />
     <link rel="stylesheet" href="./styles/problems.css" />
     <link rel="stylesheet" href="./styles/solution.css" />
     <link rel="stylesheet" href="./styles/transform.css" />
@@ -23,7 +29,12 @@
     <!-- NAVBAR -->
     <header class="navbar">
       <div class="nav-container">
-        <a class="logo" href="#">SchoolCore<span>OS</span></a>
+        <a class="logo" href="#">
+          <img src="./assets/images/logo-black.png" alt="SchoolCoreOS Logo" />
+          <span class="logo-text">
+            SchoolCore<span class="logo-accent">OS</span>
+          </span>
+        </a>
 
         <nav class="nav-links">
           <a href="#">Platform</a>
@@ -432,6 +443,294 @@
       <!-- /features-stage -->
     </section>
     <!-- FEATURE END ================================================================================================== -->
+    <!-- CHOOSE PATH START ================================================================================================= -->
+    <section class="choose-path-section">
+      <div class="choose-section">
+        <h2 class="choose-section__heading">Choose your path.</h2>
+        <p class="choose-section__subtext">
+          Select the category that best describes your institution or role.
+        </p>
+
+        <div class="cards" id="cards-grid">
+          <a href="./assets/pages/trainings-path.html" style="text-decoration: none;">
+            <div
+              class="card"
+              data-target="sub-education"
+              data-color="blue"
+              data-index="0"
+            >
+              <div class="card__icon-wrap icon--blue">
+                <svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#3b6ef5"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5" />
+                </svg>
+              </div>
+              <div class="card__title">Education</div>
+              <div class="card__desc">Schools, Colleges &amp; Institutes</div>
+              <div class="card__arrow">→</div>
+            </div>
+          </a>
+ <a href="./assets/pages/trainings-path.html" style="text-decoration: none;">
+          <div
+            class="card"
+            data-target="sub-enterprise"
+            data-color="purple"
+            data-index="1"
+          >
+            <div class="card__icon-wrap icon--purple">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#8b5cf6"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+              </svg>
+            </div>
+            <div class="card__title">Enterprise</div>
+            <div class="card__desc">
+              Universities Franchises &amp; Government
+            </div>
+            <div class="card__arrow">→</div>
+          </div>
+          </a>
+          <a href="./assets/pages/trainings-path.html" style="text-decoration: none;">
+
+          <div
+            class="card"
+            data-target="sub-training"
+            data-color="green"
+            data-index="2"
+          >
+            <div class="card__icon-wrap icon--green">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#16a34a"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 20h9" />
+                <path
+                  d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"
+                />
+              </svg>
+            </div>
+            <div class="card__title">Training</div>
+            <div class="card__desc">
+              Corporate, Fitness &amp; Skill Development
+            </div>
+            <div class="card__arrow">→</div>
+          </div>
+          </a>
+
+           <a href="./assets/pages/trainings-path.html" style="text-decoration: none;">
+          <div
+            class="card"
+            data-target="sub-individual"
+            data-color="orange"
+            data-index="3"
+          >
+            <div class="card__icon-wrap icon--orange">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f97316"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <div class="card__title">Individual</div>
+            <div class="card__desc">Learners, Parents &amp; Trainers</div>
+            <div class="card__arrow">→</div>
+          </div>
+        </div>
+        </a>
+
+        <!-- Sub Panels inside grid — full width span -->
+        <div class="sub-panel" id="sub-education" data-accent="blue">
+          <div class="sub-divider"></div>
+          <div class="sub-cards">
+            <div class="sub-card">
+              <div class="sub-card__title">School</div>
+              <div class="sub-card__desc">Structured K-12 Institutions.</div>
+              <ul class="sub-card__points">
+                <li>Parent communication</li>
+                <li>Attendance automation</li>
+                <li>Fee &amp; academic tracking</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">College</div>
+              <div class="sub-card__desc">Higher education architecture.</div>
+              <ul class="sub-card__points">
+                <li>Admission management</li>
+                <li>Department scheduling</li>
+                <li>Result &amp; grade portal</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">University</div>
+              <div class="sub-card__desc">Multi-campus governance.</div>
+              <ul class="sub-card__points">
+                <li>Multi-branch control</li>
+                <li>Research management</li>
+                <li>Alumni &amp; placement</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-panel" id="sub-enterprise" data-accent="purple">
+          <div class="sub-divider"></div>
+          <div class="sub-cards">
+            <div class="sub-card">
+              <div class="sub-card__title">Franchise</div>
+              <div class="sub-card__desc">
+                Multi-location business networks.
+              </div>
+              <ul class="sub-card__points">
+                <li>Centralised reporting</li>
+                <li>Brand consistency tools</li>
+                <li>Royalty management</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">Government</div>
+              <div class="sub-card__desc">Public sector institutions.</div>
+              <ul class="sub-card__points">
+                <li>Policy compliance</li>
+                <li>Citizen portal</li>
+                <li>Audit &amp; reporting</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">NGO</div>
+              <div class="sub-card__desc">
+                Non-profit &amp; social organisations.
+              </div>
+              <ul class="sub-card__points">
+                <li>Donor management</li>
+                <li>Project tracking</li>
+                <li>Impact reporting</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-panel" id="sub-training" data-accent="green">
+          <div class="sub-divider"></div>
+          <div class="sub-cards">
+            <div class="sub-card">
+              <div class="sub-card__title">Corporate</div>
+              <div class="sub-card__desc">
+                Employee training &amp; upskilling.
+              </div>
+              <ul class="sub-card__points">
+                <li>LMS integration</li>
+                <li>Progress tracking</li>
+                <li>Certificate generation</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">Fitness</div>
+              <div class="sub-card__desc">
+                Gyms, studios &amp; wellness centres.
+              </div>
+              <ul class="sub-card__points">
+                <li>Member check-in</li>
+                <li>Class scheduling</li>
+                <li>Subscription billing</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">Skill Dev</div>
+              <div class="sub-card__desc">
+                Vocational &amp; certification programs.
+              </div>
+              <ul class="sub-card__points">
+                <li>Batch management</li>
+                <li>Assessment tools</li>
+                <li>Placement tracking</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-panel" id="sub-individual" data-accent="orange">
+          <div class="sub-divider"></div>
+          <div class="sub-cards">
+            <div class="sub-card">
+              <div class="sub-card__title">Learner</div>
+              <div class="sub-card__desc">Self-paced personal growth.</div>
+              <ul class="sub-card__points">
+                <li>Goal setting tools</li>
+                <li>Progress dashboard</li>
+                <li>Course library access</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">Parent</div>
+              <div class="sub-card__desc">
+                Track &amp; support your child's learning.
+              </div>
+              <ul class="sub-card__points">
+                <li>Real-time updates</li>
+                <li>Attendance alerts</li>
+                <li>Fee payment portal</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">Trainer</div>
+              <div class="sub-card__desc">
+                Manage students &amp; build courses.
+              </div>
+              <ul class="sub-card__points">
+                <li>Course builder</li>
+                <li>Student analytics</li>
+                <li>Earnings dashboard</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CHOOSE PATH END =============================================================================================== -->
 
     <!-- PROBLEM DEFINITION START ================================================================================================== -->
     <section class="problem-section">
@@ -1462,6 +1761,7 @@
     <script src="scripts/mobileFirst.js"></script>
     <script src="./scripts/easyToUse.js"></script>
     <script src="./scripts/header.js"></script>
+    <script src="./scripts/choosePath.js"></script>
     <script src="./scripts/problems.js"></script>
     <script src="./scripts/roles.js"></script>
   </body>

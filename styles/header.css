@@ -26,13 +26,26 @@
 }
 
 .logo {
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
   color: #1d1d1f;
 }
-.logo span {
+
+.logo img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.logo-accent {
   color: #0a84ff;
 }
 
@@ -305,6 +318,13 @@
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
+    .logo img {
+    height: 24px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
   .nav-links {
     display: none;
   }

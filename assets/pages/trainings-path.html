@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Your Path</title>
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="../../styles/choose-path.css" />
+    <style>
+      /* container */
+      .back-button {
+        padding: 24px 28px;
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        width: 100%;
+        
+      }
+      .back-btn-group {
+        max-width: 1200px;
+        padding: 24px 28px;
+        display: flex;
+        align-items: flex-start;
+
+      }
+
+      /* button */
+      .back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        padding: 10px 18px;
+        border-radius: 999px;
+
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+
+        border: 1px solid rgba(0, 0, 0, 0.08);
+
+        font-size: 14px;
+        font-weight: 500;
+        color: #1d1d1f;
+        text-decoration: none;
+
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+        transition: all 0.25s ease;
+      }
+
+      /* icon */
+      .back-btn svg {
+        fill: #1d1d1f;
+        transition: transform 0.25s ease;
+      }
+
+      /* hover */
+      .back-btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        background: #fff;
+      }
+
+      .back-btn:hover svg {
+        transform: translateX(-3px);
+      }
+
+      /* active */
+      .back-btn:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      }
+      @media (max-width: 500px) {
+        .back-btn-group {
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER START======================================================================== -->
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="#">
+          <img src="../images/logo-black.png" alt="SchoolCoreOS Logo" />
+          <span class="logo-text">
+            SchoolCore<span class="logo-accent">OS</span>
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#">Platform</a>
+          <a href="#">Solutions</a>
+          <a href="#">Enterprise</a>
+          <a href="#">Pricing</a>
+        </nav>
+
+        <div class="nav-right">
+          <a href="#" class="login">Login</a>
+          <button class="free-trial">Free Trial</button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#000000"
+          >
+            <path
+              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+            />
+          </svg>
+        </div>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- OFFCANVAS -->
+    <aside class="offcanvas" id="offcanvas" aria-hidden="true">
+      <div class="offcanvas-header">
+        <span class="offcanvas-logo">SchoolCore<span>OS</span></span>
+        <button class="close-btn" id="closeBtn" aria-label="Close menu">
+          ✕
+        </button>
+      </div>
+
+      <div class="offcanvas-body">
+        <div class="offcanvas-section-label">Menu</div>
+        <nav class="offcanvas-nav">
+          <a href="#">Platform <span class="nav-arrow">›</span></a>
+          <a href="#">Solutions <span class="nav-arrow">›</span></a>
+          <a href="#">Enterprise <span class="nav-arrow">›</span></a>
+          <a href="#">Pricing <span class="nav-arrow">›</span></a>
+        </nav>
+
+        <div class="offcanvas-divider"></div>
+
+        <div class="offcanvas-section-label">Support</div>
+        <nav class="offcanvas-nav">
+          <a href="#">Help Center <span class="nav-arrow">›</span></a>
+          <a href="#">Contact Us <span class="nav-arrow">›</span></a>
+          <a href="#"
+            >☾ Dark Mode:
+
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.5 12.5H32.5C34.4891 12.5 36.3968 13.2902 37.8033 14.6967C39.2098 16.1032 40 18.0109 40 20C40 21.9891 39.2098 23.8968 37.8033 25.3033C36.3968 26.7098 34.4891 27.5 32.5 27.5H22.5C23.0819 26.726 23.5718 25.8871 23.96 25H32.5C33.8261 25 35.0979 24.4732 36.0355 23.5355C36.9732 22.5979 37.5 21.3261 37.5 20C37.5 18.6739 36.9732 17.4021 36.0355 16.4645C35.0979 15.5268 33.8261 15 32.5 15H23.96C23.5683 14.105 23.0817 13.2717 22.5 12.5Z"
+                fill="#07305D"
+                fill-opacity="0.6"
+              />
+              <path
+                d="M0 20C0 23.3152 1.31696 26.4946 3.66117 28.8388C6.00537 31.183 9.18479 32.5 12.5 32.5C15.8152 32.5 18.9946 31.183 21.3388 28.8388C23.683 26.4946 25 23.3152 25 20C25 16.6848 23.683 13.5054 21.3388 11.1612C18.9946 8.81696 15.8152 7.5 12.5 7.5C9.18479 7.5 6.00537 8.81696 3.66117 11.1612C1.31696 13.5054 0 16.6848 0 20Z"
+                fill="#07305D"
+                fill-opacity="0.6"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
+
+      <div class="offcanvas-footer">
+        <a href="#" class="oc-login">Login</a>
+        <button class="oc-trial">Start Free Trial</button>
+      </div>
+    </aside>
+    <!-- HEADER END ================================================================================================== -->
+    <!-- BACK BUTTON START ================================================================================================ -->
+    <section class="back-button">
+    <div class="back-btn-group">
+        <a href="../../index.html" class="back-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="22"
+          viewBox="0 -960 960 960"
+          width="22"
+        >
+          <path
+            d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"
+          />
+        </svg>
+        Back
+      </a>
+    </div>
+    </section>
+
+    <!-- TRAINING PLAN START ================================================================================================ -->
+    <section class="choose-path-section">
+      <div class="choose-section">
+        <h2 class="choose-section__heading">
+          Built for Every Type of Institution.
+        </h2>
+        <p class="choose-section__subtext">
+          Whether you manage a single campus or a nationwide network,
+          SchoolCoreOS adapts to your structure.
+        </p>
+
+        <div class="cards" id="cards-grid">
+          <div
+            class="card"
+            data-target="sub-education"
+            data-color="blue"
+            data-index="0"
+          >
+            <div class="card__icon-wrap icon--blue">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#3b6ef5"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5" />
+              </svg>
+            </div>
+            <div class="card__title">Education</div>
+            <div class="card__desc">Schools, Colleges &amp; Institutes</div>
+            <div class="card__arrow">→</div>
+          </div>
+
+          <div
+            class="card"
+            data-target="sub-enterprise"
+            data-color="purple"
+            data-index="1"
+          >
+            <div class="card__icon-wrap icon--purple">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#8b5cf6"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+              </svg>
+            </div>
+            <div class="card__title">Enterprise</div>
+            <div class="card__desc">
+              Universities Franchises &amp; Government
+            </div>
+            <div class="card__arrow">→</div>
+          </div>
+
+          <div
+            class="card"
+            data-target="sub-training"
+            data-color="green"
+            data-index="2"
+          >
+            <div class="card__icon-wrap icon--green">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#16a34a"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 20h9" />
+                <path
+                  d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"
+                />
+              </svg>
+            </div>
+            <div class="card__title">Training</div>
+            <div class="card__desc">
+              Corporate, Fitness &amp; Skill Development
+            </div>
+            <div class="card__arrow">→</div>
+          </div>
+
+          <div
+            class="card"
+            data-target="sub-individual"
+            data-color="orange"
+            data-index="3"
+          >
+            <div class="card__icon-wrap icon--orange">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f97316"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <div class="card__title">Individual</div>
+            <div class="card__desc">Learners, Parents &amp; Trainers</div>
+            <div class="card__arrow">→</div>
+          </div>
+        </div>
+
+        <!-- Sub Panels inside grid — full width span -->
+        <div class="sub-panel" id="sub-education" data-accent="blue">
+          <div class="sub-divider"></div>
+          <div class="sub-cards">
+            <div class="sub-card">
+              <div class="sub-card__title">School</div>
+              <div class="sub-card__desc">Structured K-12 Institutions.</div>
+              <ul class="sub-card__points">
+                <li>Parent communication</li>
+                <li>Attendance automation</li>
+                <li>Fee &amp; academic tracking</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">College</div>
+              <div class="sub-card__desc">Higher education architecture.</div>
+              <ul class="sub-card__points">
+                <li>Admission management</li>
+                <li>Department scheduling</li>
+                <li>Result &amp; grade portal</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">Institutes</div>
+              <div class="sub-card__desc">Multi-campus governance.</div>
+              <ul class="sub-card__points">
+                <li>Multi-branch control</li>
+                <li>Research management</li>
+                <li>Alumni &amp; placement</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-panel" id="sub-enterprise" data-accent="purple">
+          <div class="sub-divider"></div>
+          <div class="sub-cards">
+            <div class="sub-card">
+              <div class="sub-card__title">Franchise</div>
+              <div class="sub-card__desc">
+                Multi-location business networks.
+              </div>
+              <ul class="sub-card__points">
+                <li>Centralised reporting</li>
+                <li>Brand consistency tools</li>
+                <li>Royalty management</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">Government</div>
+              <div class="sub-card__desc">Public sector institutions.</div>
+              <ul class="sub-card__points">
+                <li>Policy compliance</li>
+                <li>Citizen portal</li>
+                <li>Audit &amp; reporting</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">NGO</div>
+              <div class="sub-card__desc">
+                Non-profit &amp; social organisations.
+              </div>
+              <ul class="sub-card__points">
+                <li>Donor management</li>
+                <li>Project tracking</li>
+                <li>Impact reporting</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-panel" id="sub-training" data-accent="green">
+          <div class="sub-divider"></div>
+          <div class="sub-cards">
+            <div class="sub-card">
+              <div class="sub-card__title">Corporate</div>
+              <div class="sub-card__desc">
+                Employee training &amp; upskilling.
+              </div>
+              <ul class="sub-card__points">
+                <li>LMS integration</li>
+                <li>Progress tracking</li>
+                <li>Certificate generation</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">Fitness</div>
+              <div class="sub-card__desc">
+                Gyms, studios &amp; wellness centres.
+              </div>
+              <ul class="sub-card__points">
+                <li>Member check-in</li>
+                <li>Class scheduling</li>
+                <li>Subscription billing</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">Skill Dev</div>
+              <div class="sub-card__desc">
+                Vocational &amp; certification programs.
+              </div>
+              <ul class="sub-card__points">
+                <li>Batch management</li>
+                <li>Assessment tools</li>
+                <li>Placement tracking</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-panel" id="sub-individual" data-accent="orange">
+          <div class="sub-divider"></div>
+          <div class="sub-cards">
+            <div class="sub-card">
+              <div class="sub-card__title">Learner</div>
+              <div class="sub-card__desc">Self-paced personal growth.</div>
+              <ul class="sub-card__points">
+                <li>Goal setting tools</li>
+                <li>Progress dashboard</li>
+                <li>Course library access</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">Parent</div>
+              <div class="sub-card__desc">
+                Track &amp; support your child's learning.
+              </div>
+              <ul class="sub-card__points">
+                <li>Real-time updates</li>
+                <li>Attendance alerts</li>
+                <li>Fee payment portal</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+            <div class="sub-card">
+              <div class="sub-card__title">Trainer</div>
+              <div class="sub-card__desc">
+                Manage students &amp; build courses.
+              </div>
+              <ul class="sub-card__points">
+                <li>Course builder</li>
+                <li>Student analytics</li>
+                <li>Earnings dashboard</li>
+              </ul>
+              <a href="#" class="sub-card__link">Explore Solutions →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TRAINING PLAN END ================================================================================================ -->
+    <script src="../../scripts/header.js"></script>
+    <script src="../../scripts/choosePath.js"></script>
+  </body>
+</html>
