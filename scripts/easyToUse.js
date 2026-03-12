@@ -14,7 +14,7 @@ const data = [
   {
     title: "Upload Thousands of Records in Seconds",
     desc: "Upload thousands of records in seconds — no friction, no complexity.",
-    img: "../assets/images/bulk-upload-image.png",
+    img: "assets/images/bulk-upload-image.png",
   },
   {
     title: "Speak your institution's language.",
@@ -43,7 +43,7 @@ const data = [
   },
 ];
 
-let current = 0;
+let easyCurrent = 0;
 
 function init() {
   const list = document.getElementById("desktopList");
@@ -76,28 +76,28 @@ ${item.desc}
 }
 
 function setFeature(i) {
-  current = i;
+  easyCurrent = i;
   update();
 }
 
 function move(dir) {
-  current = (current + dir + data.length) % data.length;
+  easyCurrent = (easyCurrent + dir + data.length) % data.length;
   update();
 }
 
 function update() {
-  const item = data[current];
+  const item = data[easyCurrent];
 
   document.getElementById("mainPreview").src = item.img;
   document.getElementById("mobilePreview").src = item.img;
 
   document.querySelectorAll(".feature-group").forEach((g, i) => {
-    g.classList.toggle("active", i === current);
+    g.classList.toggle("active", i === easyCurrent);
 
-    g.querySelector(".feature-pill").classList.toggle("active", i === current);
+    g.querySelector(".feature-pill").classList.toggle("active", i === easyCurrent);
 
     g.querySelector(".icon-wrapper").innerHTML =
-      i === current ? crossIcon : addIon;
+      i === easyCurrent ? crossIcon : addIon;
   });
 
   const mobile = document.getElementById("mobileDetails");
