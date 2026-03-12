@@ -291,7 +291,7 @@
 
     @media (max-width: 680px) {
       .choose-section { padding: 44px 22px 48px; border-radius: 0; }
-      .cards { grid-template-columns: repeat(1, 1fr); }
+      .cards { grid-template-columns: repeat(2, 1fr); }
       .choose-section__heading { font-size: 1.9rem; }
       .sub-cards { grid-template-columns: 1fr; }
     }
