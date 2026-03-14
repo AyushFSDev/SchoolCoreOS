@@ -1,0 +1,1065 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../images/logo-white.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../styles/home-page/header.css" />
+    <link rel="stylesheet" href="../../styles/home-page/style.css" />
+    <link rel="stylesheet" href="../../styles/home-page/hero.css" />
+    <link rel="stylesheet" href="../../styles/solutions-pages/school-page/benefit-section.css">
+    <link
+      rel="stylesheet"
+      href="../../styles/solutions-pages/school-page/ui-demo-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/solutions-pages/school-page/problem-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/solutions-pages/school-page/soluiton-page.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER START======================================================================== -->
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="../../index.html">
+          <img src="../images/logo-black.png" alt="SchoolCoreOS Logo" />
+          <span class="logo-text">
+            SchoolCore<span class="logo-accent">OS</span>
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#">Platform</a>
+          <a href="#">Solutions</a>
+          <a href="#">Enterprise</a>
+          <a href="#">Pricing</a>
+        </nav>
+
+        <div class="nav-right">
+          <a href="#" class="login">Login</a>
+          <button class="free-trial">Free Trial</button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#000000"
+          >
+            <path
+              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+            />
+          </svg>
+        </div>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- OFFCANVAS -->
+    <aside class="offcanvas" id="offcanvas" aria-hidden="true">
+      <div class="offcanvas-header">
+        <span class="offcanvas-logo">SchoolCore<span>OS</span></span>
+        <button class="close-btn" id="closeBtn" aria-label="Close menu">
+          ✕
+        </button>
+      </div>
+
+      <div class="offcanvas-body">
+        <div class="offcanvas-section-label">Menu</div>
+        <nav class="offcanvas-nav">
+          <a href="#">Platform <span class="nav-arrow">›</span></a>
+          <a href="#">Solutions <span class="nav-arrow">›</span></a>
+          <a href="#">Enterprise <span class="nav-arrow">›</span></a>
+          <a href="#">Pricing <span class="nav-arrow">›</span></a>
+        </nav>
+
+        <div class="offcanvas-divider"></div>
+
+        <div class="offcanvas-section-label">Support</div>
+        <nav class="offcanvas-nav">
+          <a href="#">Help Center <span class="nav-arrow">›</span></a>
+          <a href="#">Contact Us <span class="nav-arrow">›</span></a>
+          <a href="#"
+            >☾ Dark Mode:
+
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.5 12.5H32.5C34.4891 12.5 36.3968 13.2902 37.8033 14.6967C39.2098 16.1032 40 18.0109 40 20C40 21.9891 39.2098 23.8968 37.8033 25.3033C36.3968 26.7098 34.4891 27.5 32.5 27.5H22.5C23.0819 26.726 23.5718 25.8871 23.96 25H32.5C33.8261 25 35.0979 24.4732 36.0355 23.5355C36.9732 22.5979 37.5 21.3261 37.5 20C37.5 18.6739 36.9732 17.4021 36.0355 16.4645C35.0979 15.5268 33.8261 15 32.5 15H23.96C23.5683 14.105 23.0817 13.2717 22.5 12.5Z"
+                fill="#07305D"
+                fill-opacity="0.6"
+              />
+              <path
+                d="M0 20C0 23.3152 1.31696 26.4946 3.66117 28.8388C6.00537 31.183 9.18479 32.5 12.5 32.5C15.8152 32.5 18.9946 31.183 21.3388 28.8388C23.683 26.4946 25 23.3152 25 20C25 16.6848 23.683 13.5054 21.3388 11.1612C18.9946 8.81696 15.8152 7.5 12.5 7.5C9.18479 7.5 6.00537 8.81696 3.66117 11.1612C1.31696 13.5054 0 16.6848 0 20Z"
+                fill="#07305D"
+                fill-opacity="0.6"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
+
+      <div class="offcanvas-footer">
+        <a href="#" class="oc-login">Login</a>
+        <button class="oc-trial">Start Free Trial</button>
+      </div>
+    </aside>
+    <!-- HEADER END ================================================================================================== -->
+
+    <!-- HERO START ================================================================================================== -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+
+      <div class="hero-content">
+        <h1>
+          The Operating System<br />
+          for Schools.
+        </h1>
+
+        <p>
+          Built for institutions that demand structure, scale, and governance.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="primary-btn">Start Free Trial</button>
+          <button class="secondary-btn">Explore Platform</button>
+        </div>
+      </div>
+      <!-- Dashboard Preview -->
+      <div class="dashboard-preview-wrapper">
+        <picture>
+          <!-- Mobile Image -->
+          <source
+            media="(max-width:500px)"
+            srcset="./assets/images/dashboard-mobile-view.png"
+          />
+
+          <!-- Desktop Image -->
+          <img
+            src="../images/school-hero-image.png"
+            class="dashboard-preview"
+            alt="Dashboard Preview"
+          />
+        </picture>
+      </div>
+    </section>
+    <!-- HERO END ================================================================================================== -->
+    <!-- PROBLEMS START ================================================================================================= -->
+    <section class="problem">
+      <div class="problem-section">
+        <div class="section-header">
+          <h2>
+            Schools Don't Struggle With Education.<br />They Struggle With
+            Disconnected Systems.
+          </h2>
+          <p>
+            Admissions, academics, campus management and communication often run
+            on separate tools creating inefficiency and chaos.
+          </p>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="track">
+            <!-- Card 1 – Blue -->
+            <div class="card card--blue">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">Manual Admissions &amp; Enrollment</div>
+              <div class="card-desc">
+                Schools still rely on forms, spreadsheets and manual
+                verification processes that slow down admissions and create
+                unnecessary administrative workload.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=600&q=80"
+                  alt="Manual paperwork"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Paper Forms
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Slow Process
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 – Pink -->
+            <div class="card card--pink">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">Disconnected Campus Operations</div>
+              <div class="card-desc">
+                Buildings, classrooms, departments and academic units are often
+                managed in separate systems, making coordination difficult for
+                administrators.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=80"
+                  alt="Campus aerial"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Buildings
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Classrooms
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 – Purple -->
+            <div class="card card--purple">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">Lack of Real-Time Visibility</div>
+              <div class="card-desc">
+                Without a centralized dashboard, school leaders struggle to
+                monitor attendance, academic performance and operational
+                efficiency in real time.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+                  alt="Analytics dashboard"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Attendance
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Analytics
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 – Teal -->
+            <div class="card card--teal">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">Poor Communication Channels</div>
+              <div class="card-desc">
+                Parents, teachers and administrators use different platforms for
+                communication, leading to missed updates, delays and confusion
+                across the school ecosystem.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&q=80"
+                  alt="Communication"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Parents
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Missed Updates
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 – Amber -->
+            <div class="card card--amber">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">No Centralised Fee Management</div>
+              <div class="card-desc">
+                Fee collection, tracking and reminders are handled manually or
+                through unconnected tools, causing delays, errors and financial
+                inefficiencies for schools.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80"
+                  alt="Fee management"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Fee Tracking
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Payment Delays
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 – Rose -->
+            <div class="card card--rose">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 6h-2.18c.07-.44.18-.88.18-1.34C18 2.54 15.46 1 12.48 1c-1.49 0-2.85.73-3.76 1.82L8 3.66l-.72-.85C6.38 1.73 5.02 1 3.52 1 .54 1-2 2.54-2 4.66c0 .46.11.9.18 1.34H-4v2h24V6z"
+                  />
+                  <path
+                    d="M12 21l-9-3v-2.22l1-.52V8h2v7.21l2 1.05V8h2v8.99l2-2V8h2v7.26l1 .52V13h2v4.21l1 .52V21l-9 3z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">Fragmented Student Records</div>
+              <div class="card-desc">
+                Academic records, health data and personal details are scattered
+                across multiple registers and systems with no single source of
+                truth for student information.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80"
+                  alt="Student records"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Records
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Data Silos
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="dots" id="dots"></div>
+
+        <!-- Nav Arrows -->
+        <div class="nav-arrows">
+          <button class="nav-btn" id="prevBtn" onclick="slide(-1)">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6" /></svg>
+          </button>
+          <button class="nav-btn" id="nextBtn" onclick="slide(1)">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6" /></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- PROBLEMS END ================================================================================================= -->
+    <!-- SOLUTION START =============================================================================================== -->
+    <!-- ── HEADER ── -->
+    <div class="sol-header">
+      <div class="sol-header__eyebrow">Our Solutions</div>
+      <h2>
+        <span>One platform for every</span><br />institution that wants more.
+      </h2>
+      <p class="sol-header__sub">
+        From K-12 schools to global corporations — Classe365 replaces
+        disconnected tools with one intelligent, beautifully simple system.
+      </p>
+    </div>
+
+    <!-- ── CARDS ── -->
+    <section aria-label="Solutions" class="sol-section">
+      <div class="sol-outer">
+        <div class="sol-stack">
+          <!-- Card 1: School -->
+          <article class="sol-card sol-card--school">
+            <div class="sol-card__text">
+              <span class="sol-badge">Schools</span>
+              <h3 class="sol-card__title">
+                Smarter schools start with one connected system
+              </h3>
+              <p class="sol-card__desc">
+                3,900+ schools worldwide replaced their patchwork of tools with
+                Classe365 — and never looked back.
+              </p>
+              <div class="sol-features">
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Admissions &amp;
+                  Enrolment Automation
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Real-time Attendance
+                  &amp; Gradebook
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Fee Collection &amp;
+                  Parent Portal
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Timetabling &amp; Campus
+                  Management
+                </div>
+              </div>
+              <a href="#" class="sol-link">
+                Explore for Schools
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a>
+            </div>
+            <div class="sol-card__visual">
+              <img
+                src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=900&auto=format&fit=crop&q=80"
+                alt="Students in school"
+                loading="lazy"
+              />
+              <div class="sol-stat-badge">
+                <div class="sol-stat-badge__num">3.9K+</div>
+                <div class="sol-stat-badge__sub">Schools worldwide</div>
+              </div>
+              <div class="sol-chip">
+                <div class="sol-chip__label">Institution Types</div>
+                <ul class="sol-chip__items">
+                  <li>Public &amp; Private Schools</li>
+                  <li>IB Schools</li>
+                  <li>Religious Schools</li>
+                  <li>Special Education</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Universities -->
+          <article class="sol-card sol-card--university">
+            <div class="sol-card__text">
+              <span class="sol-badge">Universities &amp; Colleges</span>
+              <h3 class="sol-card__title">
+                Manage the entire student lifecycle with precision
+              </h3>
+              <p class="sol-card__desc">
+                6 of the top 50 global universities trust Classe365 to manage
+                enrolment, learning and the complete learner journey.
+              </p>
+              <div class="sol-features">
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Student CRM &amp;
+                  Pipeline Management
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Online Applications
+                  &amp; Acceptance
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Course Builder &amp; LMS
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Alumni Engagement &amp;
+                  Reporting
+                </div>
+              </div>
+              <a href="#" class="sol-link">
+                Explore for Universities
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a>
+            </div>
+            <div class="sol-card__visual">
+              <img
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=80"
+                alt="University campus"
+                loading="lazy"
+              />
+              <div class="sol-stat-badge">
+                <div class="sol-stat-badge__num">Top 50</div>
+                <div class="sol-stat-badge__sub">Global universities</div>
+              </div>
+              <div class="sol-chip">
+                <div class="sol-chip__label">Institution Types</div>
+                <ul class="sol-chip__items">
+                  <li>Private &amp; Public Universities</li>
+                  <li>Online &amp; Distance Learning</li>
+                  <li>Community Colleges</li>
+                  <li>Career Colleges</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Academies -->
+          <article class="sol-card sol-card--academy">
+            <div class="sol-card__text">
+              <span class="sol-badge">Academies</span>
+              <h3 class="sol-card__title">
+                Run multiple academies from one powerful dashboard
+              </h3>
+              <p class="sol-card__desc">
+                Classe365 powers 5 of the 10 largest performance academies
+                globally — handling scheduling, billing and progress in real
+                time.
+              </p>
+              <div class="sol-features">
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Multi-Branch &amp;
+                  Multi-Campus Control
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Smart Timetabling &amp;
+                  Room Booking
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Billing, Invoicing &amp;
+                  Subscriptions
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Student Progress &amp;
+                  Skill Tracking
+                </div>
+              </div>
+              <a href="#" class="sol-link">
+                Explore for Academies
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a>
+            </div>
+            <div class="sol-card__visual">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&auto=format&fit=crop&q=80"
+                alt="Academy students"
+                loading="lazy"
+              />
+              <div class="sol-stat-badge">
+                <div class="sol-stat-badge__num">5 of 10</div>
+                <div class="sol-stat-badge__sub">Largest academies</div>
+              </div>
+              <div class="sol-chip">
+                <div class="sol-chip__label">Academy Types</div>
+                <ul class="sol-chip__items">
+                  <li>Performance Arts</li>
+                  <li>Language Schools</li>
+                  <li>Health &amp; Fitness</li>
+                  <li>After-School &amp; Child Care</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Corporate -->
+          <article class="sol-card sol-card--corporate">
+            <div class="sol-card__text">
+              <span class="sol-badge">Corporate Learning</span>
+              <h3 class="sol-card__title">
+                Transform how your workforce learns and grows
+              </h3>
+              <p class="sol-card__desc">
+                With an 8.9 NPS, Classe365 is the go-to LMS for L&D teams
+                managing onboarding, compliance and upskilling at scale.
+              </p>
+              <div class="sol-features">
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Employee Onboarding
+                  Workflows
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Compliance &amp;
+                  Certification Tracking
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>SCORM / xAPI Content
+                  Support
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Skills Assessments &amp;
+                  Analytics
+                </div>
+              </div>
+              <a href="#" class="sol-link">
+                Explore for Corporate
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a>
+            </div>
+            <div class="sol-card__visual">
+              <img
+                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&auto=format&fit=crop&q=80"
+                alt="Corporate training"
+                loading="lazy"
+              />
+              <div class="sol-stat-badge">
+                <div class="sol-stat-badge__num">8.9</div>
+                <div class="sol-stat-badge__sub">NPS Score</div>
+              </div>
+              <div class="sol-chip">
+                <div class="sol-chip__label">Training Types</div>
+                <ul class="sol-chip__items">
+                  <li>Employee Onboarding</li>
+                  <li>Safety &amp; Compliance</li>
+                  <li>Leadership Development</li>
+                  <li>Technical Upskilling</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- SOLUTION END ================================================================================================ -->
+    <!-- UI DEMO START =============================================================================================== -->
+    <section class="ui-demo-section">
+      <div class="section">
+        <div class="section-header">
+          <div class="eyebrow">The Operating System for Schools</div>
+          <h2>Everything Unified</h2>
+          <p>
+            Ditch the multiple tabs. Run your entire institution from one
+            intuitive interface.
+          </p>
+        </div>
+
+        <div class="cards-container">
+          <div class="card-scene">
+            <div class="step-card">
+              <div class="card-text">
+                <div class="step-label">01 / Setup</div>
+                <h3>Set Up Your School</h3>
+                <p>
+                  Create your digital campus by defining structures,
+                  departments, and academic years in minutes.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Multi-campus support
+                  </li>
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Smart Room Allocation
+                  </li>
+                </ul>
+              </div>
+              <div class="ui-demo-card-visual">
+                <img
+                  src="https://cdn.dribbble.com/userupload/3180523/file/original-c820feafd41efa7f2325b2fcc7ff3f89.png?resize=752x564"
+                  alt="School Setup"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-scene">
+            <div class="step-card">
+              <div class="card-text">
+                <div class="step-label">02 / Academics</div>
+                <h3>Classes & Syllabus</h3>
+                <p>
+                  Plan your curriculum with precision. Manage subjects, teacher
+                  allocations, and study materials effortlessly.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Auto-Teacher Matching
+                  </li>
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Digital Resource Hub
+                  </li>
+                </ul>
+              </div>
+              <div class="ui-demo-card-visual">
+                <img
+                  src="https://cdn.dribbble.com/userupload/3180523/file/original-c820feafd41efa7f2325b2fcc7ff3f89.png?resize=752x564"
+                  alt="Academics"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-scene">
+            <div class="step-card">
+              <div class="card-text">
+                <div class="step-label">03 / Evaluation</div>
+                <h3>Exams & Reports</h3>
+                <p>
+                  Conduct online or offline exams and get automated result
+                  generation with deep performance analytics.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    One-click Report Cards
+                  </li>
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    AI Performance Insights
+                  </li>
+                </ul>
+              </div>
+              <div class="ui-demo-card-visual">
+                <img
+                  src="https://cdn.dribbble.com/userupload/3180523/file/original-c820feafd41efa7f2325b2fcc7ff3f89.png?resize=752x564"
+                  alt="Exams"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-scene">
+            <div class="step-card">
+              <div class="card-text">
+                <div class="step-label">04 / Connectivity</div>
+                <h3>Track & Communicate</h3>
+                <p>
+                  Real-time attendance and instant notifications keep parents
+                  and staff always in the loop.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Instant App Alerts
+                  </li>
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Biometric Integration
+                  </li>
+                </ul>
+              </div>
+              <div class="ui-demo-card-visual">
+                <img
+                  src="https://cdn.dribbble.com/userupload/3180523/file/original-c820feafd41efa7f2325b2fcc7ff3f89.png?resize=752x564"
+                  alt="Communication"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="after-spacer">Ready to transform your school?</div>
+    </section>
+    <!-- UI DEMO END ================================================================================================ -->
+     <!-- BENEFITS START ================================================================================================ -->
+      <section class="benefit-section">
+    <div class="section">
+
+  <div class="section-header">
+    <h2>Automated School<br>Administration</h2>
+  </div>
+
+  <div class="cards-track-wrap">
+    <div class="cards-track" id="track">
+
+      <!-- Card 1 -->
+      <div class="feature-card">
+        <div>
+          <div class="card-icon">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="7" stroke="#7c3aed" stroke-width="2.2"/>
+              <path d="M18 4v3M18 29v3M4 18h3M29 18h3" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M8.5 8.5l2.1 2.1M25.4 25.4l2.1 2.1M25.4 8.5l-2.1 2.1M8.5 25.4l2.1 2.1" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <p>Automate daily school administration tasks.</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="arrow-btn" aria-label="Learn more">
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7.5 3.5L11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feature-card">
+        <div>
+          <div class="card-icon">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L7 12v6c0 5.5 4.7 10.6 11 12 6.3-1.4 11-6.5 11-12v-6L18 6z" stroke="#d97706" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M13 18l3.5 3.5L23 14" stroke="#d97706" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <p>Manage classes, students and academics from one platform.</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="arrow-btn" aria-label="Learn more">
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7.5 3.5L11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="feature-card">
+        <div>
+          <div class="card-icon">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 10h24M6 18h24M6 26h14" stroke="#0d9488" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="27" cy="26" r="5" stroke="#0d9488" stroke-width="2"/>
+              <path d="M25 26l1.5 1.5L29 24" stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <p>Keep teachers, students and parents connected.</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="arrow-btn" aria-label="Learn more">
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7.5 3.5L11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="feature-card">
+        <div>
+          <div class="card-icon">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 28V16M17 28V10M24 28v-8" stroke="#e11d48" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M6 8l5-3 6 4 5-3 8 5" stroke="#e11d48" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <p>Track attendance, exams and activities in real time.</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="arrow-btn" aria-label="Learn more">
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7.5 3.5L11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="feature-card">
+        <div>
+          <div class="card-icon">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="8" width="24" height="20" rx="3" stroke="#0071e3" stroke-width="2.2"/>
+              <path d="M6 14h24" stroke="#0071e3" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="12" cy="22" r="1.5" fill="#0071e3"/>
+              <circle cx="18" cy="22" r="1.5" fill="#0071e3"/>
+              <circle cx="24" cy="22" r="1.5" fill="#0071e3"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <p>Schedule timetables, events and notifications effortlessly.</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="arrow-btn" aria-label="Learn more">
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7.5 3.5L11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="feature-card">
+        <div>
+          <div class="card-icon">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="13" r="5" stroke="#16a34a" stroke-width="2.2"/>
+              <path d="M6 28c0-4.4 3.6-8 8-8h1" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M23 20l2 2 4-4" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="25" cy="22" r="6" stroke="#16a34a" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <p>Manage admissions, fee records and student data securely.</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="arrow-btn" aria-label="Learn more">
+            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7.5 3.5L11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Nav buttons -->
+  <div class="nav-row">
+    <button class="nav-btn" id="prevBtn" aria-label="Previous" disabled>
+      <svg viewBox="0 0 13 13" fill="none"><path d="M8 2.5L4.5 6.5 8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="nav-btn" id="nextBtn" aria-label="Next">
+      <svg viewBox="0 0 13 13" fill="none"><path d="M5 2.5L8.5 6.5 5 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+</div>  
+</section>
+      <!-- BENEFITS END ================================================================================================ -->
+    <!-- SCRIPT -->
+    <script src="../../scripts/home-page/header.js"></script>
+    <script src="../../scripts/splutions-pages/school-page/problemSection.js"></script>
+    <script svr="../../scripts/splutions-pages/school-page/benefitSection.js"></script>
+  </body>
+</html>

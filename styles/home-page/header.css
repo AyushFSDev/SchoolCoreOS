@@ -1,0 +1,346 @@
+/* HEADER START ----------------------------------------- */
+
+/* NAVBAR */
+/* ── NAVBAR ── */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  height: 68px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  z-index: 900;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #1d1d1f;
+}
+
+.logo img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.logo-accent {
+  color: #0a84ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #1d1d1f;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+}
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.login {
+  font-size: 14.5px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1d1d1f;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+}
+.login:hover {
+  opacity: 1;
+}
+
+.free-trial {
+  background: linear-gradient(135deg, #0a84ff, #005bea);
+  color: #fff;
+  border: none;
+  padding: 9px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0 4px 14px rgba(10, 132, 255, 0.28);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.free-trial:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(10, 132, 255, 0.38);
+}
+
+/* ── HAMBURGER ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5.5px;
+  width: 38px;
+  height: 38px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 9px;
+  transition: background 0.2s;
+  z-index: 1100;
+}
+.hamburger:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #1d1d1f;
+  border-radius: 2px;
+  transition:
+    transform 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s ease;
+  transform-origin: center;
+}
+.hamburger.open .bar:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0.1);
+}
+.hamburger.open .bar:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/* ── OVERLAY ── */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 950;
+  transition: background 0.35s ease;
+}
+.overlay.visible {
+  background: rgba(0, 0, 0, 0.38);
+}
+
+/* ── OFFCANVAS PANEL ── */
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
+  z-index: 1000;
+  transform: translateX(110%);
+  transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 0 40px rgba(0, 0, 0, 0.12);
+}
+.offcanvas.open {
+  transform: translateX(0);
+}
+
+/* Panel header */
+.offcanvas-header {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  flex-shrink: 0;
+}
+.offcanvas-logo {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #1d1d1f;
+}
+.offcanvas-logo span {
+  color: #0a84ff;
+}
+
+.close-btn {
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.06);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #1d1d1f;
+  transition: background 0.2s;
+  line-height: 1;
+}
+.close-btn:hover {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* Panel body */
+.offcanvas-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 0;
+}
+
+.offcanvas-section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #aeaeb2;
+  padding: 16px 24px 8px;
+}
+
+.offcanvas-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1d1d1f;
+  padding: 13px 24px;
+  border-radius: 0;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.offcanvas-nav a:hover {
+  background: rgba(10, 132, 255, 0.06);
+  color: #0a84ff;
+}
+.offcanvas-nav a .nav-arrow {
+  font-size: 18px;
+  opacity: 0.25;
+  transition:
+    opacity 0.15s,
+    transform 0.15s;
+}
+.offcanvas-nav a:hover .nav-arrow {
+  opacity: 0.7;
+  transform: translateX(3px);
+}
+
+.offcanvas-divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.07);
+  margin: 8px 24px;
+}
+
+/* Panel footer */
+.offcanvas-footer {
+  padding: 20px 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.oc-login {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1d1d1f;
+  padding: 13px;
+  border: 1.5px solid rgba(0, 0, 0, 0.13);
+  border-radius: 14px;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+.oc-login:hover {
+  border-color: #0a84ff;
+  background: rgba(10, 132, 255, 0.04);
+}
+
+.oc-trial {
+  background: linear-gradient(135deg, #0a84ff, #005bea);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0 4px 16px rgba(10, 132, 255, 0.32);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.oc-trial:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(10, 132, 255, 0.42);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+    .logo img {
+    height: 24px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-right {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .overlay {
+    display: block;
+    pointer-events: none;
+  }
+  .overlay.visible {
+    pointer-events: auto;
+  }
+}
+
+/* HEADER END ----------------------------------------------- */

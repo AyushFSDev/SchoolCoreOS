@@ -1,0 +1,215 @@
+ :root {
+        --ui-demo-white: #ffffff;
+        --ui-demo-bg: #fbfbfd;
+        --ui-demo-card-bg: #ffffff;
+        --ui-demo-border: rgba(0, 0, 0, 0.06);
+        --ui-demo-border-strong: rgba(0, 0, 0, 0.1);
+        --ui-demo-text-primary: #1d1d1f;
+        --ui-demo-text-secondary: #6e6e73;
+        --ui-demo-text-tertiary: #aeaeb2;
+        --ui-demo-accent: #0071e3;
+        --ui-demo-accent-light: rgba(0, 113, 227, 0.08);
+      }
+
+
+      .ui-demo-section {
+        font-family:
+          -apple-system, "SF Pro Display", "SF Pro Text", BlinkMacSystemFont,
+          sans-serif;
+        background: var(--ui-demo-bg);
+        color: var(--ui-demo-text-primary);
+        -webkit-font-smoothing: antialiased;
+      }
+
+
+      .section {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .section-header {
+        text-align: center;
+        padding: 60px 0 100px;
+      }
+
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ui-demo-accent);
+        margin-bottom: 16px;
+      }
+
+      .section-header h2 {
+        font-size: clamp(32px, 5vw, 48px);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        line-height: 1.1;
+        margin-bottom: 20px;
+      }
+
+      .section-header p {
+        font-size: 19px;
+        color: var(--ui-demo-text-secondary);
+        max-width: 500px;
+        margin: 0 auto;
+        line-height: 1.5;
+      }
+
+      /* ── Cards Logic ── */
+      .cards-container {
+        position: relative;
+      }
+
+      .card-scene {
+        height: 110vh; /* Extra height for scrolling room */
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .card-scene:last-child {
+        height: auto;
+        padding-bottom: 150px;
+      }
+
+      .step-card {
+        background: var(--ui-demo-card-bg);
+        border-radius: 28px;
+        border: 1px solid var(--ui-demo-border);
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        min-height: 480px;
+        width: 100%;
+        position: sticky;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      /* Stacking Offset (Gap from top) */
+      .card-scene:nth-child(1) .step-card {
+        z-index: 1;
+        top: 60px;
+      }
+      .card-scene:nth-child(2) .step-card {
+        z-index: 2;
+        top: 90px;
+      }
+      .card-scene:nth-child(3) .step-card {
+        z-index: 3;
+        top: 120px;
+      }
+      .card-scene:nth-child(4) .step-card {
+        z-index: 4;
+        top: 150px;
+      }
+
+      /* ── Card Content ── */
+      .card-text {
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .step-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ui-demo-text-tertiary);
+        margin-bottom: 12px;
+      }
+
+      .card-text h3 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        letter-spacing: -0.02em;
+      }
+
+      .card-text p {
+        font-size: 16px;
+        color: var(--ui-demo-text-secondary);
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      .feature-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .feature-list li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 14px;
+        color: var(--ui-demo-text-primary);
+        font-weight: 500;
+      }
+
+      .check-wrap {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: var(--ui-demo-accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+
+      .check-wrap svg {
+        width: 12px;
+        height: 12px;
+      }
+
+      /* ── Card Visual ── */
+      .ui-demo-card-visual {
+        background: #f5f5f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        border-left: 1px solid var(--ui-demo-border);
+        height: 100%;
+      }
+
+      .ui-demo-card-visual img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+      }
+
+      .after-spacer {
+        height: 40vh;
+        text-align: center;
+        color: var(--ui-demo-text-tertiary);
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 900px) {
+        .step-card {
+          grid-template-columns: 1fr;
+        }
+        .ui-demo-card-visual {
+          height: 300px;
+          border-left: none;
+          border-top: 1px solid var(--ui-demo-border);
+        }
+        .card-scene {
+          height: auto;
+          margin-bottom: 40px;
+        }
+        .step-card {
+          position: relative;
+          top: 0 !important;
+        }
+      }

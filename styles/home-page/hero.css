@@ -1,0 +1,171 @@
+/* HERO SECTION ----------------------------------------------*/
+.hero {
+  position: relative;
+  padding: 100px 24px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Background Dashboard */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://www.plainconcepts.com/wp-content/uploads/2021/04/modulo-dashboards.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+  filter: blur(6px);
+  transform: scale(1.1);
+  z-index: 0;
+}
+
+/* White Gradient Overlay */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 50% 20%,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.96) 60%
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.96), #ffffff);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* Headline */
+.hero h1 {
+  font-size: 78px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin-bottom: 28px;
+}
+
+/* Subtext */
+.hero p {
+  font-size: 22px;
+  color: #6e6e73;
+  max-width: 700px;
+  margin: 0 auto 48px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 100px;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #0a84ff, #005bea);
+  color: white;
+  border: none;
+  padding: 15px 34px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 45px rgba(10, 132, 255, 0.25);
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 25px 65px rgba(10, 132, 255, 0.35);
+}
+
+.secondary-btn {
+  background: #f5f5f7;
+  border: 1px solid #e5e5ea;
+  padding: 15px 34px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #e8e8ed;
+  transform: translateY(-2px);
+}
+
+/* Dashboard Preview */
+.dashboard-preview-wrapper {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: -60px;
+}
+
+.dashboard-preview {
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 24px;
+  display: block;
+  margin: auto;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 120px 24px 0;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .hero {
+    padding: 60px 20px 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    gap: 10px;
+  }
+  .primary-btn{
+    width: 70%;
+  }
+  .secondary-btn{
+    width: 70%;
+  }
+}
