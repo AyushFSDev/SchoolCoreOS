@@ -30,7 +30,7 @@
 
       .section-header {
         text-align: center;
-        padding: 60px 0 100px;
+        padding: 60px 0 20px;
       }
 
       .eyebrow {
@@ -42,13 +42,6 @@
         margin-bottom: 16px;
       }
 
-      .section-header h2 {
-        font-size: 48px;
-        font-weight: 600;
-        letter-spacing: -0.03em;
-        line-height: 1.1;
-        margin-bottom: 20px;
-      }
 
       .section-header p {
         font-size: 19px;
@@ -212,4 +205,13 @@
           position: relative;
           top: 0 !important;
         }
+      }
+
+      @media (max-width: 600px) {
+       .card-text h3{
+        font-size: 20px;
+       }
+       .card-text p{
+        font-size: 14px;
+       }
       }

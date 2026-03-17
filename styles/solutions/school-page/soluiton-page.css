@@ -677,6 +677,9 @@
         .sol-header {
           padding: 64px 20px 40px;
         }
+        .sol-header__sub{
+          font-size: 16px;
+        }
 
         .sol-card {
           grid-template-columns: 1fr;
@@ -700,7 +703,7 @@
           );
         }
         .sol-card__title {
-          font-size: 22px;
+          font-size: 20px;
         }
         .sol-card__desc {
           font-size: 14px;
@@ -732,7 +735,7 @@
           height: 190px;
         }
         .sol-header h2 {
-          font-size: 30px;
+          font-size: 24px;
         }
         .cta-section {
           padding: 28px 20px;

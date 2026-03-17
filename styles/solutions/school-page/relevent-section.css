@@ -13,7 +13,7 @@
          background: #ffffff;
         display: flex;
         justify-content: center;
-        padding: 80px 32px 100px;
+        padding: 80px 16px 100px;
    }
 
       .tm-wrap {
@@ -358,6 +358,15 @@
       }
 
       @media (max-width: 780px) {
+        .tm-header h2{
+          font-size: 24px;
+        }
+        .tm-hero-left h3{
+          font-size: 20px;
+        }
+        .tm-card h3 {
+          font-size: 18px;
+        }
         .tm-grid {
           grid-template-columns: 1fr;
         }

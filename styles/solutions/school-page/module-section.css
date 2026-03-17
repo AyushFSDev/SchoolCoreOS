@@ -56,7 +56,7 @@
   }
 
   .module-header h1 {
-      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      font-size: 48px;
       font-weight: 800;
       line-height: 1.2;
       letter-spacing: -.02em;
@@ -64,7 +64,7 @@
   }
 
   .module-header p {
-      margin-top: 12px;
+      margin-top: 16px;
       font-size: .95rem;
       color: var(--module-text-sub);
       max-width: 520px;
@@ -235,6 +235,12 @@
      MOBILE  ≤ 768 px
   ════════════════════════════════════════════════════════════════════ */
   @media (max-width: 768px) {
+    .module-header h1 {
+        font-size: 24px;
+    }
+    .module-header p {
+        font-size: 16px;
+    }
 
       .module-section {
           padding: 48px 16px 56px;
