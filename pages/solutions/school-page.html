@@ -1,0 +1,2451 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Icons link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/logo-white.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../styles/shared/header.css" />
+    <link rel="stylesheet" href="../../styles/shared/style.css" />
+    <link rel="stylesheet" href="../../styles/solutions/school-page/hero-section.css" />
+
+    <link
+      rel="stylesheet"
+      href="../../styles/solutions/school-page/problem-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/solutions/school-page/soluiton-page.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/solutions/school-page/relevent-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/solutions/school-page/ui-demo-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/solutions/school-page/benefit-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/solutions/school-page/module-section.css"
+    />
+  </head>
+  <link rel="stylesheet" href="../../styles/solutions/school-page/faqs-section.css">
+  <link rel="stylesheet" href="../../styles/shared/footer.css">
+  <body>
+    <!-- HEADER START======================================================================== -->
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="../../index.html">
+          <img src="../../assets/images/logo-black.png" alt="SchoolCoreOS Logo" />
+          <span class="logo-text">
+            SchoolCore<span class="logo-accent">OS</span>
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#">Platform</a>
+          <a href="#">Solutions</a>
+          <a href="#">Enterprise</a>
+          <a href="#">Pricing</a>
+        </nav>
+
+        <div class="nav-right">
+          <a href="#" class="login">Login</a>
+          <button class="free-trial">Free Trial</button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#000000"
+          >
+            <path
+              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+            />
+          </svg>
+        </div>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- OFFCANVAS -->
+    <aside class="offcanvas" id="offcanvas" aria-hidden="true">
+      <div class="offcanvas-header">
+        <span class="offcanvas-logo">SchoolCore<span>OS</span></span>
+        <button class="close-btn" id="closeBtn" aria-label="Close menu">
+          ✕
+        </button>
+      </div>
+
+      <div class="offcanvas-body">
+        <div class="offcanvas-section-label">Menu</div>
+        <nav class="offcanvas-nav">
+          <a href="#">Platform <span class="nav-arrow">›</span></a>
+          <a href="#">Solutions <span class="nav-arrow">›</span></a>
+          <a href="#">Enterprise <span class="nav-arrow">›</span></a>
+          <a href="#">Pricing <span class="nav-arrow">›</span></a>
+        </nav>
+
+        <div class="offcanvas-divider"></div>
+
+        <div class="offcanvas-section-label">Support</div>
+        <nav class="offcanvas-nav">
+          <a href="#">Help Center <span class="nav-arrow">›</span></a>
+          <a href="#">Contact Us <span class="nav-arrow">›</span></a>
+          <a href="#"
+            >☾ Dark Mode:
+
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.5 12.5H32.5C34.4891 12.5 36.3968 13.2902 37.8033 14.6967C39.2098 16.1032 40 18.0109 40 20C40 21.9891 39.2098 23.8968 37.8033 25.3033C36.3968 26.7098 34.4891 27.5 32.5 27.5H22.5C23.0819 26.726 23.5718 25.8871 23.96 25H32.5C33.8261 25 35.0979 24.4732 36.0355 23.5355C36.9732 22.5979 37.5 21.3261 37.5 20C37.5 18.6739 36.9732 17.4021 36.0355 16.4645C35.0979 15.5268 33.8261 15 32.5 15H23.96C23.5683 14.105 23.0817 13.2717 22.5 12.5Z"
+                fill="#07305D"
+                fill-opacity="0.6"
+              />
+              <path
+                d="M0 20C0 23.3152 1.31696 26.4946 3.66117 28.8388C6.00537 31.183 9.18479 32.5 12.5 32.5C15.8152 32.5 18.9946 31.183 21.3388 28.8388C23.683 26.4946 25 23.3152 25 20C25 16.6848 23.683 13.5054 21.3388 11.1612C18.9946 8.81696 15.8152 7.5 12.5 7.5C9.18479 7.5 6.00537 8.81696 3.66117 11.1612C1.31696 13.5054 0 16.6848 0 20Z"
+                fill="#07305D"
+                fill-opacity="0.6"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
+
+      <div class="offcanvas-footer">
+        <a href="#" class="oc-login">Login</a>
+        <button class="oc-trial">Start Free Trial</button>
+      </div>
+    </aside>
+    <!-- HEADER END ================================================================================================== -->
+
+    <!-- HERO START ================================================================================================== -->
+     <section class="school-hero">
+      <div class="school-hero-left">
+        <h1>
+          <span>Run Your Entire School</span><br />
+          on One Smart Platform
+        </h1>
+
+        <p>
+          Manage academics, departments, campus operations, and administration
+          seamlessly from one unified system.
+        </p>
+
+        <div class="school-hero-buttons">
+          <a href="#" class="school-btn-primary">Start Free Trial</a>
+          <a href="#" class="school-btn-secondary">Explore Platform</a>
+        </div>
+      </div>
+
+      <div class="school-hero-right">
+        <img src="../../assets/svgs/school-hero-section.svg" alt="School Dashboard Preview" />
+      </div>
+    </section>
+    <!-- HERO END ================================================================================================== -->
+    <!-- PROBLEMS START ================================================================================================= -->
+    <section class="problem">
+      <div class="problem-section">
+        <div class="section-header">
+          <h2>
+            Schools Don't Struggle With Education.<br />They Struggle With
+            Disconnected Systems.
+          </h2>
+          <p>
+            Admissions, academics, campus management and communication often run
+            on separate tools creating inefficiency and chaos.
+          </p>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="problem-track">
+            <!-- Card 1 – Blue -->
+            <div class="card card--blue">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">Manual Admissions &amp; Enrollment</div>
+              <div class="card-desc">
+                Schools still rely on forms, spreadsheets and manual
+                verification processes that slow down admissions and create
+                unnecessary administrative workload.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=600&q=80"
+                  alt="Manual paperwork"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Paper Forms
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Slow Process
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 – Pink -->
+            <div class="card card--pink">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">Disconnected Campus Operations</div>
+              <div class="card-desc">
+                Buildings, classrooms, departments and academic units are often
+                managed in separate systems, making coordination difficult for
+                administrators.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=80"
+                  alt="Campus aerial"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Buildings
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Classrooms
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 – Purple -->
+            <div class="card card--purple">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">Lack of Real-Time Visibility</div>
+              <div class="card-desc">
+                Without a centralized dashboard, school leaders struggle to
+                monitor attendance, academic performance and operational
+                efficiency in real time.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+                  alt="Analytics dashboard"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Attendance
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Analytics
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 – Teal -->
+            <div class="card card--teal">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">Poor Communication Channels</div>
+              <div class="card-desc">
+                Parents, teachers and administrators use different platforms for
+                communication, leading to missed updates, delays and confusion
+                across the school ecosystem.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&q=80"
+                  alt="Communication"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Parents
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Missed Updates
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 – Amber -->
+            <div class="card card--amber">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">No Centralised Fee Management</div>
+              <div class="card-desc">
+                Fee collection, tracking and reminders are handled manually or
+                through unconnected tools, causing delays, errors and financial
+                inefficiencies for schools.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80"
+                  alt="Fee management"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Fee Tracking
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Payment Delays
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 – Rose -->
+            <div class="card card--rose">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 6h-2.18c.07-.44.18-.88.18-1.34C18 2.54 15.46 1 12.48 1c-1.49 0-2.85.73-3.76 1.82L8 3.66l-.72-.85C6.38 1.73 5.02 1 3.52 1 .54 1-2 2.54-2 4.66c0 .46.11.9.18 1.34H-4v2h24V6z"
+                  />
+                  <path
+                    d="M12 21l-9-3v-2.22l1-.52V8h2v7.21l2 1.05V8h2v8.99l2-2V8h2v7.26l1 .52V13h2v4.21l1 .52V21l-9 3z"
+                  />
+                </svg>
+              </div>
+              <div class="card-title">Fragmented Student Records</div>
+              <div class="card-desc">
+                Academic records, health data and personal details are scattered
+                across multiple registers and systems with no single source of
+                truth for student information.
+              </div>
+              <div class="card-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80"
+                  alt="Student records"
+                />
+                <div class="tag tag-tl">
+                  <span class="tag-dot"></span> Records
+                </div>
+                <div class="tag tag-br">
+                  <span class="tag-dot"></span> Data Silos
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="dots" id="dots"></div>
+
+        <!-- Nav Arrows -->
+        <div class="nav-arrows">
+          <button class="nav-btn" id="prevBtn" onclick="slide(-1)">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6" /></svg>
+          </button>
+          <button class="nav-btn" id="nextBtn" onclick="slide(1)">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6" /></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- PROBLEMS END ================================================================================================= -->
+    <!-- SOLUTION START =============================================================================================== -->
+    <!-- ── HEADER ── -->
+    <div class="sol-header">
+      <div class="sol-header__eyebrow">Our Solutions</div>
+      <h2>
+        <span>One platform for every</span><br />institution that wants more.
+      </h2>
+      <p class="sol-header__sub">
+        From K-12 schools to global corporations — Classe365 replaces
+        disconnected tools with one intelligent, beautifully simple system.
+      </p>
+    </div>
+
+    <!-- ── CARDS ── -->
+    <section aria-label="Solutions" class="sol-section">
+      <div class="sol-outer">
+        <div class="sol-stack">
+          <!-- Card 1: School -->
+          <article class="sol-card sol-card--school">
+            <div class="sol-card__text">
+              <span class="sol-badge">Schools</span>
+              <h3 class="sol-card__title">
+               Smarter schools start with one connected platform
+              </h3>
+              <p class="sol-card__desc">
+               Run your entire school from a single system manage admissions, academics, attendance and communication without switching between tools.
+              </p>
+              <div class="sol-features">
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Admissions &amp;
+                   Enrollment Automation
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Attendance
+                  &amp; Student Tracking
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Timetable &amp;
+                  Academic Management
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span> Alerts, Notices &amp;
+                   Parent Communication
+                </div>
+              </div>
+              <!-- <a href="#" class="sol-link">
+                Explore for Schools
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a> -->
+            </div>
+            <div class="sol-card__visual">
+              <img
+                src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=900&auto=format&fit=crop&q=80"
+                alt="Students in school"
+                loading="lazy"
+              />
+              <div class="sol-stat-badge">
+                <div class="sol-stat-badge__num">3.9K+</div>
+                <div class="sol-stat-badge__sub">Schools worldwide</div>
+              </div>
+              <div class="sol-chip">
+                <div class="sol-chip__label">Institution Types</div>
+                <ul class="sol-chip__items">
+                  <li>Public &amp; Private Schools</li>
+                  <li>IB Schools</li>
+                  <li>Religious Schools</li>
+                  <li>Special Education</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Universities -->
+          <article class="sol-card sol-card--university">
+            <div class="sol-card__text">
+              <span class="sol-badge">School Administration</span>
+              <h3 class="sol-card__title">
+                Manage school operations with clarity and control
+              </h3>
+              <p class="sol-card__desc">
+                Simplify daily school operations with powerful tools for campus management, exams, performance tracking and reports.
+              </p>
+              <div class="sol-features">
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Exams, Quizzes &amp;
+                  Result Management
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Classes, Subjects
+                  &amp; Syllabus Planning
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Campus &amp; Classroom Management
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Real-time Reports &amp;
+                  Insights
+                </div>
+              </div>
+              <!-- <a href="#" class="sol-link">
+                Explore for Universities
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a> -->
+            </div>
+            <div class="sol-card__visual">
+              <img
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=80"
+                alt="University campus"
+                loading="lazy"
+              />
+              <div class="sol-stat-badge">
+                <div class="sol-stat-badge__num">Top 50</div>
+                <div class="sol-stat-badge__sub">Global universities</div>
+              </div>
+              <div class="sol-chip">
+                <div class="sol-chip__label">Institution Types</div>
+                <ul class="sol-chip__items">
+                  <li>Private &amp; Public Universities</li>
+                  <li>Online &amp; Distance Learning</li>
+                  <li>Community Colleges</li>
+                  <li>Career Colleges</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Academies -->
+          <article class="sol-card sol-card--academy">
+            <div class="sol-card__text">
+              <span class="sol-badge">Academies</span>
+              <h3 class="sol-card__title">
+                Run multiple academies from one powerful dashboard
+              </h3>
+              <p class="sol-card__desc">
+                Classe365 powers 5 of the 10 largest performance academies
+                globally — handling scheduling, billing and progress in real
+                time.
+              </p>
+              <div class="sol-features">
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Multi-Branch &amp;
+                  Multi-Campus Control
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Smart Timetabling &amp;
+                  Room Booking
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Billing, Invoicing &amp;
+                  Subscriptions
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Student Progress &amp;
+                  Skill Tracking
+                </div>
+              </div>
+              <a href="#" class="sol-link">
+                Explore for Academies
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a>
+            </div>
+            <div class="sol-card__visual">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&auto=format&fit=crop&q=80"
+                alt="Academy students"
+                loading="lazy"
+              />
+              <div class="sol-stat-badge">
+                <div class="sol-stat-badge__num">5 of 10</div>
+                <div class="sol-stat-badge__sub">Largest academies</div>
+              </div>
+              <div class="sol-chip">
+                <div class="sol-chip__label">Academy Types</div>
+                <ul class="sol-chip__items">
+                  <li>Performance Arts</li>
+                  <li>Language Schools</li>
+                  <li>Health &amp; Fitness</li>
+                  <li>After-School &amp; Child Care</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Corporate -->
+          <article class="sol-card sol-card--corporate">
+            <div class="sol-card__text">
+              <span class="sol-badge">Corporate Learning</span>
+              <h3 class="sol-card__title">
+                Transform how your workforce learns and grows
+              </h3>
+              <p class="sol-card__desc">
+                With an 8.9 NPS, Classe365 is the go-to LMS for L&D teams
+                managing onboarding, compliance and upskilling at scale.
+              </p>
+              <div class="sol-features">
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Employee Onboarding
+                  Workflows
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Compliance &amp;
+                  Certification Tracking
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>SCORM / xAPI Content
+                  Support
+                </div>
+                <div class="sol-feature">
+                  <span class="sol-feature__dot"></span>Skills Assessments &amp;
+                  Analytics
+                </div>
+              </div>
+              <a href="#" class="sol-link">
+                Explore for Corporate
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a>
+            </div>
+            <div class="sol-card__visual">
+              <img
+                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&auto=format&fit=crop&q=80"
+                alt="Corporate training"
+                loading="lazy"
+              />
+              <div class="sol-stat-badge">
+                <div class="sol-stat-badge__num">8.9</div>
+                <div class="sol-stat-badge__sub">NPS Score</div>
+              </div>
+              <div class="sol-chip">
+                <div class="sol-chip__label">Training Types</div>
+                <ul class="sol-chip__items">
+                  <li>Employee Onboarding</li>
+                  <li>Safety &amp; Compliance</li>
+                  <li>Leadership Development</li>
+                  <li>Technical Upskilling</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- SOLUTION END ================================================================================================ -->
+    <!-- RELEVENT SECTION START ================================================================================================ -->
+    <section class="relevent-section">
+      <div class="tm-wrap">
+        <!-- HEADER -->
+        <div class="tm-header">
+          <h2>Relevant Modules for<br />Training Institutes</h2>
+        </div>
+
+        <div class="tm-grid">
+          <!-- ══ HERO CARD ══ -->
+          <div class="tm-hero">
+            <!-- LEFT -->
+            <div class="tm-hero-left">
+              <div class="tm-hero-tag">⭐ #1 Training Institute Platform</div>
+              <h3>One platform.<br />Every operation.</h3>
+              <p>
+                Manage students, courses and institute operations from one
+                system.
+              </p>
+            </div>
+
+            <!-- CENTER -->
+            <div class="tm-hero-center">
+              <div class="tm-dash-wrap">
+                <img
+                  class="tm-dash-img"
+                  src="https://cdn.dribbble.com/userupload/23506760/file/original-c98eae4c7d7385f0c5fa1780bfd25ed5.gif"
+                  alt="Platform dashboard"
+                />
+              </div>
+            </div>
+
+            <!-- RIGHT: accordion -->
+            <div class="tm-hero-right">
+              <div class="tm-acc tm-open" onclick="tmToggle(this)">
+                <div class="tm-acc-row">
+                  <div class="tm-acc-btn">
+                    <svg viewBox="0 0 12 12">
+                      <line x1="6" y1="1" x2="6" y2="11" />
+                      <line x1="1" y1="6" x2="11" y2="6" />
+                    </svg>
+                  </div>
+                  <span class="tm-acc-title">Student Admissions</span>
+                </div>
+                <div class="tm-acc-body">
+                  <div class="tm-acc-inner">
+                    <p class="tm-acc-desc">
+                      Streamline applications, document collection and student
+                      onboarding in one smooth workflow.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tm-acc" onclick="tmToggle(this)">
+                <div class="tm-acc-row">
+                  <div class="tm-acc-btn">
+                    <svg viewBox="0 0 12 12">
+                      <line x1="6" y1="1" x2="6" y2="11" />
+                      <line x1="1" y1="6" x2="11" y2="6" />
+                    </svg>
+                  </div>
+                  <span class="tm-acc-title">Batch &amp; Timetable</span>
+                </div>
+                <div class="tm-acc-body">
+                  <div class="tm-acc-inner">
+                    <p class="tm-acc-desc">
+                      Create batches, assign trainers and auto-generate
+                      conflict-free timetables instantly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tm-acc" onclick="tmToggle(this)">
+                <div class="tm-acc-row">
+                  <div class="tm-acc-btn">
+                    <svg viewBox="0 0 12 12">
+                      <line x1="6" y1="1" x2="6" y2="11" />
+                      <line x1="1" y1="6" x2="11" y2="6" />
+                    </svg>
+                  </div>
+                  <span class="tm-acc-title">Attendance Tracking</span>
+                </div>
+                <div class="tm-acc-body">
+                  <div class="tm-acc-inner">
+                    <p class="tm-acc-desc">
+                      Mark, monitor and report attendance with automated alerts
+                      for low-attendance students.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tm-acc" onclick="tmToggle(this)">
+                <div class="tm-acc-row">
+                  <div class="tm-acc-btn">
+                    <svg viewBox="0 0 12 12">
+                      <line x1="6" y1="1" x2="6" y2="11" />
+                      <line x1="1" y1="6" x2="11" y2="6" />
+                    </svg>
+                  </div>
+                  <span class="tm-acc-title">Trainer Management</span>
+                </div>
+                <div class="tm-acc-body">
+                  <div class="tm-acc-inner">
+                    <p class="tm-acc-desc">
+                      Manage trainer profiles, availability, assignments and
+                      performance reviews centrally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tm-acc" onclick="tmToggle(this)">
+                <div class="tm-acc-row">
+                  <div class="tm-acc-btn">
+                    <svg viewBox="0 0 12 12">
+                      <line x1="6" y1="1" x2="6" y2="11" />
+                      <line x1="1" y1="6" x2="11" y2="6" />
+                    </svg>
+                  </div>
+                  <span class="tm-acc-title">Course &amp; Syllabus</span>
+                </div>
+                <div class="tm-acc-body">
+                  <div class="tm-acc-inner">
+                    <p class="tm-acc-desc">
+                      Build structured course content, upload materials and
+                      track syllabus completion live.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tm-acc" onclick="tmToggle(this)">
+                <div class="tm-acc-row">
+                  <div class="tm-acc-btn">
+                    <svg viewBox="0 0 12 12">
+                      <line x1="6" y1="1" x2="6" y2="11" />
+                      <line x1="1" y1="6" x2="11" y2="6" />
+                    </svg>
+                  </div>
+                  <span class="tm-acc-title">Analytics</span>
+                </div>
+                <div class="tm-acc-body">
+                  <div class="tm-acc-inner">
+                    <p class="tm-acc-desc">
+                      Real-time dashboards for enrolments, revenue, attendance
+                      and student performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 1 -->
+          <div class="tm-card">
+            <div class="tm-card-img">
+              <img
+                src="https://images.klipfolio.com/website/public/22b133bc-124d-44f4-85f8-9170b08d3ce9/dashboard-examples-hero.png"
+                alt="Admission Management"
+              />
+            </div>
+            <div class="tm-card-body">
+              <h3>Admission Management</h3>
+              <p>
+                Handle applications, approvals and student onboarding with zero
+                friction.
+              </p>
+              <!-- <div class="tm-card-link">Learn more →</div> -->
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="tm-card">
+            <div class="tm-card-img">
+              <img
+                src="https://cdn.dribbble.com/userupload/3180522/file/original-5efc59b333ab05039d1422109895a68b.png?resize=752x564&vertical=center"
+                alt="Performance Analytics"
+              />
+            </div>
+            <div class="tm-card-body">
+              <h3>Performance Analytics</h3>
+              <p>
+                Track student progress and course outcomes with deep, actionable
+                insights.
+              </p>
+              <!-- <div class="tm-card-link">Learn more →</div> -->
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="tm-card">
+            <div class="tm-card-img">
+              <img
+                src="https://cdn.dribbble.com/userupload/3180524/file/original-97773f26de0a12d5ef2a4b0a76109afa.png?resize=752x564&vertical=center"
+                alt="Student CRM"
+              />
+            </div>
+            <div class="tm-card-body">
+              <h3>Student CRM</h3>
+              <p>
+                Manage student data, lead pipelines and communication in one
+                place.
+              </p>
+              <!-- <div class="tm-card-link">Learn more →</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELEVENT SECTION END ================================================================================================ -->
+    <!-- UI DEMO START =============================================================================================== -->
+    <section class="ui-demo-section">
+      <div class="section">
+        <div class="section-header">
+          <h2>Everything Unified</h2>
+          <p>
+            Ditch the multiple tabs. Run your entire institution from one
+            intuitive interface.
+          </p>
+        </div>
+
+        <div class="cards-container">
+          <div class="card-scene">
+            <div class="step-card">
+              <div class="card-text">
+                <div class="step-label">01 / Setup</div>
+                <h3>Set Up Your School</h3>
+                <p>
+                  Create your digital campus by defining structures,
+                  departments, and academic years in minutes.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Multi-campus support
+                  </li>
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Smart Room Allocation
+                  </li>
+                </ul>
+              </div>
+              <div class="ui-demo-card-visual">
+                <img
+                  src="https://cdn.dribbble.com/userupload/3180523/file/original-c820feafd41efa7f2325b2fcc7ff3f89.png?resize=752x564"
+                  alt="School Setup"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-scene">
+            <div class="step-card">
+              <div class="card-text">
+                <div class="step-label">02 / Academics</div>
+                <h3>Classes & Syllabus</h3>
+                <p>
+                  Plan your curriculum with precision. Manage subjects, teacher
+                  allocations, and study materials effortlessly.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Auto-Teacher Matching
+                  </li>
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Digital Resource Hub
+                  </li>
+                </ul>
+              </div>
+              <div class="ui-demo-card-visual">
+                <img
+                  src="https://cdn.dribbble.com/userupload/3180523/file/original-c820feafd41efa7f2325b2fcc7ff3f89.png?resize=752x564"
+                  alt="Academics"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-scene">
+            <div class="step-card">
+              <div class="card-text">
+                <div class="step-label">03 / Evaluation</div>
+                <h3>Exams & Reports</h3>
+                <p>
+                  Conduct online or offline exams and get automated result
+                  generation with deep performance analytics.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    One-click Report Cards
+                  </li>
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    AI Performance Insights
+                  </li>
+                </ul>
+              </div>
+              <div class="ui-demo-card-visual">
+                <img
+                  src="https://cdn.dribbble.com/userupload/3180523/file/original-c820feafd41efa7f2325b2fcc7ff3f89.png?resize=752x564"
+                  alt="Exams"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-scene">
+            <div class="step-card">
+              <div class="card-text">
+                <div class="step-label">04 / Connectivity</div>
+                <h3>Track & Communicate</h3>
+                <p>
+                  Real-time attendance and instant notifications keep parents
+                  and staff always in the loop.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Instant App Alerts
+                  </li>
+                  <li>
+                    <div class="check-wrap">
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M2 5l2.5 2.5 3.5-4"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    Biometric Integration
+                  </li>
+                </ul>
+              </div>
+              <div class="ui-demo-card-visual">
+                <img
+                  src="https://cdn.dribbble.com/userupload/3180523/file/original-c820feafd41efa7f2325b2fcc7ff3f89.png?resize=752x564"
+                  alt="Communication"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- UI DEMO END ================================================================================================ -->
+    <!-- BENEFITS START ================================================================================================ -->
+
+    <section class="asa-section">
+      <div class="asa-container">
+        <div class="asa-header">
+          <h2>Automated School<br />Administration.</h2>
+        </div>
+
+        <div class="asa-track-wrap">
+          <div class="asa-track" id="asa-scroll-track">
+            <!-- Card 1 -->
+            <div class="asa-feature-card">
+              <div>
+                <div class="asa-card-icon">
+                  <svg viewBox="0 0 36 36" fill="none">
+                    <circle
+                      cx="18"
+                      cy="18"
+                      r="7"
+                      stroke="#7c3aed"
+                      stroke-width="2.2"
+                    />
+                    <path
+                      d="M18 4v3M18 29v3M4 18h3M29 18h3"
+                      stroke="#7c3aed"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M8.5 8.5l2.1 2.1M25.4 25.4l2.1 2.1M25.4 8.5l-2.1 2.1M8.5 25.4l2.1 2.1"
+                      stroke="#7c3aed"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <div class="asa-card-body">
+                  <p>
+                    Automate
+                    <span class="asa-highlight-purple">daily admin tasks</span>
+                    effortlessly.
+                  </p>
+                </div>
+              </div>
+              <div class="asa-card-footer">
+                <button class="asa-arrow-btn" aria-label="Learn more">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <path
+                      d="M3 7h8M7.5 3.5L11 7l-3.5 3.5"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="asa-feature-card">
+              <div>
+                <div class="asa-card-icon">
+                  <svg viewBox="0 0 36 36" fill="none">
+                    <path
+                      d="M18 6L7 12v6c0 5.5 4.7 10.6 11 12 6.3-1.4 11-6.5 11-12v-6L18 6z"
+                      stroke="#d97706"
+                      stroke-width="2.2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13 18l3.5 3.5L23 14"
+                      stroke="#d97706"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="asa-card-body">
+                  <p>
+                    Manage with
+                    <span class="asa-highlight-orange">55% less effort</span> on
+                    one platform.
+                  </p>
+                </div>
+              </div>
+              <div class="asa-card-footer">
+                <button class="asa-arrow-btn" aria-label="Learn more">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <path
+                      d="M3 7h8M7.5 3.5L11 7l-3.5 3.5"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="asa-feature-card">
+              <div>
+                <div class="asa-card-icon">
+                  <svg viewBox="0 0 36 36" fill="none">
+                    <path
+                      d="M6 10h24M6 18h24M6 26h14"
+                      stroke="#0d9488"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                    />
+                    <circle
+                      cx="27"
+                      cy="26"
+                      r="5"
+                      stroke="#0d9488"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M25 26l1.5 1.5L29 24"
+                      stroke="#0d9488"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="asa-card-body">
+                  <p>
+                    Keep
+                    <span class="asa-highlight-teal"
+                      >teachers, students and parents</span
+                    >
+                    connected.
+                  </p>
+                </div>
+              </div>
+              <div class="asa-card-footer">
+                <button class="asa-arrow-btn" aria-label="Learn more">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <path
+                      d="M3 7h8M7.5 3.5L11 7l-3.5 3.5"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="asa-feature-card">
+              <div>
+                <div class="asa-card-icon">
+                  <svg viewBox="0 0 36 36" fill="none">
+                    <path
+                      d="M10 28V16M17 28V10M24 28v-8"
+                      stroke="#e11d48"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M6 8l5-3 6 4 5-3 8 5"
+                      stroke="#e11d48"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="asa-card-body">
+                  <p>
+                    Track attendance with
+                    <span class="asa-highlight-red">real‑time insights</span>.
+                  </p>
+                </div>
+              </div>
+              <div class="asa-card-footer">
+                <button class="asa-arrow-btn" aria-label="Learn more">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <path
+                      d="M3 7h8M7.5 3.5L11 7l-3.5 3.5"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="asa-feature-card">
+              <div>
+                <div class="asa-card-icon">
+                  <svg viewBox="0 0 36 36" fill="none">
+                    <rect
+                      x="6"
+                      y="8"
+                      width="24"
+                      height="20"
+                      rx="3"
+                      stroke="#0071e3"
+                      stroke-width="2.2"
+                    />
+                    <path
+                      d="M6 14h24"
+                      stroke="#0071e3"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="12" cy="22" r="1.5" fill="#0071e3" />
+                    <circle cx="18" cy="22" r="1.5" fill="#0071e3" />
+                    <circle cx="24" cy="22" r="1.5" fill="#0071e3" />
+                  </svg>
+                </div>
+                <div class="asa-card-body">
+                  <p>
+                    Schedule
+                    <span class="asa-highlight-blue"
+                      >timetables and events</span
+                    >
+                    effortlessly.
+                  </p>
+                </div>
+              </div>
+              <div class="asa-card-footer">
+                <button class="asa-arrow-btn" aria-label="Learn more">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <path
+                      d="M3 7h8M7.5 3.5L11 7l-3.5 3.5"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="asa-feature-card">
+              <div>
+                <div class="asa-card-icon">
+                  <svg viewBox="0 0 36 36" fill="none">
+                    <circle
+                      cx="14"
+                      cy="13"
+                      r="5"
+                      stroke="#16a34a"
+                      stroke-width="2.2"
+                    />
+                    <path
+                      d="M6 28c0-4.4 3.6-8 8-8h1"
+                      stroke="#16a34a"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M23 20l2 2 4-4"
+                      stroke="#16a34a"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <circle
+                      cx="25"
+                      cy="22"
+                      r="6"
+                      stroke="#16a34a"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                </div>
+                <div class="asa-card-body">
+                  <p>
+                    Secure
+                    <span class="asa-highlight-green"
+                      >admissions and fee records</span
+                    >
+                    in one place.
+                  </p>
+                </div>
+              </div>
+              <div class="asa-card-footer">
+                <button class="asa-arrow-btn" aria-label="Learn more">
+                  <svg viewBox="0 0 14 14" fill="none">
+                    <path
+                      d="M3 7h8M7.5 3.5L11 7l-3.5 3.5"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav buttons -->
+        <div class="asa-nav-row">
+          <button
+            class="asa-nav-btn"
+            id="asa-prev-btn"
+            aria-label="Previous"
+            disabled
+          >
+            <svg viewBox="0 0 13 13" fill="none">
+              <path
+                d="M8 2.5L4.5 6.5 8 10.5"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button class="asa-nav-btn" id="asa-next-btn" aria-label="Next">
+            <svg viewBox="0 0 13 13" fill="none">
+              <path
+                d="M5 2.5L8.5 6.5 5 10.5"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- BENEFITS END ================================================================================================ -->
+    <!-- MODULES START =============================================================================================== -->
+    <section class="module-section">
+      <!-- ══════════════════════════════════════
+       HERO HEADER
+  ══════════════════════════════════════ -->
+      <div class="module-header">
+        <h1>Essential Modules to Run <br />Your Entire College</h1>
+        <p>
+          Admissions, departments, academics, and campus management — everything
+          connected in one platform.
+        </p>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════════════════════
+       DESKTOP LAYOUT  –  four category rows, 2-col card grid each
+       This block is hidden on mobile via CSS (display:none on wrapper)
+  ══════════════════════════════════════════════════════════════════ -->
+      <div class="module-desktop-list">
+        <!-- 1 · Conduct Exams & Assessments -->
+
+        <div class="module-category">
+          <div class="module-cat-label">
+            <h2>Communication & Engagement</h2>
+          </div>
+
+          <div class="module-cards">
+            <a class="module-card" href="#">
+              <span class="module-icon icon-green">
+                <span class="material-symbols-outlined"> school </span>
+              </span>
+              <span class="module-card-label">Classes / Batches</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-green">
+                <span class="material-symbols-outlined"> menu_book </span>
+              </span>
+              <span class="module-card-label">Subjects & Syllabus</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-green">
+                <span class="material-symbols-outlined"> checklist </span>
+              </span>
+              <span class="module-card-label">Study Plans</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-green">
+                <span class="material-symbols-outlined"> description </span>
+              </span>
+              <span class="module-card-label">Digital Materials</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-green">
+                <span class="material-symbols-outlined"> assignment </span>
+              </span>
+              <span class="module-card-label">Assignments</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-green">
+                <span class="material-symbols-outlined"> quiz </span>
+              </span>
+              <span class="module-card-label">Exams & Results</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2 · Student & Faculty Management -->
+
+        <div class="module-category">
+          <div class="module-cat-label">
+            <h2>Student &amp; Faculty Management</h2>
+          </div>
+
+          <div class="module-cards">
+            <a class="module-card" href="#">
+              <span class="module-icon icon-orange">
+                <span class="material-symbols-outlined"> school </span>
+              </span>
+              <span class="module-card-label">Students</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-orange">
+                <span class="material-symbols-outlined"> person </span>
+              </span>
+              <span class="module-card-label">Teachers</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-orange">
+                <span class="material-symbols-outlined"> groups </span>
+              </span>
+              <span class="module-card-label">Parents</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-orange">
+                <span class="material-symbols-outlined">badge</span>
+              </span>
+              <span class="module-card-label">Staff</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-orange">
+                <span class="material-symbols-outlined">how_to_reg</span>
+              </span>
+              <span class="module-card-label">Applicants</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-orange">
+                <span class="material-symbols-outlined"> groups_2 </span>
+              </span>
+              <span class="module-card-label">Alumni</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 · Campus & Operations -->
+        <div class="module-category">
+          <div class="module-cat-label">
+            <h2>Campus &amp; Operations</h2>
+          </div>
+
+          <div class="module-cards">
+            <a class="module-card" href="#">
+              <span class="module-icon icon-blue">
+                <span class="material-symbols-outlined"> domain </span>
+              </span>
+              <span class="module-card-label">Campus</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-blue">
+                <span class="material-symbols-outlined"> apartment </span>
+              </span>
+              <span class="module-card-label">Buildings</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-blue">
+                <span class="material-symbols-outlined"> meeting_room </span>
+              </span>
+              <span class="module-card-label">Classrooms</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-blue">
+                <span class="material-symbols-outlined"> fact_check </span>
+              </span>
+              <span class="module-card-label">Attendance</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-blue">
+                <span class="material-symbols-outlined"> calendar_month </span>
+              </span>
+              <span class="module-card-label">Timetable</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-blue">
+                <span class="material-symbols-outlined"> directions_bus </span>
+              </span>
+              <span class="module-card-label">Transport</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4 · Communication & Engagement -->
+
+        <div class="module-category">
+          <div class="module-cat-label">
+            <h2>Communication &amp; Engagement</h2>
+          </div>
+
+          <div class="module-cards">
+            <a class="module-card" href="#">
+              <span class="module-icon icon-red">
+                <span class="material-symbols-outlined">article</span>
+              </span>
+              <span class="module-card-label">Posts</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-red">
+                <span class="material-symbols-outlined">campaign</span>
+              </span>
+              <span class="module-card-label">Notice Board</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-red">
+                <span class="material-symbols-outlined">chat</span>
+              </span>
+              <span class="module-card-label">Messaging</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-red">
+                <span class="material-symbols-outlined">notifications</span>
+              </span>
+              <span class="module-card-label">Notifications</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-red">
+                <span class="material-symbols-outlined">groups</span>
+              </span>
+              <span class="module-card-label">Meetings</span>
+            </a>
+
+            <a class="module-card" href="#">
+              <span class="module-icon icon-red">
+                <span class="material-symbols-outlined">event</span>
+              </span>
+              <span class="module-card-label">Appointments</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /module-desktop-list -->
+
+      <!-- ══════════════════════════════════════════════════════════════════
+       MOBILE SECTION SLIDER
+       Hidden on desktop (display:none). Each slide = full category.
+       Shown on mobile via the @media (max-width: 768px) rule.
+  ══════════════════════════════════════════════════════════════════ -->
+      <div
+        class="module-mob-slider"
+        id="module-slider"
+        aria-label="Module categories"
+      >
+        <!-- Sliding viewport + track -->
+        <div class="module-mob-viewport">
+          <div class="module-mob-track" id="module-track">
+            <!-- ── Slide 1: Conduct Exams & Assessments ── -->
+
+            <div
+              class="module-mob-slide"
+              role="group"
+              aria-label="Slide 1 of 4"
+            >
+              <div class="module-mob-slide-inner">
+                <p class="module-mob-slide-title">
+                  Conduct Exams &amp; Assessments
+                </p>
+
+                <div class="module-mob-cards">
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-green">
+                      <span class="material-symbols-outlined">school</span>
+                    </span>
+                    <span class="module-card-label">Classes / Batches</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-green">
+                      <span class="material-symbols-outlined">checklist</span>
+                    </span>
+                    <span class="module-card-label">Study Plans</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-green">
+                      <span class="material-symbols-outlined">assignment</span>
+                    </span>
+                    <span class="module-card-label">Assignments</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-green">
+                      <span class="material-symbols-outlined">menu_book</span>
+                    </span>
+                    <span class="module-card-label"
+                      >Subjects &amp; Syllabus</span
+                    >
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-green">
+                      <span class="material-symbols-outlined">description</span>
+                    </span>
+                    <span class="module-card-label">Digital Materials</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-green">
+                      <span class="material-symbols-outlined">quiz</span>
+                    </span>
+                    <span class="module-card-label">Exams &amp; Results</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Slide 2: Student & Faculty Management ── -->
+
+            <div
+              class="module-mob-slide"
+              role="group"
+              aria-label="Slide 2 of 4"
+            >
+              <div class="module-mob-slide-inner">
+                <p class="module-mob-slide-title">
+                  Student &amp; Faculty Management
+                </p>
+
+                <div class="module-mob-cards">
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-orange">
+                      <span class="material-symbols-outlined">school</span>
+                    </span>
+                    <span class="module-card-label">Students</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-orange">
+                      <span class="material-symbols-outlined">person</span>
+                    </span>
+                    <span class="module-card-label">Teachers</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-orange">
+                      <span class="material-symbols-outlined">groups</span>
+                    </span>
+                    <span class="module-card-label">Parents</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-orange">
+                      <span class="material-symbols-outlined">badge</span>
+                    </span>
+                    <span class="module-card-label">Staff</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-orange">
+                      <span class="material-symbols-outlined">how_to_reg</span>
+                    </span>
+                    <span class="module-card-label">Applicants</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-orange">
+                      <span class="material-symbols-outlined"> groups_2 </span>
+                    </span>
+                    <span class="module-card-label">Alumni</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Slide 3: Campus & Operations ── -->
+            <div
+              class="module-mob-slide"
+              role="group"
+              aria-label="Slide 3 of 4"
+            >
+              <div class="module-mob-slide-inner">
+                <p class="module-mob-slide-title">Campus &amp; Operations</p>
+
+                <div class="module-mob-cards">
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-blue">
+                      <span class="material-symbols-outlined">apartment</span>
+                    </span>
+                    <span class="module-card-label">Campus</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-blue">
+                      <span class="material-symbols-outlined">business</span>
+                    </span>
+                    <span class="module-card-label">Buildings</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-blue">
+                      <span class="material-symbols-outlined"
+                        >meeting_room</span
+                      >
+                    </span>
+                    <span class="module-card-label">Classrooms</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-blue">
+                      <span class="material-symbols-outlined">fact_check</span>
+                    </span>
+                    <span class="module-card-label">Attendance</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-blue">
+                      <span class="material-symbols-outlined"
+                        >calendar_month</span
+                      >
+                    </span>
+                    <span class="module-card-label">Timetable</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-blue">
+                      <span class="material-symbols-outlined"
+                        >directions_bus</span
+                      >
+                    </span>
+                    <span class="module-card-label">Transport</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Slide 4: Communication & Engagement ── -->
+
+            <div
+              class="module-mob-slide"
+              role="group"
+              aria-label="Slide 4 of 4"
+            >
+              <div class="module-mob-slide-inner">
+                <p class="module-mob-slide-title">
+                  Communication &amp; Engagement
+                </p>
+
+                <div class="module-mob-cards">
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-red">
+                      <span class="material-symbols-outlined">article</span>
+                    </span>
+                    <span class="module-card-label">Posts</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-red">
+                      <span class="material-symbols-outlined">campaign</span>
+                    </span>
+                    <span class="module-card-label">Notice Board</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-red">
+                      <span class="material-symbols-outlined">chat</span>
+                    </span>
+                    <span class="module-card-label">Messaging</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-red">
+                      <span class="material-symbols-outlined"
+                        >notifications</span
+                      >
+                    </span>
+                    <span class="module-card-label">Notifications</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-red">
+                      <span class="material-symbols-outlined">groups</span>
+                    </span>
+                    <span class="module-card-label">Meetings</span>
+                  </a>
+
+                  <a class="module-card" href="#">
+                    <span class="module-icon icon-red">
+                      <span class="material-symbols-outlined">event</span>
+                    </span>
+                    <span class="module-card-label">Appointments</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /module-mob-track -->
+        </div>
+        <!-- /module-mob-viewport -->
+
+        <!-- Controls: counter · dots · arrows -->
+        <div
+          class="module-mob-controls"
+          role="group"
+          aria-label="Slider controls"
+        >
+          <span
+            class="module-mob-counter"
+            id="module-counter"
+            aria-live="polite"
+          ></span>
+          <div class="module-mob-dots" id="module-dots" role="tablist"></div>
+          <button
+            class="module-mob-btn"
+            id="module-btn-prev"
+            aria-label="Previous section"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+          <button
+            class="module-mob-btn"
+            id="module-btn-next"
+            aria-label="Next section"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULES END ================================================================================================ -->
+    <!-- FAQS SECTION START ================================================================================================ -->
+    <div class="module-divider">
+      <section class="faq-sec-wrapper">
+        <h2 class="faq-sec-title">Frequently asked questions</h2>
+
+        <ul id="faq-sec-list">
+          <li class="faq-sec-item open">
+            <button class="faq-sec-trigger" aria-expanded="true">
+              <span class="faq-sec-question"> What is SchoolCoreOS? </span>
+
+              <span class="faq-sec-icon">
+                <svg viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
+
+            <div class="faq-sec-panel">
+              <div class="faq-sec-panel-inner">
+                <p class="faq-sec-answer">
+                  SchoolCoreOS is an all-in-one college management platform
+                  designed to help colleges and universities manage admissions,
+                  academic programs, campus operations, and communication from a
+                  single unified system.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq-sec-item">
+            <button class="faq-sec-trigger">
+              <span class="faq-sec-question"> Who can use SchoolCoreOS? </span>
+
+              <span class="faq-sec-icon">
+                <svg viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
+
+            <div class="faq-sec-panel">
+              <div class="faq-sec-panel-inner">
+                <p class="faq-sec-answer">
+                  SchoolCoreOS is built for colleges, universities, and
+                  higher-education institutions of all sizes. Administrators,
+                  faculty, and academic coordinators can all benefit from the
+                  platform's centralised tools.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq-sec-item">
+            <button class="faq-sec-trigger">
+              <span class="faq-sec-question">
+                What features does SchoolCoreOS provide?
+              </span>
+
+              <span class="faq-sec-icon">
+                <svg viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
+
+            <div class="faq-sec-panel">
+              <div class="faq-sec-panel-inner">
+                <p class="faq-sec-answer">
+                  The platform offers admissions management, course scheduling,
+                  attendance tracking, fee collection, examination management,
+                  alumni engagement, and real-time analytics in one unified
+                  dashboard.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq-sec-item">
+            <button class="faq-sec-trigger">
+              <span class="faq-sec-question">
+                Can SchoolCoreOS manage the entire student lifecycle?
+              </span>
+
+              <span class="faq-sec-icon">
+                <svg viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
+
+            <div class="faq-sec-panel">
+              <div class="faq-sec-panel-inner">
+                <p class="faq-sec-answer">
+                  Yes. SchoolCoreOS supports the entire student journey from
+                  application and admission through academics, fees,
+                  assessments, and alumni engagement.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq-sec-item">
+            <button class="faq-sec-trigger">
+              <span class="faq-sec-question">
+                Is SchoolCoreOS easy to set up?
+              </span>
+
+              <span class="faq-sec-icon">
+                <svg viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
+
+            <div class="faq-sec-panel">
+              <div class="faq-sec-panel-inner">
+                <p class="faq-sec-answer">
+                  Yes. Our onboarding team assists institutions through the
+                  setup process so they can start using the system quickly and
+                  efficiently.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- FAQS SECTION END ================================================================================================ -->
+         <!-- FOOTER START ================================================================================= -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <h3>SchoolCoreOS</h3>
+            <p>Operational clarity for modern institutions.</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Solutions</h4>
+              <a href="#">Education</a>
+              <a href="#">Enterprise</a>
+              <a href="#">Professional</a>
+              <a href="#">Individual</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Platform</h4>
+              <a href="#">Features</a>
+              <a href="#">AI Engine</a>
+              <a href="#">Security</a>
+              <a href="#">Integrations</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Company</h4>
+              <a href="#">About</a>
+              <a href="#">Careers</a>
+              <a href="#">Contact</a>
+              <a href="#">Support</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="app-links">
+            <h4>Get the App</h4>
+
+            <div class="app-buttons">
+              <a href="#" class="">
+                <!-- GOOGLE PLAY SVG -->
+
+                <svg
+                  width="136"
+                  height="41"
+                  viewBox="0 0 136 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_565_548)">
+                    <path
+                      d="M127.165 0.710938H8.16455C4.02242 0.710938 0.664551 4.0688 0.664551 8.21094V32.2109C0.664551 36.3531 4.02242 39.7109 8.16455 39.7109H127.165C131.307 39.7109 134.665 36.3531 134.665 32.2109V8.21094C134.665 4.0688 131.307 0.710938 127.165 0.710938Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M127.165 0.710938H8.16455C4.02242 0.710938 0.664551 4.0688 0.664551 8.21094V32.2109C0.664551 36.3531 4.02242 39.7109 8.16455 39.7109H127.165C131.307 39.7109 134.665 36.3531 134.665 32.2109V8.21094C134.665 4.0688 131.307 0.710938 127.165 0.710938Z"
+                      stroke="#A6A6A6"
+                    />
+                    <path
+                      d="M68.3015 21.9628C65.9495 21.9628 64.0325 23.7508 64.0325 26.2158C64.0325 28.6647 65.9495 30.4688 68.3015 30.4688C70.6535 30.4688 72.5705 28.6647 72.5705 26.2158C72.5705 23.7508 70.6535 21.9628 68.3015 21.9628ZM68.3015 28.7938C67.0125 28.7938 65.9005 27.7307 65.9005 26.2158C65.9005 24.6848 67.0125 23.6378 68.3015 23.6378C69.5905 23.6378 70.7015 24.6848 70.7015 26.2158C70.7015 27.7298 69.5905 28.7938 68.3015 28.7938ZM58.9875 21.9628C56.6355 21.9628 54.7185 23.7508 54.7185 26.2158C54.7185 28.6647 56.6355 30.4688 58.9875 30.4688C61.3395 30.4688 63.2565 28.6647 63.2565 26.2158C63.2575 23.7508 61.3395 21.9628 58.9875 21.9628ZM58.9875 28.7938C57.6985 28.7938 56.5875 27.7307 56.5875 26.2158C56.5875 24.6848 57.6995 23.6378 58.9875 23.6378C60.2765 23.6378 61.3875 24.6848 61.3875 26.2158C61.3885 27.7298 60.2765 28.7938 58.9875 28.7938ZM47.9095 25.0718H52.2275C52.0985 26.0868 51.7605 26.8277 51.2445 27.3438C50.6165 27.9718 49.6335 28.6648 47.9095 28.6648C45.2515 28.6648 43.1735 26.5218 43.1735 23.8638C43.1735 21.2058 45.2515 19.0628 47.9095 19.0628C49.3435 19.0628 50.3905 19.6268 51.1635 20.3518L52.4365 19.0788C51.3575 18.0478 49.9235 17.2578 47.9095 17.2578C44.2685 17.2578 41.2075 20.2218 41.2075 23.8628C41.2075 27.5038 44.2685 30.4678 47.9095 30.4678C49.8745 30.4678 51.3575 29.8238 52.5175 28.6148C53.7095 27.4228 54.0805 25.7468 54.0805 24.3938C54.0805 23.9748 54.0485 23.5878 53.9835 23.2658H47.9095V25.0718ZM93.2175 24.6688C92.8635 23.7178 91.7835 21.9618 89.5765 21.9618C87.3855 21.9618 85.5655 23.6858 85.5655 26.2148C85.5655 28.5988 87.3695 30.4678 89.7865 30.4678C91.7355 30.4678 92.8635 29.2758 93.3305 28.5828L91.8805 27.6158C91.3975 28.3248 90.7365 28.7918 89.7865 28.7918C88.8355 28.7918 88.1595 28.3568 87.7245 27.5028L93.4115 25.1508L93.2175 24.6688ZM87.4175 26.0868C87.3695 24.4438 88.6905 23.6058 89.6405 23.6058C90.3815 23.6058 91.0095 23.9758 91.2195 24.5078L87.4175 26.0868ZM82.7935 30.2108H84.6625V17.7098H82.7935V30.2108ZM79.7325 22.9128H79.6685C79.2495 22.4138 78.4445 21.9618 77.4295 21.9618C75.3025 21.9618 73.3535 23.8308 73.3535 26.2308C73.3535 28.6148 75.3025 30.4678 77.4295 30.4678C78.4445 30.4678 79.2495 30.0168 79.6685 29.5008H79.7325V30.1128C79.7325 31.7398 78.8625 32.6097 77.4605 32.6097C76.3165 32.6097 75.6075 31.7878 75.3175 31.0958L73.6905 31.7728C74.1575 32.9008 75.3985 34.2858 77.4605 34.2858C79.6515 34.2858 81.5045 32.9968 81.5045 29.8558V22.2198H79.7325V22.9128ZM77.5905 28.7938C76.3015 28.7938 75.2225 27.7148 75.2225 26.2318C75.2225 24.7338 76.3015 23.6378 77.5905 23.6378C78.8635 23.6378 79.8615 24.7328 79.8615 26.2318C79.8615 27.7138 78.8635 28.7938 77.5905 28.7938ZM101.972 17.7098H97.5005V30.2108H99.3655V25.4748H101.971C104.039 25.4748 106.072 23.9778 106.072 21.5928C106.072 19.2078 104.04 17.7098 101.972 17.7098ZM102.02 23.7348H99.3655V19.4498H102.02C103.415 19.4498 104.207 20.6048 104.207 21.5928C104.207 22.5608 103.415 23.7348 102.02 23.7348ZM113.552 21.9398C112.201 21.9398 110.802 22.5348 110.223 23.8538L111.88 24.5458C112.234 23.8538 112.893 23.6288 113.585 23.6288C114.55 23.6288 115.531 24.2078 115.547 25.2368V25.3658C115.209 25.1728 114.485 24.8828 113.601 24.8828C111.816 24.8828 109.998 25.8638 109.998 27.6978C109.998 29.3708 111.462 30.4478 113.102 30.4478C114.357 30.4478 115.048 29.8848 115.482 29.2258H115.546V30.1908H117.347V25.3978C117.347 23.1778 115.691 21.9398 113.552 21.9398ZM113.326 28.7908C112.715 28.7908 111.862 28.4847 111.862 27.7298C111.862 26.7648 112.924 26.3948 113.84 26.3948C114.66 26.3948 115.046 26.5718 115.545 26.8128C115.401 27.9707 114.404 28.7908 113.326 28.7908ZM123.909 22.2128L121.77 27.6328H121.706L119.487 22.2128H117.477L120.806 29.7878L118.908 34.0018H120.854L125.985 22.2128H123.909ZM107.102 30.2108H108.968V17.7098H107.102V30.2108Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M47.5406 10.0031H44.6326V10.7241H46.8116C46.7526 11.3101 46.5176 11.7711 46.1246 12.1061C45.7306 12.4411 45.2276 12.6091 44.6326 12.6091C43.9786 12.6091 43.4256 12.3831 42.9736 11.9301C42.5296 11.4691 42.3026 10.9001 42.3026 10.2121C42.3026 9.52512 42.5296 8.95512 42.9736 8.49412C43.4256 8.04212 43.9786 7.81612 44.6326 7.81612C44.9676 7.81612 45.2866 7.87412 45.5796 8.00012C45.8726 8.12612 46.1076 8.30213 46.2916 8.52813L46.8446 7.97513C46.5936 7.69013 46.2746 7.47213 45.8816 7.31313C45.4876 7.15413 45.0766 7.07812 44.6326 7.07812C43.7606 7.07812 43.0236 7.38013 42.4206 7.98313C41.8166 8.58713 41.5156 9.33212 41.5156 10.2121C41.5156 11.0921 41.8166 11.8381 42.4206 12.4411C43.0236 13.0451 43.7606 13.3461 44.6326 13.3461C45.5456 13.3461 46.2746 13.0531 46.8366 12.4581C47.3306 11.9641 47.5826 11.2931 47.5826 10.4551C47.5826 10.3131 47.5656 10.1621 47.5406 10.0031Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M48.6885 7.21094V13.211H52.1915V12.474H49.4595V10.572H51.9225V9.85094H49.4595V7.94894H52.1915V7.21094H48.6885Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M57.1176 7.94894V7.21094H52.9946V7.94894H54.6706V13.211H55.4416V7.94894H57.1176Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M60.8726 7.21094H60.1016V13.211H60.8726V7.21094Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M65.9677 7.94894V7.21094H61.8447V7.94894H63.5207V13.211H64.2917V7.94894H65.9677Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M73.7697 7.99213C73.1747 7.38013 72.4457 7.07812 71.5737 7.07812C70.7027 7.07812 69.9727 7.38013 69.3777 7.98313C68.7827 8.57813 68.4897 9.32412 68.4897 10.2121C68.4897 11.1011 68.7827 11.8461 69.3777 12.4411C69.9727 13.0451 70.7027 13.3461 71.5737 13.3461C72.4367 13.3461 73.1747 13.0451 73.7697 12.4411C74.3647 11.8461 74.6577 11.1011 74.6577 10.2121C74.6577 9.33212 74.3647 8.58713 73.7697 7.99213ZM69.9317 8.49412C70.3757 8.04212 70.9197 7.81612 71.5737 7.81612C72.2277 7.81612 72.7717 8.04212 73.2077 8.49412C73.6517 8.93912 73.8697 9.51712 73.8697 10.2121C73.8697 10.9081 73.6517 11.4861 73.2077 11.9301C72.7717 12.3831 72.2277 12.6091 71.5737 12.6091C70.9197 12.6091 70.3757 12.3831 69.9317 11.9301C69.4957 11.4781 69.2777 10.9081 69.2777 10.2121C69.2777 9.51712 69.4957 8.94712 69.9317 8.49412Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M76.5097 9.47394L76.4767 8.31694H76.5097L79.5607 13.211H80.3647V7.21094H79.5937V10.723L79.6277 11.879H79.5937L76.6777 7.21094H75.7397V13.211H76.5097V9.47394Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M20.8819 19.6348L10.2349 30.9348C10.2359 30.9368 10.2359 30.9388 10.2369 30.9408C10.5629 32.1688 11.6839 33.0718 13.0139 33.0718C13.5459 33.0718 14.0449 32.9278 14.4729 32.6758L14.5069 32.6558L26.4909 25.7408L20.8819 19.6348Z"
+                      fill="#EB4335"
+                    />
+                    <path
+                      d="M31.6541 17.7121L31.6441 17.7051L26.4701 14.7051L20.6411 19.8921L26.4901 25.7401L31.6371 22.7711C32.5391 22.2841 33.1511 21.3331 33.1511 20.2361C33.1511 19.1471 32.5471 18.2001 31.6541 17.7121Z"
+                      fill="#FABC13"
+                    />
+                    <path
+                      d="M10.2352 9.48828C10.1712 9.72428 10.1372 9.97128 10.1372 10.2283V30.1953C10.1372 30.4523 10.1699 30.7002 10.2349 30.9352L21.2482 19.9243L10.2352 9.48828Z"
+                      fill="#547DBF"
+                    />
+                    <path
+                      d="M20.9599 20.2116L26.4709 14.7026L14.4999 7.76256C14.0649 7.50156 13.5579 7.35156 13.0139 7.35156C11.6839 7.35156 10.5619 8.25656 10.2349 9.48556L10.2352 9.48853L20.9599 20.2116Z"
+                      fill="#30A851"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_565_548">
+                      <rect width="136" height="41" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+
+              <a href="#" class="">
+                <!-- APP STORE SVG -->
+
+                <svg
+                  width="125"
+                  height="41"
+                  viewBox="0 0 121 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_565_563)">
+                    <path
+                      d="M112.165 0.710938H8.16455C4.02242 0.710938 0.664551 4.0688 0.664551 8.21094V32.2109C0.664551 36.3531 4.02242 39.7109 8.16455 39.7109H112.165C116.307 39.7109 119.665 36.3531 119.665 32.2109V8.21094C119.665 4.0688 116.307 0.710938 112.165 0.710938Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M112.165 0.710938H8.16455C4.02242 0.710938 0.664551 4.0688 0.664551 8.21094V32.2109C0.664551 36.3531 4.02242 39.7109 8.16455 39.7109H112.165C116.307 39.7109 119.665 36.3531 119.665 32.2109V8.21094C119.665 4.0688 116.307 0.710938 112.165 0.710938Z"
+                      stroke="#A6A6A6"
+                    />
+                    <path
+                      d="M24.9345 20.5113C24.9453 19.6766 25.167 18.8582 25.579 18.1323C25.991 17.4063 26.58 16.7964 27.2911 16.3592C26.8394 15.7141 26.2434 15.1831 25.5506 14.8086C24.8578 14.434 24.0871 14.2262 23.2999 14.2015C21.6207 14.0253 19.9928 15.2064 19.137 15.2064C18.2648 15.2064 16.9473 14.219 15.5285 14.2482C14.6109 14.2779 13.7165 14.5447 12.9326 15.0228C12.1488 15.5009 11.5021 16.1738 11.0556 16.9761C9.12161 20.3245 10.5642 25.2456 12.4168 27.9522C13.3437 29.2775 14.427 30.758 15.8445 30.7055C17.2315 30.648 17.7496 29.821 19.4239 29.821C21.0826 29.821 21.5686 30.7055 23.0149 30.6721C24.5032 30.6479 25.441 29.3409 26.3354 28.003C27.0013 27.0586 27.5138 26.0149 27.8538 24.9105C26.9891 24.5447 26.2512 23.9325 25.732 23.1503C25.2129 22.368 24.9356 21.4502 24.9345 20.5113Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M22.2031 12.4223C23.0146 11.4481 23.4144 10.1959 23.3176 8.93164C22.0778 9.06186 20.9325 9.65442 20.1101 10.5913C19.7079 11.0489 19.3999 11.5814 19.2037 12.1582C19.0074 12.7349 18.9268 13.3447 18.9663 13.9527C19.5865 13.9591 20.2 13.8246 20.7606 13.5596C21.3213 13.2945 21.8145 12.9056 22.2031 12.4223Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M42.4673 27.3507H37.7339L36.5971 30.7071H34.5923L39.0757 18.2891H41.1587L45.6421 30.7071H43.603L42.4673 27.3507ZM38.2241 25.8019H41.9761L40.1265 20.3546H40.0747L38.2241 25.8019Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M55.3248 26.1804C55.3248 28.9939 53.8189 30.8015 51.5465 30.8015C50.9708 30.8316 50.3983 30.699 49.8945 30.4188C49.3907 30.1387 48.976 29.7224 48.6978 29.2175H48.6548V33.7018H46.7964V21.653H48.5953V23.1589H48.6295C48.9204 22.6564 49.3422 22.2422 49.8498 21.9604C50.3574 21.6785 50.932 21.5396 51.5123 21.5583C53.8101 21.5583 55.3248 23.3747 55.3248 26.1804ZM53.4146 26.1804C53.4146 24.3474 52.4674 23.1423 51.022 23.1423C49.6021 23.1423 48.647 24.3728 48.647 26.1804C48.647 28.0046 49.6021 29.2263 51.022 29.2263C52.4674 29.2263 53.4146 28.03 53.4146 26.1804Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M65.2895 26.1804C65.2895 28.9939 63.7837 30.8015 61.5112 30.8015C60.9356 30.8316 60.3631 30.699 59.8593 30.4188C59.3555 30.1387 58.9407 29.7224 58.6626 29.2175H58.6196V33.7018H56.7612V21.653H58.56V23.1589H58.5942C58.8851 22.6564 59.3069 22.2422 59.8145 21.9604C60.3221 21.6785 60.8967 21.5396 61.477 21.5583C63.7749 21.5583 65.2895 23.3747 65.2895 26.1804ZM63.3794 26.1804C63.3794 24.3474 62.4321 23.1423 60.9868 23.1423C59.5669 23.1423 58.6118 24.3728 58.6118 26.1804C58.6118 28.0046 59.5669 29.2263 60.9868 29.2263C62.4321 29.2263 63.3794 28.03 63.3794 26.1804Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M71.8755 27.2471C72.0132 28.4785 73.2095 29.2871 74.8442 29.2871C76.4106 29.2871 77.5376 28.4785 77.5376 27.3681C77.5376 26.4043 76.8579 25.8271 75.2485 25.4316L73.6391 25.0439C71.3589 24.4931 70.3003 23.4267 70.3003 21.6962C70.3003 19.5537 72.1675 18.082 74.8188 18.082C77.4428 18.082 79.2417 19.5537 79.3022 21.6962H77.4262C77.3139 20.457 76.2895 19.7089 74.7924 19.7089C73.2954 19.7089 72.271 20.4658 72.271 21.5673C72.271 22.4453 72.9253 22.9619 74.5258 23.3573L75.894 23.6933C78.4418 24.2958 79.5005 25.3193 79.5005 27.1357C79.5005 29.4589 77.6499 30.914 74.7065 30.914C71.9526 30.914 70.0932 29.4931 69.9731 27.247L71.8755 27.2471Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M83.5112 19.5098V21.6524H85.2329V23.1241H83.5112V28.1153C83.5112 28.8907 83.8559 29.252 84.6128 29.252C84.8172 29.2485 85.0212 29.2341 85.2241 29.209V30.6719C84.8838 30.7355 84.538 30.7643 84.1919 30.7579C82.3589 30.7579 81.644 30.0694 81.644 28.3135V23.1241H80.3276V21.6524H81.644V19.5098H83.5112Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M86.23 26.1817C86.23 23.333 87.9077 21.543 90.5239 21.543C93.1489 21.543 94.8189 23.333 94.8189 26.1817C94.8189 29.0381 93.1577 30.8203 90.5239 30.8203C87.8911 30.8203 86.23 29.0381 86.23 26.1817ZM92.9253 26.1817C92.9253 24.2276 92.0298 23.0743 90.5239 23.0743C89.0181 23.0743 88.1236 24.2364 88.1236 26.1817C88.1236 28.1436 89.0181 29.2881 90.5239 29.2881C92.0298 29.2881 92.9253 28.1436 92.9253 26.1817Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M96.3511 21.6529H98.1235V23.1939H98.1665C98.2864 22.7126 98.5684 22.2873 98.965 21.9894C99.3616 21.6915 99.8486 21.5393 100.344 21.5582C100.558 21.5574 100.772 21.5807 100.981 21.6275V23.3658C100.711 23.2832 100.428 23.2453 100.146 23.2535C99.876 23.2426 99.6069 23.2902 99.357 23.393C99.1072 23.4959 98.8825 23.6517 98.6986 23.8496C98.5146 24.0474 98.3756 24.2828 98.2912 24.5395C98.2068 24.7961 98.1789 25.068 98.2095 25.3365V30.7066H96.3511V21.6529Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M109.549 28.0489C109.299 29.6924 107.699 30.8203 105.651 30.8203C103.017 30.8203 101.382 29.0557 101.382 26.2246C101.382 23.3848 103.026 21.543 105.573 21.543C108.078 21.543 109.653 23.2637 109.653 26.0088V26.6455H103.258V26.7578C103.229 27.091 103.27 27.4267 103.381 27.7425C103.491 28.0584 103.667 28.3472 103.897 28.5897C104.128 28.8323 104.407 29.023 104.717 29.1493C105.026 29.2756 105.359 29.3346 105.694 29.3223C106.133 29.3634 106.574 29.2617 106.95 29.0323C107.327 28.8028 107.62 28.4579 107.785 28.0488L109.549 28.0489ZM103.267 25.3467H107.793C107.81 25.0471 107.765 24.7473 107.66 24.4661C107.555 24.1849 107.394 23.9283 107.185 23.7126C106.977 23.4968 106.726 23.3265 106.448 23.2123C106.171 23.098 105.873 23.0424 105.573 23.0489C105.27 23.0471 104.97 23.1052 104.69 23.2199C104.41 23.3347 104.155 23.5037 103.941 23.7174C103.727 23.931 103.557 24.185 103.441 24.4646C103.325 24.7443 103.266 25.0441 103.267 25.3467Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M37.9912 8.94232C38.3808 8.91436 38.7718 8.97322 39.1359 9.11465C39.5 9.25609 39.8282 9.47657 40.0968 9.76019C40.3653 10.0438 40.5676 10.3835 40.689 10.7548C40.8104 11.1261 40.8479 11.5197 40.7988 11.9072C40.7988 13.8134 39.7685 14.9092 37.9912 14.9092H35.8359V8.94232H37.9912ZM36.7627 14.0653H37.8877C38.1661 14.082 38.4447 14.0363 38.7032 13.9317C38.9618 13.8271 39.1937 13.6662 39.3822 13.4606C39.5707 13.255 39.711 13.01 39.7929 12.7434C39.8747 12.4768 39.8961 12.1953 39.8554 11.9193C39.8931 11.6445 39.8696 11.3647 39.7865 11.1001C39.7034 10.8354 39.5627 10.5924 39.3747 10.3885C39.1866 10.1846 38.9558 10.0247 38.6987 9.92048C38.4416 9.81624 38.1647 9.77016 37.8877 9.78553H36.7627V14.0653Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M41.8455 12.6548C41.8172 12.3589 41.851 12.0603 41.9449 11.7782C42.0387 11.4962 42.1905 11.2368 42.3904 11.0168C42.5903 10.7969 42.8341 10.6211 43.1059 10.5008C43.3778 10.3805 43.6717 10.3184 43.969 10.3184C44.2663 10.3184 44.5603 10.3805 44.8321 10.5008C45.104 10.6211 45.3477 10.7969 45.5476 11.0168C45.7476 11.2368 45.8993 11.4962 45.9932 11.7782C46.087 12.0603 46.1209 12.3589 46.0925 12.6548C46.1214 12.951 46.0879 13.25 45.9944 13.5325C45.9008 13.815 45.7491 14.0749 45.5491 14.2953C45.3491 14.5157 45.1052 14.6918 44.8331 14.8124C44.561 14.9329 44.2666 14.9952 43.969 14.9952C43.6714 14.9952 43.3771 14.9329 43.1049 14.8124C42.8328 14.6918 42.5889 14.5157 42.3889 14.2953C42.1889 14.0749 42.0373 13.815 41.9437 13.5325C41.8501 13.25 41.8166 12.951 41.8455 12.6548ZM45.1785 12.6548C45.1785 11.6787 44.74 11.1079 43.9705 11.1079C43.198 11.1079 42.7635 11.6787 42.7635 12.6548C42.7635 13.6387 43.198 14.2051 43.9705 14.2051C44.74 14.2051 45.1785 13.6348 45.1785 12.6548Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M51.7383 14.9092H50.8164L49.8857 11.5928H49.8154L48.8887 14.9092H47.9756L46.7344 10.4062H47.6357L48.4424 13.8422H48.5088L49.4346 10.4062H50.2871L51.2129 13.8422H51.2832L52.0859 10.4062H52.9746L51.7383 14.9092Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M54.0186 10.4059H54.8741V11.1212H54.9405C55.0532 10.8643 55.2432 10.6489 55.484 10.5051C55.7249 10.3613 56.0046 10.2962 56.2843 10.3189C56.5034 10.3025 56.7234 10.3355 56.928 10.4156C57.1326 10.4957 57.3165 10.6208 57.4662 10.7817C57.6159 10.9425 57.7274 11.135 57.7926 11.3448C57.8579 11.5546 57.875 11.7764 57.8428 11.9937V14.9087H56.9542V12.2169C56.9542 11.4933 56.6397 11.1334 55.9825 11.1334C55.8337 11.1265 55.6852 11.1518 55.5472 11.2076C55.4091 11.2635 55.2848 11.3485 55.1827 11.4569C55.0805 11.5653 55.003 11.6944 54.9555 11.8356C54.908 11.9767 54.8915 12.1264 54.9073 12.2745V14.9088H54.0186V10.4059Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M59.2588 8.64844H60.1474V14.9092H59.2588V8.64844Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M61.3826 12.6549C61.3543 12.359 61.3882 12.0604 61.482 11.7783C61.5759 11.4962 61.7277 11.2369 61.9276 11.0169C62.1276 10.7969 62.3713 10.6211 62.6432 10.5008C62.9151 10.3806 63.2091 10.3184 63.5064 10.3184C63.8037 10.3184 64.0977 10.3806 64.3695 10.5008C64.6414 10.6211 64.8851 10.7969 65.0851 11.0169C65.2851 11.2369 65.4368 11.4962 65.5307 11.7783C65.6246 12.0604 65.6584 12.359 65.6301 12.6549C65.659 12.9511 65.6255 13.2501 65.5319 13.5326C65.4382 13.8152 65.2865 14.075 65.0865 14.2954C64.8865 14.5158 64.6426 14.6919 64.3705 14.8124C64.0983 14.933 63.804 14.9952 63.5064 14.9952C63.2087 14.9952 62.9144 14.933 62.6423 14.8124C62.3701 14.6919 62.1262 14.5158 61.9262 14.2954C61.7262 14.075 61.5745 13.8152 61.4809 13.5326C61.3873 13.2501 61.3538 12.9511 61.3826 12.6549ZM64.7156 12.6549C64.7156 11.6788 64.2771 11.108 63.5076 11.108C62.7351 11.108 62.3006 11.6788 62.3006 12.6549C62.3006 13.6388 62.7352 14.2052 63.5076 14.2052C64.2771 14.2052 64.7156 13.6349 64.7156 12.6549Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M66.5659 13.6348C66.5659 12.8242 67.1694 12.3569 68.2407 12.2905L69.4604 12.2202V11.8315C69.4604 11.356 69.146 11.0874 68.5386 11.0874C68.0425 11.0874 67.6987 11.2695 67.6001 11.5879H66.7397C66.8305 10.8145 67.5581 10.3184 68.5796 10.3184C69.7085 10.3184 70.3452 10.8804 70.3452 11.8315V14.9082H69.4897V14.2754H69.4194C69.2767 14.5024 69.0763 14.6874 68.8387 14.8117C68.601 14.9359 68.3347 14.9948 68.0669 14.9824C67.8778 15.0021 67.6868 14.9819 67.506 14.9232C67.3253 14.8645 67.1588 14.7686 67.0174 14.6416C66.876 14.5146 66.7627 14.3594 66.685 14.186C66.6072 14.0126 66.5666 13.8248 66.5659 13.6348ZM69.4604 13.25V12.8735L68.3608 12.9438C67.7407 12.9853 67.4594 13.1963 67.4594 13.5933C67.4594 13.9985 67.811 14.2344 68.2944 14.2344C68.4361 14.2487 68.5792 14.2344 68.7152 14.1923C68.8512 14.1502 68.9773 14.0812 69.0861 13.9894C69.1949 13.8975 69.2841 13.7847 69.3484 13.6577C69.4127 13.5307 69.4508 13.392 69.4604 13.25Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M71.5132 12.6558C71.5132 11.2329 72.2446 10.3316 73.3823 10.3316C73.6637 10.3186 73.943 10.386 74.1875 10.5259C74.4321 10.6658 74.6317 10.8724 74.7632 11.1216H74.8296V8.64844H75.7182V14.9092H74.8667V14.1978H74.7964C74.6548 14.4452 74.4482 14.6493 74.1989 14.7878C73.9496 14.9262 73.6673 14.9939 73.3823 14.9834C72.2368 14.9834 71.5132 14.0821 71.5132 12.6558ZM72.4312 12.6558C72.4312 13.6109 72.8814 14.1856 73.6343 14.1856C74.3833 14.1856 74.8462 13.6026 74.8462 12.6597C74.8462 11.7212 74.3784 11.1299 73.6343 11.1299C72.8862 11.1299 72.4312 11.7085 72.4312 12.6558Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M79.3948 12.6548C79.3665 12.3589 79.4003 12.0603 79.4942 11.7782C79.588 11.4962 79.7398 11.2368 79.9397 11.0168C80.1397 10.7969 80.3834 10.6211 80.6552 10.5008C80.9271 10.3805 81.2211 10.3184 81.5183 10.3184C81.8156 10.3184 82.1096 10.3805 82.3814 10.5008C82.6533 10.6211 82.897 10.7969 83.0969 11.0168C83.2969 11.2368 83.4486 11.4962 83.5425 11.7782C83.6363 12.0603 83.6702 12.3589 83.6419 12.6548C83.6707 12.951 83.6373 13.25 83.5437 13.5325C83.4501 13.815 83.2984 14.0749 83.0984 14.2953C82.8984 14.5157 82.6545 14.6918 82.3824 14.8124C82.1103 14.9329 81.816 14.9952 81.5183 14.9952C81.2207 14.9952 80.9264 14.9329 80.6543 14.8124C80.3821 14.6918 80.1382 14.5157 79.9382 14.2953C79.7382 14.0749 79.5866 13.815 79.493 13.5325C79.3994 13.25 79.366 12.951 79.3948 12.6548ZM82.7278 12.6548C82.7278 11.6787 82.2893 11.1079 81.5198 11.1079C80.7473 11.1079 80.3128 11.6787 80.3128 12.6548C80.3128 13.6387 80.7474 14.2051 81.5198 14.2051C82.2893 14.2051 82.7278 13.6348 82.7278 12.6548Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M84.8345 10.4059H85.6899V11.1212H85.7563C85.869 10.8643 86.059 10.6489 86.2999 10.5051C86.5407 10.3613 86.8205 10.2962 87.1001 10.3189C87.3192 10.3025 87.5392 10.3355 87.7438 10.4156C87.9484 10.4957 88.1323 10.6208 88.282 10.7817C88.4317 10.9425 88.5433 11.135 88.6085 11.3448C88.6737 11.5546 88.6908 11.7764 88.6587 11.9937V14.9087H87.77V12.2169C87.77 11.4933 87.4556 11.1334 86.7983 11.1334C86.6496 11.1265 86.5011 11.1518 86.363 11.2076C86.225 11.2635 86.1006 11.3485 85.9985 11.4569C85.8963 11.5653 85.8189 11.6944 85.7713 11.8356C85.7238 11.9767 85.7074 12.1264 85.7231 12.2745V14.9088H84.8345V10.4059Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M93.6802 9.28516V10.4268H94.6558V11.1753H93.6802V13.4907C93.6802 13.9624 93.8745 14.169 94.3169 14.169C94.4301 14.1686 94.5433 14.1618 94.6558 14.1485V14.8887C94.4962 14.9172 94.3345 14.9324 94.1723 14.9341C93.1841 14.9341 92.7905 14.5864 92.7905 13.7183V11.1753H92.0757V10.4267H92.7905V9.28516H93.6802Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M95.8696 8.64844H96.7505V11.1299H96.8208C96.9389 10.8706 97.1341 10.654 97.3798 10.5096C97.6255 10.3653 97.9098 10.3002 98.1938 10.3233C98.4117 10.3114 98.6296 10.3478 98.8319 10.4298C99.0342 10.5119 99.2159 10.6375 99.364 10.7979C99.5121 10.9582 99.623 11.1493 99.6888 11.3574C99.7546 11.5655 99.7736 11.7856 99.7446 12.002V14.9092H98.855V12.2212C98.855 11.502 98.52 11.1377 97.8921 11.1377C97.7394 11.1252 97.5857 11.1462 97.442 11.1992C97.2982 11.2523 97.1677 11.3361 97.0597 11.4448C96.9518 11.5536 96.8688 11.6846 96.8168 11.8287C96.7647 11.9729 96.7448 12.1266 96.7583 12.2793V14.9092H95.8697L95.8696 8.64844Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M104.926 13.6924C104.805 14.1039 104.544 14.4599 104.187 14.6981C103.83 14.9362 103.401 15.0414 102.975 14.9951C102.678 15.0029 102.383 14.9461 102.111 14.8286C101.839 14.7111 101.595 14.5356 101.397 14.3145C101.199 14.0934 101.052 13.8318 100.965 13.548C100.878 13.2642 100.854 12.9649 100.895 12.6709C100.855 12.376 100.88 12.0761 100.966 11.7914C101.053 11.5067 101.199 11.244 101.396 11.0209C101.593 10.7978 101.836 10.6197 102.107 10.4984C102.379 10.3772 102.674 10.3158 102.971 10.3184C104.224 10.3184 104.98 11.1744 104.98 12.5884V12.8984H101.8V12.9482C101.786 13.1135 101.807 13.2798 101.861 13.4366C101.915 13.5933 102.002 13.737 102.114 13.8585C102.227 13.9799 102.364 14.0765 102.517 14.1419C102.669 14.2073 102.834 14.2401 102.999 14.2382C103.212 14.2638 103.427 14.2255 103.618 14.1283C103.809 14.0311 103.966 13.8793 104.071 13.6923L104.926 13.6924ZM101.8 12.2412H104.075C104.086 12.0901 104.065 11.9383 104.014 11.7956C103.963 11.6528 103.883 11.5224 103.779 11.4125C103.674 11.3027 103.548 11.2158 103.408 11.1577C103.268 11.0995 103.118 11.0712 102.966 11.0747C102.812 11.0728 102.66 11.1016 102.518 11.1596C102.375 11.2175 102.246 11.3034 102.137 11.4121C102.029 11.5208 101.943 11.6502 101.885 11.7926C101.827 11.935 101.798 12.0875 101.8 12.2412Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_565_563">
+                      <rect width="121" height="41" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <h4>Connect</h4>
+
+            <div class="social-icons">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="4.983" cy="5.009" r="2.188" />
+                  <path
+                    d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+                  />
+                  <circle cx="16.806" cy="7.207" r="1.078" />
+                  <path
+                    d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 SchoolCoreOS. All rights reserved.</span>
+
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END ================================================================================= -->
+    <script src="../../styles/shared/header.css"></script>
+    <script src="../../scripts/solution-pages/school-page/benefitSection.js"></script>
+    <script src="../../scripts/solution-pages/school-page/problemSection.js"></script>
+    <script src="../../scripts/solution-pages/school-page/releventSection.js"></script>
+    <script src="../../scripts/solution-pages/school-page/moduleSection.js"></script>
+    <script src="../../scripts/solution-pages/school-page/faqSection.js"></script>
+  </body>
+</html>

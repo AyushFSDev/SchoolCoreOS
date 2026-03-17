@@ -1,0 +1,215 @@
+.asa-section {
+      font-family: -apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, sans-serif;
+      background: #e8ecef;
+      color: #1d1d1f;
+      -webkit-font-smoothing: antialiased;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* ── Container — responsive, never overflows ── */
+    .asa-container {
+      width: 100%;
+      max-width: 1100px;
+      padding: 40px 0 48px;
+    }
+
+    /* ── Header ── */
+    .asa-container .asa-header {
+      padding: 0 20px 8px;
+    }
+
+    .asa-container .asa-header h2 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      color: #1d1d1f;
+      margin-bottom: 10px;
+    }
+
+    .asa-container .asa-header-link {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #0071e3;
+      text-decoration: none;
+      margin-bottom: 24px;
+    }
+
+    .asa-container .asa-header-link:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Scroll track ── */
+    .asa-container .asa-track-wrap {
+      position: relative;
+    }
+
+    .asa-container .asa-track {
+      display: flex;
+      gap: 12px;
+      padding: 4px 20px 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      cursor: grab;
+    }
+
+    .asa-container .asa-track:active { cursor: grabbing; }
+    .asa-container .asa-track::-webkit-scrollbar { display: none; }
+
+    /* right fade */
+    .asa-container .asa-track-wrap::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 20px;
+      width: 48px;
+      background: linear-gradient(to left, #e8ecef 10%, transparent);
+      pointer-events: none;
+    }
+
+    /* ── Card ── */
+    .asa-container .asa-feature-card {
+      flex: 0 0 200px;
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 22px 20px 20px;
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 200px;
+      border: 1px solid rgba(0,0,0,0.07);
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+      position: relative;
+      user-select: none;
+    }
+
+    .asa-container .asa-feature-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 32px rgba(0,0,0,0.09);
+    }
+
+    /* ── Icon ── */
+    .asa-container .asa-card-icon {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 16px;
+    }
+
+    .asa-container .asa-card-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* ── Text ── */
+    .asa-container .asa-card-body { flex: 1; }
+
+    .asa-container .asa-card-body p {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1d1d1f;
+      line-height: 1.45;
+      letter-spacing: -0.015em;
+    }
+
+    .asa-container .asa-highlight-purple { color: #7c3aed; font-weight: 700; }
+    .asa-container .asa-highlight-orange { color: #d97706; font-weight: 700; }
+    .asa-container .asa-highlight-teal   { color: #0d9488; font-weight: 700; }
+    .asa-container .asa-highlight-red    { color: #e11d48; font-weight: 700; }
+    .asa-container .asa-highlight-blue   { color: #0071e3; font-weight: 700; }
+    .asa-container .asa-highlight-green  { color: #16a34a; font-weight: 700; }
+
+    /* ── Arrow button ── */
+    .asa-container .asa-card-footer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .asa-container .asa-arrow-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #1d1d1f;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease, background 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .asa-container .asa-arrow-btn:hover {
+      transform: scale(1.08);
+      background: #333;
+    }
+
+    .asa-container .asa-arrow-btn svg {
+      width: 13px;
+      height: 13px;
+      color: #fff;
+    }
+
+    /* ── Nav row ── */
+    .asa-container .asa-nav-row {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 4px 20px 0;
+      gap: 8px;
+    }
+
+    .asa-container .asa-nav-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.75);
+      border: 1px solid rgba(0,0,0,0.10);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: background 0.2s ease, transform 0.15s ease;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    .asa-container .asa-nav-btn:hover {
+      background: rgba(255,255,255,0.95);
+      transform: scale(1.06);
+    }
+
+    .asa-container .asa-nav-btn:active { transform: scale(0.95); }
+
+    .asa-container .asa-nav-btn svg {
+      width: 12px;
+      height: 12px;
+      color: #1d1d1f;
+    }
+
+    .asa-container .asa-nav-btn:disabled {
+      opacity: 0.35;
+      cursor: default;
+      transform: none;
+    }
+
+    /* ── Desktop overrides ── */
+    @media (min-width: 768px) {
+      .asa-container { padding: 64px 0; }
+      .asa-container .asa-header { padding: 0 0 36px 0px; }
+      .asa-container .asa-header h2 { font-size: 48px; }
+      .asa-container .asa-track { padding: 8px 64px 24px; gap: 16px; }
+      .asa-container .asa-feature-card { flex: 0 0 220px; min-height: 210px; padding: 28px 24px 24px; }
+      .asa-container .asa-card-icon { width: 36px; height: 36px; margin-bottom: 20px; }
+      .asa-container .asa-card-footer { margin-top: 28px; }
+      .asa-container .asa-arrow-btn { width: 34px; height: 34px; }
+      .asa-container .asa-nav-row { padding: 12px 64px 0; }
+      .asa-container .asa-nav-btn { width: 36px; height: 36px; }
+      .asa-container .asa-track-wrap::after { width: 80px; }
+    }

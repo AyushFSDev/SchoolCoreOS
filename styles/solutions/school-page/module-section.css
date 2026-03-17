@@ -1,0 +1,391 @@
+:root {
+
+      --module-bg: #f4f6f8;
+      --module-surface: #EEEEF1;
+      --module-border: #e8eaed;
+      --module-text-h: #111827;
+      --module-text-sub: #6b7280;
+      --module-text-cat: #1f2937;
+      --module-text-card: #374151;
+
+      --module-green-icon: #227A2C;
+      --module-green-bg: white;
+      --module-orange-icon: #FF7804;
+      --module-orange-bg: white;
+      --module-blue-icon: #29919B;
+      --module-blue-bg: white;
+      --module-red-icon: #FF1F64;
+      --module-red-bg: white;
+
+      --module-r-card: 10px;
+      --module-r-icon: 8px;
+      --module-sh-card: 0 1px 3px rgba(0, 0, 0, .07), 0 1px 2px rgba(0, 0, 0, .04);
+      --module-sh-hover: 0 6px 20px rgba(0, 0, 0, .10), 0 2px 6px rgba(0, 0, 0, .06);
+
+      --module-font: 'helvetica neue', helvetica, arial, sans-serif;
+      --module-ease: cubic-bezier(.4, 0, .2, 1);
+  }
+
+
+
+
+  body {
+      font-family: var(--module-font);
+      background: var(--module-bg);
+      color: var(--module-text-h);
+      -webkit-font-smoothing: antialiased;
+  }
+
+
+
+
+  /* ════════════════════════════════════════════════════════════════════
+     PAGE WRAPPER
+  ════════════════════════════════════════════════════════════════════ */
+  .module-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 72px 24px 80px;
+  }
+
+  /* ════════════════════════════════════════════════════════════════════
+     HERO HEADER
+  ════════════════════════════════════════════════════════════════════ */
+  .module-header {
+      margin-bottom: 56px;
+  }
+
+  .module-header h1 {
+      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -.02em;
+      color: var(--module-text-h);
+  }
+
+  .module-header p {
+      margin-top: 12px;
+      font-size: .95rem;
+      color: var(--module-text-sub);
+      max-width: 520px;
+      line-height: 1.6;
+  }
+
+  /* ════════════════════════════════════════════════════════════════════
+     DESKTOP – CATEGORY ROWS  (never touched by mobile styles)
+  ════════════════════════════════════════════════════════════════════ */
+  .module-desktop-list {
+      display: block;
+  }
+
+  /* wraps all 4 .module-category divs */
+
+  .module-category {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 24px 40px;
+      padding: 36px 0;
+      border-top: 1px solid var(--module-border);
+      /* entrance animation */
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .55s ease, transform .55s ease;
+  }
+
+  .module-category.visible {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  .module-category:nth-child(1) {
+      transition-delay: .05s;
+  }
+
+  .module-category:nth-child(2) {
+      transition-delay: .15s;
+  }
+
+  .module-category:nth-child(3) {
+      transition-delay: .25s;
+  }
+
+  .module-category:nth-child(4) {
+      transition-delay: .35s;
+  }
+
+  /* Category label */
+  .module-cat-label {
+      padding-top: 4px;
+  }
+
+  .module-cat-label h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--module-text-cat);
+      line-height: 1.45;
+      letter-spacing: -.01em;
+  }
+
+  /* 2-column card grid */
+  .module-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+  }
+
+  /* ════════════════════════════════════════════════════════════════════
+     SHARED CARD STYLES  (used by both desktop grid & mobile slider)
+  ════════════════════════════════════════════════════════════════════ */
+  .module-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--module-surface);
+      border: 1px solid var(--module-border);
+      border-radius: var(--module-r-card);
+      padding: 13px 16px;
+      cursor: pointer;
+      box-shadow: var(--module-sh-card);
+      text-decoration: none;
+      transition:
+          transform .22s var(--module-ease),
+          box-shadow .22s var(--module-ease),
+          border-color .22s var(--module-ease);
+  }
+
+  .module-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--module-sh-hover);
+      border-color: #d1d5db;
+  }
+
+  /* Icon badge */
+  .module-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: var(--module-r-icon);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .module-icon svg {
+      width: 18px;
+      height: 18px;
+  }
+
+  .icon-green {
+      background: var(--module-green-bg);
+      color: var(--module-green-icon);
+  }
+
+  .icon-orange {
+      background: var(--module-orange-bg);
+      color: var(--module-orange-icon);
+  }
+
+  .icon-blue {
+      background: var(--module-blue-bg);
+      color: var(--module-blue-icon);
+  }
+
+  .icon-red {
+      background: var(--module-red-bg);
+      color: var(--module-red-icon);
+  }
+
+  .module-card-label {
+      font-size: .875rem;
+      font-weight: 600;
+      color: var(--module-text-card);
+      line-height: 1.35;
+  }
+
+  /* ════════════════════════════════════════════════════════════════════
+     MOBILE SECTION SLIDER  –  hidden on desktop
+  ════════════════════════════════════════════════════════════════════ */
+  .module-mob-slider {
+      display: none;
+  }
+
+  /* shown only inside the media query */
+
+  /* ════════════════════════════════════════════════════════════════════
+     RESPONSIVE – TABLET & SMALL DESKTOP  (desktop grid adjustments)
+  ════════════════════════════════════════════════════════════════════ */
+  @media (min-width: 769px) and (max-width: 992px) {
+      .module-category {
+          grid-template-columns: 180px 1fr;
+          gap: 20px 28px;
+      }
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+      .module-section {
+          padding: 60px 32px 72px;
+      }
+
+      .module-category {
+          grid-template-columns: 200px 1fr;
+      }
+  }
+
+  /* ════════════════════════════════════════════════════════════════════
+     MOBILE  ≤ 768 px
+  ════════════════════════════════════════════════════════════════════ */
+  @media (max-width: 768px) {
+
+      .module-section {
+          padding: 48px 16px 56px;
+      }
+
+      .module-header {
+          margin-bottom: 28px;
+      }
+
+      /* Hide the desktop category list entirely */
+      .module-desktop-list {
+          display: none;
+      }
+
+      /* ── Show the section slider ── */
+      .module-mob-slider {
+          display: block;
+      }
+
+      /* ── Outer viewport: clips the sliding track ── */
+      .module-mob-viewport {
+          overflow: hidden;
+          /* subtle rounded border so the slide edges look clean */
+          border-radius: 4px;
+      }
+
+      /* ── Track: all slides side by side ── */
+      .module-mob-track {
+          display: flex;
+          transition: transform .42s cubic-bezier(.4, 0, .2, 1);
+          will-change: transform;
+      }
+
+      /* ── One slide = full viewport width ── */
+      .module-mob-slide {
+          flex: 0 0 100%;
+          width: 100%;
+      }
+
+      /* Slide inner padding */
+      .module-mob-slide-inner {
+          padding: 2px 0 4px;
+          /* breathing room so shadow isn't clipped */
+      }
+
+      /* Section title inside a slide */
+      .module-mob-slide-title {
+          font-size: 1.05rem;
+          font-weight: 700;
+          color: var(--module-text-cat);
+          letter-spacing: -.01em;
+          line-height: 1.4;
+          margin-bottom: 14px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid var(--module-border);
+      }
+
+      /* Cards stack single-column inside each slide */
+      .module-mob-cards {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+      }
+
+      /* Cards fill full width in the slide */
+      .module-mob-cards .module-card {
+          width: 100%;
+          /* disable the lift on touch screens */
+          transition: box-shadow .22s var(--module-ease), border-color .22s var(--module-ease);
+      }
+
+      .module-mob-cards .module-card:hover {
+          transform: none;
+      }
+
+      /* ── Controls bar ── */
+      .module-mob-controls {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-top: 18px;
+      }
+
+      /* "1 / 4" counter – left-aligned */
+      .module-mob-counter {
+          font-size: .78rem;
+          font-weight: 700;
+          color: var(--module-text-sub);
+          letter-spacing: .04em;
+          margin-right: auto;
+          min-width: 32px;
+      }
+
+      /* Step dots */
+      .module-mob-dots {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+      }
+
+      .module-mob-dot {
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: #d1d5db;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+          transition: background .2s var(--module-ease), transform .2s var(--module-ease);
+          flex-shrink: 0;
+      }
+
+      .module-mob-dot.active {
+          background: var(--module-text-cat);
+          transform: scale(1.4);
+      }
+
+      /* Arrow buttons */
+      .module-mob-btn {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #e5e7eb;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          transition:
+              background .18s var(--module-ease),
+              transform .18s var(--module-ease),
+              opacity .18s var(--module-ease);
+      }
+
+      .module-mob-btn:hover:not(:disabled) {
+          background: #d1d5db;
+          transform: scale(1.07);
+      }
+
+      .module-mob-btn:disabled {
+          opacity: .3;
+          cursor: default;
+          transform: none;
+      }
+
+      .module-mob-btn svg {
+          width: 16px;
+          height: 16px;
+          color: #374151;
+          display: block;
+      }
+
+  }
