@@ -40,8 +40,12 @@
 
       .school-hero-buttons {
         display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+ 
+        flex-wrap:nowrap;
       }
 
       .school-btn-primary {
@@ -134,10 +138,14 @@
         .school-hero-left p {
           font-size: 16px;
         }
+        .school-hero-buttons {
+          flex-direction: column;
+          gap: 20px;
+        }
 
         .school-btn-primary,
         .school-btn-secondary {
-          font-size: 14px;
-          padding: 12px 22px;
+      
+          width: 70%;
         }
       }
