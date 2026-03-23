@@ -51,6 +51,7 @@ schoolcoreos-marketing/
 ├── index.html
 ├── assets/
 ├── styles/
+├── scripts/
 ├── pages/
 ```
 
